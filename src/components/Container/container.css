@@ -1,8 +1,10 @@
 .content_div {
-    margin: 0px 300px;
+    margin: 0px auto;
     background-color: white;
     padding: 50px;
     border-radius: 25px;
+    opacity: .8;
+    max-width: 800px;
 }
 
 .container_div {

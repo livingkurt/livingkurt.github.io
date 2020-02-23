@@ -2,8 +2,11 @@
     object-fit: cover;
     object-position: 80% 0;
     height: 300px;
-    width: 300px;
+    /* width: 300px; */
+    max-width: 300px;
+    /* max-height: 300px; */
     border-radius: 25px;
+    margin-left: 10px;
 }
 
 
@@ -19,6 +22,7 @@
 
 
 #home_img_div {
+    
     /* width: 500px; */
     /* margin-left: 150px; */
 }
@@ -33,3 +37,8 @@ h1 {
     margin: 0px;
     
 }
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }

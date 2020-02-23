@@ -16,7 +16,7 @@ function Home() {
             </div>
             <div id="home_img_div">
 
-                <img id="head_shot" src={Head_Shot} alt="Head Shot" />
+                <img id="head_shot" className="responsive" src={Head_Shot} alt="Head Shot" />
             </div>
 
         </div>

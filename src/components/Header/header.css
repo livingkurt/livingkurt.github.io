@@ -19,7 +19,6 @@
 i {
     color: silver;
     margin: 0px 15px;
-    
 }
 
 .icon_active {
@@ -36,6 +35,7 @@ span {
     -moz-osx-font-smoothing: grayscale;
     /* width: 75px; */
 }
+
 #home_pop_up {
     padding: 10px;
 }
@@ -80,4 +80,23 @@ span {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     font-size: 16px;
+}
+
+.box {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box::after {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover {
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+}
+
+.box:hover::after {
+    opacity: 1;
 }

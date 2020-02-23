@@ -1,33 +1,50 @@
 [
-    {
-      "id": 1,
-      "name": "Livdin",
-      "image": ""
-    },
-    {
-        "id": 1,
-        "name": "My",
-        "image": ""
-      },
-      {
-        "id": 1,
-        "name": "Livdin",
-        "image": ""
-      },
-      {
-        "id": 1,
-        "name": "Livdin",
-        "image": ""
-      },
-      {
-        "id": 1,
-        "name": "Livdin",
-        "image": ""
-      },
-      {
-        "id": 1,
-        "name": "Livdin",
-        "image": ""
-      },
-  ]
-  
+  {
+    "id": 1,
+    "name": "Livdin",
+    "image": "",
+    "url": "",
+    "description": "Livdin is a web application that lets users post reviews on previous and current places of residence. The application was designed with the idea of giving individuals a space to review their current place of residence free from the real estate pressure.Mainly supervised the front end using HTML, CSS, and Javascript, but also had a big part in creating backend routes using Node.js.",
+    "color": ""
+  },
+  {
+    "id": 1,
+    "name": "CoLab",
+    "image": "",
+    "url": "",
+    "description": "CoLab is a place where makers, creators, and doers can come together to take their projects to the next level, with the ability to source highly qualified teams for projects in the community or remotely.",
+    "color": ""
+  },
+  {
+    "id": 1,
+    "name": "10x10 Ping Pong Ball Matrix",
+    "image": "",
+    "url": "",
+    "description": "",
+    "color": ""
+  },
+  {
+    "id": 1,
+    "name": "WeatherMe or PlayMeTheWeather",
+    "image": "",
+    "url": "",
+    "description": "",
+    "color": ""
+  },
+  {
+    "id": 1,
+    "name": "Infinity Cube",
+    "image": "",
+    "url": "",
+    "description": "",
+    "color": ""
+  },
+  {
+    "id": 1,
+    "name": "Date Night Recipes",
+    "image": "",
+    "url": "",
+    "description": "",
+    "color": ""
+  }
+]
