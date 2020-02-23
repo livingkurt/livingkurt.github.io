@@ -1,0 +1,26 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0px;
+    padding:5px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px silver solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    max-width: 100px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
