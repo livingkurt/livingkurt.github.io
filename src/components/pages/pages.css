@@ -1,0 +1,35 @@
+#head_shot {
+    object-fit: cover;
+    object-position: 80% 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
+}
+
+
+#home_container_div {
+    display:flex;
+    justify-content: space-between;
+}
+
+#home_words_div {
+    /* min-width: 150px; */
+    /* margin-right: 150px; */
+}
+
+
+#home_img_div {
+    /* width: 500px; */
+    /* margin-left: 150px; */
+}
+
+h2 {
+    font-weight: 300;
+    color: rgb(141, 141, 141);
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0px;
+    
+}

@@ -1,21 +1,26 @@
 import React from "react";
+import Head_Shot from "./Head_Shot.jpeg"
+import "./pages.css"
 
 function Home() {
-  return (
-    <div>
-      <h1>Home Page</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
-        varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
-        Etiam ut feugiat ex. Cras non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna
-        imperdiet ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras rutrum
-        ligula in tincidunt commodo. Morbi sit amet mollis orci, in tristique ex. Donec nec ornare
-        elit. Donec blandit est sed risus feugiat porttitor. Vestibulum molestie hendrerit massa non
-        consequat. Vestibulum vitae lorem tortor. In elementum ultricies tempus. Interdum et
-        malesuada fames ac ante ipsum primis in faucibus.
-      </p>
-    </div>
-  );
+    return (
+        <div id="home_container_div">
+            <div id="home_words_div">
+                <h1>Kurt LaVacque</h1>
+                <h2>Web Developer</h2>
+                <h2>Creator</h2>
+                <h2>Thinker</h2>
+                {/* <p>
+                    My name is Kurt LaVacque and I am an innovator. I take old ideas and make them work better. I learn, create, and make my world around me into a well-oiled machine constantly improving every day. I live in Austin, TX, I am a web developer by day and CAD designer by night. If I'm not moving forward, then I must be moving backward.
+            </p> */}
+            </div>
+            <div id="home_img_div">
+
+                <img id="head_shot" src={Head_Shot} alt="Head Shot" />
+            </div>
+
+        </div>
+    );
 }
 
 export default Home;

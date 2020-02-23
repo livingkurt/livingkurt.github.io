@@ -1,18 +1,14 @@
 import React from "react";
 
 function About() {
-  return (
-    <div>
-      <h1>About Page</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam. Integer gravida dui
-        mauris, ut interdum nunc egestas sed. Aenean sed mollis diam. Nunc aliquet risus ac finibus
-        porta. Nam quis arcu non lectus tincidunt fermentum. Suspendisse aliquet orci porta quam
-        semper imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus in. Sed
-        rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
-    </div>
-  );
+    return (
+        <div>
+            <h1>About Page</h1>
+            <p>
+                My name is Kurt LaVacque and I am an innovator. I take old ideas and make them work better. I learn, create, and make my world around me into a well-oiled machine constantly improving every day. I live in Austin, TX, I am a web developer by day and CAD designer by night. If I'm not moving forward, then I must be moving backward.
+            </p>
+        </div>
+    );
 }
 
 export default About;
