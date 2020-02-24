@@ -19,6 +19,14 @@ function NavTabs() {
 
             </li>
             <li className="nav_items">
+                <Link to="/about">
+                    <i id="about_i" className={location.pathname === "/about" ? "fas fa-address-card tooltip icon_active box" : " fas fa-address-card tooltip icon_inactive box" }>
+                        <span id="about_pop_up"className="tooltiptext">About</span>
+                    </i>
+                </Link>
+
+            </li>
+            <li className="nav_items">
                 <Link to="/projects">
                     <i id="projects_i" className={location.pathname === "/projects" ? "fas fa-folder tooltip icon_active box" : " fas fa-folder tooltip icon_inactive box" }>
                         <span id="projects_pop_up"className="tooltiptext">Projects</span>

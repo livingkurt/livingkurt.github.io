@@ -50,6 +50,11 @@ span {
     left: 42px;
 }
 
+#about_pop_up {
+    padding: 10px;
+    left: 52px;
+}
+
 /* Tooltip container */
 
 .tooltip {
