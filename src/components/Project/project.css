@@ -6,6 +6,7 @@
     position: relative;
     display: flex;
     border-radius: 15px;
+    height: 200px;
     
 
 }
@@ -69,4 +70,38 @@ h3 {
 
 .box:hover::after {
     opacity: 1;
+}
+
+.tooltip_p {
+    position: relative;
+    display: inline-block;
+    /* width: 100%; */
+    /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+
+.tooltip_p .tooltiptext_p {
+    visibility: hidden;
+    /* width: 75px; */
+    background-color: black;
+    opacity: 0.5;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px; */
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 20%;
+    left: 0;
+    width: 80%;
+    margin: 0px 10px;
+    /* margin-left: -60px; */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tooltip_p:hover .tooltiptext_p {
+    visibility: visible;
+    font-size: 16px;
 }
