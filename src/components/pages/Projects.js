@@ -11,7 +11,7 @@ function Projects() {
             <h1 className="text-center">Projects</h1>
             <div id="project_div">
                 {projects_data.map(project => (
-                    <Project name={project.name} image={project.image} description={project.description} />
+                    <Project name={project.name} image={project.image} description={project.description} url={project.url} />
                 ))}
             </div>
         </div>
