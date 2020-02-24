@@ -17,14 +17,14 @@ export default function Form() {
 
   return (
     <form className="contact-form" onSubmit={sendEmail}>
-      <input type="hidden" name="contact_number" />
+      <input className="zoom_f input_i"type="hidden" name="contact_number" />
       <label>Name</label>
-      <input type="text" name="user_name" placeholder="Name"/>
+      <input className="zoom_f input_i"type="text" name="user_name" placeholder="Name"/>
       <label>Email</label>
-      <input type="email" name="user_email"placeholder="Email" />
+      <input className="zoom_f input_i"type="email" name="user_email"placeholder="Email" />
       <label>Message</label>
-      <textarea name="message" placeholder="Enter Message Here"/>
-      <input id="button"type="submit" value="Send" />
+      <textarea className="zoom_f input_i"name="message" placeholder="Enter Message Here"/>
+      <input className="zoom_b"id="button"type="submit" value="Send" />
     </form>
   );
 }

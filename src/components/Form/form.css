@@ -3,11 +3,11 @@ form {
     flex-direction: column;
 }
 
-input, textarea {
+.input_i {
     margin: 10px 0px;
-    padding:5px;
+    padding:10px;
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px silver solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -19,22 +19,52 @@ textarea {
 
 #button {
     max-width: 75px;
-    display: flex;
-    justify-content: center;
-    height: 40px;
+    padding:10px;
     font-size: 16px;
-    border-radius: 15px;
+    border-radius: 5px;
+    border: 1px silver solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#name_i {
-    /* max-width: 200px; */
+#button:active {
+    background-color: rgb(219, 219, 219);
 }
 
-#email_i {
-    /* max-width: 200px; */
+.zoom_f {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-#message_t {
+.zoom_f::after {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 
+.zoom_f:hover {
+    -webkit-transform: scale(1.01, 1.01);
+    transform: scale(1.01, 1.01);
+}
+
+.zoom_f:hover::after {
+    opacity: 1;
+}
+
+
+.zoom_b {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.zoom_b::after {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.zoom_b:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.zoom_b:hover::after {
+    opacity: 1;
 }

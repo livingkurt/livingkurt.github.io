@@ -12,7 +12,7 @@ function NavTabs() {
         <ul className="nav">
             <li className="nav_items">
                 <Link to="/" >
-                    <i id="home_i" className={location.pathname === "/" ? "fas fa-home tooltip icon_active box" : " fas fa-home tooltip icon_inactive box" }>
+                    <i id="home_i" className={location.pathname === "/" ? "fas fa-home tooltip icon_active zoom_h" : " fas fa-home tooltip icon_inactive zoom_h" }>
                         <span id="home_pop_up"className="tooltiptext">Home</span>
                     </i>
                 </Link>
@@ -20,7 +20,7 @@ function NavTabs() {
             </li>
             <li className="nav_items">
                 <Link to="/about">
-                    <i id="about_i" className={location.pathname === "/about" ? "fas fa-address-card tooltip icon_active box" : " fas fa-address-card tooltip icon_inactive box" }>
+                    <i id="about_i" className={location.pathname === "/about" ? "fas fa-address-card tooltip icon_active zoom_h" : " fas fa-address-card tooltip icon_inactive zoom_h" }>
                         <span id="about_pop_up"className="tooltiptext">About</span>
                     </i>
                 </Link>
@@ -28,7 +28,7 @@ function NavTabs() {
             </li>
             <li className="nav_items">
                 <Link to="/projects">
-                    <i id="projects_i" className={location.pathname === "/projects" ? "fas fa-folder tooltip icon_active box" : " fas fa-folder tooltip icon_inactive box" }>
+                    <i id="projects_i" className={location.pathname === "/projects" ? "fas fa-folder tooltip icon_active zoom_h" : " fas fa-folder tooltip icon_inactive zoom_h" }>
                         <span id="projects_pop_up"className="tooltiptext">Projects</span>
                     </i>
                 </Link>
@@ -36,7 +36,7 @@ function NavTabs() {
             </li>
             <li className="nav_items">
                 <Link to="/contact">
-                    <i id="contact_i" className={location.pathname === "/contact" ? "fas fa-envelope tooltip icon_active box" : " fas fa-envelope tooltip icon_inactive box" }>
+                    <i id="contact_i" className={location.pathname === "/contact" ? "fas fa-envelope tooltip icon_active zoom_h" : " fas fa-envelope tooltip icon_inactive zoom_h" }>
                         <span id="contact_pop_up"className="tooltiptext">Contact</span>
                     </i>
                 </Link>

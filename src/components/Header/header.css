@@ -87,21 +87,21 @@ span {
     font-size: 16px;
 }
 
-.box {
+.zoom_h {
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.box::after {
+.zoom_h::after {
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.box:hover {
+.zoom_h:hover {
     -webkit-transform: scale(1.25, 1.25);
     transform: scale(1.25, 1.25);
 }
 
-.box:hover::after {
+.zoom_h:hover::after {
     opacity: 1;
 }
