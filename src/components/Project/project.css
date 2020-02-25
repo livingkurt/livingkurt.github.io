@@ -1,12 +1,13 @@
 #project_container_div {
     /* height: 200px;
     width: 200px; */
-    background-color: silver;
+    background-color: rgb(255, 255, 255);
     margin: 20px;
     position: relative;
     display: flex;
     border-radius: 15px;
     height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 
 }
@@ -15,11 +16,13 @@
     overflow-x: auto;
     margin-top: 20px;
     height: 55vh;
+    
 }
 
 .project_image {
     /* object-fit: cover; */
     border-radius: 15px;
+    max-height: 200px;
     /* object-position: 80% 0; */
     /* height: 100px;
     width: 100px; */
@@ -42,6 +45,7 @@
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
+    
 }
 
 .project_description_p {

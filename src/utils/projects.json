@@ -2,55 +2,41 @@
   {
     "id": 1,
     "name": "Livdin",
-    "image": "",
+    "image": "/images/Livdin_Logo_2.png",
     "url": "https://livdin.herokuapp.com",
     "github": "https://github.com/livingkurt/Livdin",
-    "description": "Livdin is a web application that lets users post reviews on previous and current places of residence. The application was designed with the idea of giving individuals a space to review their current place of residence free from the real estate pressure.",
-    "background_color": "#3b5d80"
+    "description": "Livdin is a web application that lets users post reviews on previous and current places of residence. The application was designed with the idea of giving individuals a space to review their current place of residence free from the real estate pressure."
   },
   {
     "id": 2,
-    "name": "CoLab",
-    "image": "",
-    "url": "",
-    "github": "",
-    "description": "CoLab is a place where makers, creators, and doers can come together to take their projects to the next level, with the ability to source highly qualified teams for projects in the community or remotely.",
-    "color": ""
+    "name": "3D Printing Quiz",
+    "image": "/images/3D_Printing_Quiz.png",
+    "url": "https://livingkurt.github.io/3D-Printing-Quiz/",
+    "github": "https://github.com/livingkurt/3D-Printing-Quiz",
+    "description": "Did you even Want to test your 3D printing knowledge? On a nice easy to use UI? Now heres your chance! I created this app with the maker in mind. Making the questions challengeing but doable."
   },
   {
     "id": 3,
-    "name": "10x10 Ping Pong Ball Matrix",
-    "image": "",
-    "url": "",
-    "github": "",
-    "description": "",
-    "color": ""
+    "name": "Date Night Recipes",
+    "image": "/images/Date_Night_Recipes.png",
+    "url": "https://livingkurt.github.io/Date-Night-Recipes/",
+    "github": "https://github.com/livingkurt/Date-Night-Recipes",
+    "description": "Have you ever been preparing for a date, deciding to stay in or go out. But terrified of what you'll make if you stay in? Well look no further. Date Night Recipes can provide you with gormet meals and cocktail recipes all in one place. Giving you the best date experice that you have ever had!"
   },
   {
     "id": 4,
-    "name": "WeatherMe or PlayMeTheWeather",
-    "image": "",
-    "url": "",
-    "github": "",
-    "description": "",
-    "color": ""
+    "name": "Passwword Generator",
+    "image": "/images/password_generator.png",
+    "url": "https://livingkurt.github.io/Random-Password-Generator/",
+    "github": "https://github.com/livingkurt/Random-Password-Generator",
+    "description": "Security is a big deal now a days. No one is safe. But some are safer than others. With this password generator you too can be one of the safe ones. With the ability to choose the length, and type of characters. You will be the safest on the internet!"
   },
   {
     "id": 5,
-    "name": "Infinity Cube",
-    "image": "",
-    "url": "",
-    "github": "",
-    "description": "",
-    "color": ""
-  },
-  {
-    "id": 6,
-    "name": "Date Night Recipes",
-    "image": "",
-    "url": "",
-    "github": "",
-    "description": "",
-    "color": ""
+    "name": "Weather Dashboard",
+    "image": "/images/Weather_Dashboard.png",
+    "url": "https://livingkurt.github.io/Weather-Dashboard/",
+    "github": "https://github.com/livingkurt/Weather-Dashboard",
+    "description": "Weather Dashboard is a nice and simple way to view the weather without all the noise from ads and other features that you just don't care about. No more wondering if your looking at the correct forcast in your area!"
   }
 ]

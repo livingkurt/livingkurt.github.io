@@ -1,25 +1,29 @@
 import React from "react";
 import Head_Shot from "./Head_Shot.jpeg"
+import Thingiverse from "./Thingiverse_Logo.png"
 import "./pages.css"
 
 function Home() {
-    return (
-        <div id="home_container_div">
-            <div id="home_words_div">
-                <h1>Kurt LaVacque</h1>
-                <h2>Web Developer</h2>
-                <h2>Creator</h2>
-                <h2>Thinker</h2>
-                {/* <p>
-                    My name is Kurt LaVacque and I am an innovator. I take old ideas and make them work better. I learn, create, and make my world around me into a well-oiled machine constantly improving every day. I live in Austin, TX, I am a web developer by day and CAD designer by night. If I'm not moving forward, then I must be moving backward.
-            </p> */}
-            </div>
-            <div id="home_img_div">
-                <img id="head_shot" className="responsive" src={Head_Shot} alt="Head Shot" />
-            </div>
-
+  return (
+    <div id="home_container_div">
+      <div id="home_words_div">
+        <h1>Kurt LaVacque</h1>
+        <h2>Web Developer</h2>
+        <h2>Creator</h2>
+        <h2>Thinker</h2>
+        <div id="icon_container">
+          <a href="https://github.com/livingkurt" target="_blank" rel="noopener noreferrer"><i className="fab fa-github icon zoom_i"></i></a>
+          <a href="https://www.thingiverse.com/livingkur1/designs" target="_blank" rel="noopener noreferrer"><img id="thingiverse_logo" className="responsive zoom_i" src={Thingiverse} alt="Head Shot" /></a>
+          <a href="https://www.instagram.com/vintage_ntre/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram icon zoom_i"></i></a>
+          {/* <a href="https://www.instagram.com/vintage_ntre/"><i className="fab fa-facebook-square icon"></i></a> */}
         </div>
-    );
+      </div>
+      <div id="home_img_div">
+        <img id="head_shot" className="responsive" src={Head_Shot} alt="Head Shot" />
+      </div>
+
+    </div>
+  );
 }
 
 export default Home;
