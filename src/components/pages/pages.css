@@ -79,3 +79,55 @@ p {
 .zoom_i:hover::after {
   opacity: 1;
 }
+
+.zoom_img {
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.zoom_img::after {
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.zoom_img:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.zoom_img:hover::after {
+  opacity: 1;
+}
+
+.tooltip_h {
+  position: relative;
+  display: inline-block;
+  /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+
+.tooltip_h .tooltiptext_h {
+  visibility: hidden;
+  /* width: 75px; */
+  background-color: black;
+  opacity: 0.5;
+  color: #fff;
+  text-align: center;
+  /* padding: 10px; */
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 10%;
+  left: 0;
+  width: 80%;
+  margin: 0px 25px;
+  /* margin-left: -60px; */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tooltip_h:hover .tooltiptext_h {
+  visibility: visible;
+  font-size: 16px;
+}

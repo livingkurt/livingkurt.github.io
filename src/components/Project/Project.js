@@ -20,7 +20,7 @@ function Project(props) {
     <div id="project_container_div" >
       <a className="zoom_p tooltip_p" href={props.url} target="_blank" rel="noopener noreferrer">
         <img className="project_image img-fluid" src={props.image ? props.image : "https://via.placeholder.com/200"} alt={props.name} />
-        <span id="home_pop_up" className="tooltiptext_p">{props.name} View Deploy</span>
+        <span id="home_pop_up" className="tooltiptext_p">View Deploy</span>
       </a>
       <div className="project_name_div">
         <h3 className="project_name">{props.name}</h3>

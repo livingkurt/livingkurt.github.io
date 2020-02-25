@@ -18,9 +18,13 @@ function Home() {
           {/* <a href="https://www.instagram.com/vintage_ntre/"><i className="fab fa-facebook-square icon"></i></a> */}
         </div>
       </div>
-      <div id="home_img_div">
-        <img id="head_shot" className="responsive" src={Head_Shot} alt="Head Shot" />
-      </div>
+      {/* <div id="home_img_div">
+        <img id="head_shot" className="responsive zoom_img" src={Head_Shot} alt="Head Shot" />
+      </div> */}
+      <a className="zoom_img tooltip_h" href="/about">
+        <img id="head_shot" className="responsive " src={Head_Shot} alt="Head Shot" />
+        <span id="home_pop_up" className="tooltiptext_h"> Learn More About Me</span>
+      </a>
 
     </div>
   );
