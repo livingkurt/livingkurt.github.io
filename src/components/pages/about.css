@@ -1,4 +1,4 @@
-#head_shot {
+#about_head_shot {
   object-fit: cover;
   object-position: 80% 0;
   height: 300px;
@@ -64,6 +64,7 @@ p {
 
 #about_me_div {
   max-width: 500px;
+  margin: 0px auto;
 }
 
 @media screen and (min-width: 930px) {
@@ -75,7 +76,7 @@ p {
   }
 }
 
-@media screen and (max-width: 791px) {
+@media screen and (max-width: 887px) {
   #home_words_div {
     justify-content: center;
     text-align: center;
@@ -91,18 +92,22 @@ p {
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
+    margin-top: 0px;
   }
-  #about_div {
-    margin-left: 0px;
-    /* width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; */
+  p {
+    /* width: 100%; */
+    margin: 15px auto;
+  }
+  #home_img_div {
+    margin: 0px auto;
+  }
+  .input_i {
+    padding: 0px;
   }
 }
 
 @media screen and (max-width: 481px) {
-  #head_shot {
+  #about_head_shot {
     object-fit: cover;
     object-position: 70% 0;
     height: 200px;
@@ -110,36 +115,10 @@ p {
     /* max-width: 300px; */
     /* max-height: 300px; */
     border-radius: 25px;
+    display: none;
   }
   h1 {
     font-size: 40px;
-  }
-  p {
-    font-size: 13px;
-  }
-  .content_div {
-    padding: 10px;
-  }
-  #contact_h1 {
-    margin: 0px;
-  }
-  #home_h1 {
-    margin: 0px;
-  }
-}
-
-@media screen and (max-width: 330px) {
-  #home_h1 {
-    font-size: 30px;
-  }
-  #about_h1 {
-    font-size: 30px;
-  }
-  #projects_h1 {
-    font-size: 30px;
-  }
-  h2 {
-    font-size: 20px;
   }
 }
 
