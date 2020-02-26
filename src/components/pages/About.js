@@ -25,7 +25,7 @@ function About() {
         </p>
         </div>
       </div>
-      <div id="home_img_div">
+      <div id="home_img_div" className="zoom_img">
         <img id="about_head_shot" className="responsive" src={Head_Shot} alt="Head Shot" />
       </div>
 

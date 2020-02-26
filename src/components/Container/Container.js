@@ -9,19 +9,19 @@ import './container.css'
 
 
 function Container() {
-    return (
-        <Router>
-            <div className="container_div">
-                <Header />
-                <div className="content_div">
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/about" component={About} />
-                    <Route exact path="/projects" component={Projects} />
-                    <Route path="/contact" component={Contact} />
-                </div>
-            </div>
-        </Router>
-    );
+  return (
+    <Router>
+      <div className="container_div fade_in">
+        <Header />
+        <div className="content_div">
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
+        </div>
+      </div>
+    </Router>
+  );
 }
 
 export default Container;

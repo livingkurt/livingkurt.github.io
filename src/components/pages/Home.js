@@ -1,6 +1,7 @@
 import React from "react";
 import Head_Shot from "./Head_Shot.jpeg"
 import Thingiverse from "./Thingiverse_Logo.png"
+import { Link } from "react-router-dom";
 import "./pages.css"
 
 function Home() {
@@ -26,10 +27,14 @@ function Home() {
         <img id="head_shot" className="responsive zoom_img" src={Head_Shot} alt="Head Shot" />
       </div> */}
       <div id="head_shot_div">
-        <a className="zoom_img tooltip_h" href="/about">
+        <Link to="/about" className="zoom_img tooltip_h" >
           <img id="head_shot" className="responsive " src={Head_Shot} alt="Head Shot" />
           <span id="home_pop_up" className="tooltiptext_h"> Learn More About Me</span>
-        </a>
+        </Link>
+        {/* <a className="zoom_img tooltip_h" href="/about">
+          <img id="head_shot" className="responsive " src={Head_Shot} alt="Head Shot" />
+          <span id="home_pop_up" className="tooltiptext_h"> Learn More About Me</span>
+        </a> */}
       </div>
 
     </div>
