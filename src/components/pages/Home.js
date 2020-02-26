@@ -17,10 +17,13 @@ function Home() {
           </div>
         </div>
         <div id="icon_container">
-          <a href="https://github.com/livingkurt" target="_blank" rel="noopener noreferrer"><i className="fab fa-github icon zoom_i"></i></a>
+          {/* <div > */}
+          <a id="github_icon" href="https://github.com/livingkurt" target="_blank" rel="noopener noreferrer"><i className="fab fa-github icon zoom_i"></i></a>
           <a href="https://www.thingiverse.com/livingkur1/designs" target="_blank" rel="noopener noreferrer"><img id="thingiverse_logo" className="responsive zoom_i" src={Thingiverse} alt="Head Shot" /></a>
           <a href="https://www.instagram.com/vintage_ntre/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram icon zoom_i"></i></a>
+          <a href="https://www.linkedin.com/in/kurt-lavacque/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin icon zoom_i"></i></a>
           {/* <a href="https://www.instagram.com/vintage_ntre/"><i className="fab fa-facebook-square icon"></i></a> */}
+          {/* </div> */}
         </div>
       </div>
       {/* <div id="home_img_div">
