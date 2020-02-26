@@ -9,19 +9,22 @@ function About() {
         <h1 id="about_h1">About Me</h1>
         <div id="about_me_div">
           <p>
-            My name is Kurt LaVacque and I am a innovator!
+            My name is Kurt LaVacque and I am an innovator!
         </p>
           <p>
-            I take old ideas and make them work better.
+            I use the foundation of old concepts to sculpt new ideas.
         </p>
           <p>
-            I learn, create, and make my world around me into a well-oiled machine constantly improving every day.
+            I learn, create, and make the world around me into a well-oiled machine, constantly improving every day.
         </p>
           <p>
-            I live in Austin, TX, I am a web developer by day and CAD designer by night.
+            I live in Austin, TX.
         </p>
           <p>
-            If I'm not moving forward, then I must be moving backward.
+            I am a web developer by day and CAD designer by night.
+        </p>
+          <p>
+            I believe that if I'm not moving forwards, then I must be moving backwards.
         </p>
         </div>
       </div>
