@@ -5,6 +5,7 @@ import './project.css'
 
 function Project(props) {
 
+
   return (
     <div id="project_container_div" >
       <div id="project_img_div">
@@ -13,11 +14,15 @@ function Project(props) {
           <span id="home_pop_up" className="tooltiptext_p">View Deploy</span>
         </a>
       </div>
-      <div className="project_name_div">
+      <div className="project_name_div tooltip_n">
+
         <h3 className="project_name">{props.name}</h3>
         <p className="project_description_p">
           {props.description}
         </p>
+        <a className="" id="words" href={props.github_url} target="_blank" rel="noopener noreferrer">
+          <span id="home_pop_up" className="tooltiptext_n">View Github Repo</span>
+        </a>
       </div>
 
     </div>

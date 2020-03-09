@@ -112,7 +112,7 @@
 @media screen and (max-width: 930px) {
   .content_div {
     /* margin: 10px 100px; */
-    margin: 20px;
+    margin: 20px 100px;
   }
 }
 
