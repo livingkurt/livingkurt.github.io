@@ -5,11 +5,12 @@
   border-radius: 25px;
   opacity: .8;
   max-width: 800px;
+  max-height: 80vh;
   /* margin: 0px 20px; */
 }
 
 .container_div {
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 .fade_in {
@@ -128,8 +129,8 @@
 @media screen and (max-width: 656px) {
   .content_div {
     /* padding: 20px; */
-    margin: 20px
-    /* height: 70vh; */
+    margin: 20px;
+    height: 75vh;
   }
 }
 

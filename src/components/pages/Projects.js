@@ -9,7 +9,7 @@ function Projects() {
       <h1 id="projects_h1" className="text-center">Projects</h1>
       <div id="project_div">
         {projects_data.map(project => (
-          <Project key={project.id} name={project.name} image={project.image} description={project.description} url={project.url} github_url={project.github} />
+          <Project key={project.id} name={project.name} image={project.image} description={project.description} url={project.url} github_url={project.github} date_created={project.date_created} date_completed={project.date_completed} technologies={project.technologies} />
         ))}
       </div>
     </div>

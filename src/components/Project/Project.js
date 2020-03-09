@@ -4,6 +4,7 @@ import './project.css'
 
 
 function Project(props) {
+  console.log(props)
 
 
   return (
@@ -19,6 +20,12 @@ function Project(props) {
         <h3 className="project_name">{props.name}</h3>
         <p className="project_description_p">
           {props.description}
+          <p style={{ margin: "10px 0px" }}><strong>Technologies:</strong> {" "}
+            {props.technologies.map(tech => (
+              tech + ", "
+            ))}
+            <p><strong>Date Created:</strong> {props.date_created} <strong>Date Completed:</strong> {props.date_completed}</p>
+          </p>
         </p>
         <a className="" id="words" href={props.github_url} target="_blank" rel="noopener noreferrer">
           <span id="home_pop_up" className="tooltiptext_n">View Github Repo</span>

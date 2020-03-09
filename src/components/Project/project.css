@@ -6,7 +6,7 @@
   position: relative;
   display: flex;
   border-radius: 15px;
-  height: 200px;
+  height: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -47,6 +47,7 @@
 
 .project_description_p {
   margin: 20px;
+  margin-left: 0px;
   max-width: 500px;
 }
 
@@ -93,9 +94,9 @@ h3 {
   border-radius: 6px;
   position: absolute;
   z-index: 1;
-  bottom: 10%;
-  left: 0;
-  width: 80%;
+  bottom: 15%;
+  left: 5%;
+  min-width: 70%;
   margin: 0px 10px;
   /* margin-left: -60px; */
 }
@@ -128,7 +129,7 @@ h3 {
   position: absolute;
   z-index: 1;
   bottom: 10%;
-  left: 30%;
+  left: 25%;
   width: 40%;
   /* margin: 0px 10px; */
   margin: 0px auto;
@@ -136,6 +137,12 @@ h3 {
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
+
+#project_img_div {
+  display: flex;
+  align-items: center;
+  margin: auto 50px;
+}
 
 .tooltip_n:hover .tooltiptext_n {
   visibility: visible;
@@ -148,12 +155,16 @@ h3 {
 
 @media screen and (min-width: 930px) {}
 
-@media screen and (max-width: 788px) {
+@media screen and (max-width: 930px) {
   #project_container_div {
     flex-direction: column;
     height: auto;
     /* margin-top: 15px; */
     /* height: ; */
+  }
+  .project_description_p {
+    margin: 20px;
+    max-width: 500px;
   }
   #project_img_div {
     width: 100%;
@@ -173,7 +184,7 @@ h3 {
     margin-left: 15px;
   }
   #project_div {
-    height: 80vh;
+    height: 69vh;
   }
 }
 
@@ -186,5 +197,9 @@ h3 {
 @media screen and (max-width: 330px) {
   #project_div {
     margin-top: 0px;
+  }
+  #project_container_div {
+    margin: 5px;
+    /* box-shadow: none; */
   }
 }
