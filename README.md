@@ -37,16 +37,16 @@ I used a visual reference when creating this UI, but I did not copy any code fro
 
 ## Home Page
 
-![Home](public/images/Home.png)
+![Home](./images/Home.png)
 
 ## About Me Page
 
-![Home](public/images/About_Me.png)
+![About](./images/About_Me.png)
 
 ## Projects Page
 
-![Home](public/images/Projects.png)
+![Projects](./images/Projects.png)
 
 ## Contact Page
 
-![Home](public/images/Contact.png)
+![Contact](./images/Contact.png)
