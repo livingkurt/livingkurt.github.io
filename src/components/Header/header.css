@@ -57,6 +57,11 @@ span {
   left: 52px;
 }
 
+#blog_pop_up {
+  padding: 10px;
+  left: 57px;
+}
+
 /* Tooltip container */
 
 .tooltip {
