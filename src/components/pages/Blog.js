@@ -1,5 +1,5 @@
 import React from "react";
-import "./pages.css"
+import "./page_styles/pages.css"
 import Blog_Post from "../Blog_Post/Blog_Post"
 import blog_posts from "../../utils/blog_posts.json"
 

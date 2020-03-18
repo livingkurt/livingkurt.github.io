@@ -1,6 +1,7 @@
 import React from "react";
+// import Head_Shot from "./Head_Shot.jpeg"
 import Head_Shot from "./Head_Shot.jpeg"
-import "./about.css"
+import "./page_styles/about.css"
 
 function About() {
   return (

@@ -1,8 +1,9 @@
 import React from "react";
 import Head_Shot from "./Head_Shot.jpeg"
+// import Head_Shot from "./Head_Shot.jpeg"
 import Thingiverse from "./Thingiverse_Logo.png"
 import { Link } from "react-router-dom";
-import "./pages.css"
+import "./page_styles/pages.css"
 
 function Home() {
   return (

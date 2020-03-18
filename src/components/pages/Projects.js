@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../Project/Project"
 import projects_data from "../../utils/projects.json"
-import "./pages.css"
+import "./page_styles/pages.css"
 
 function Projects() {
   return (

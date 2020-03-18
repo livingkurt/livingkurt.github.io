@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../pages.css"
+import "../../page_styles/pages.css"
 
 import header_img from "./images/LED_Matrix_Header_Img.JPG"
 // import header_img from "./images/LED_Matrix_Header_Img.JPG"
