@@ -32,7 +32,8 @@
   overflow: scroll;
   overflow-y: auto;
   margin-top: 20px;
-  width: 80vh;
+  /* width: 80vh; */
+  max-width: 800px;
   /* height: 55vh; */
 }
 
@@ -170,6 +171,9 @@ a:-webkit-any-link {
   #contact_h1 {
     margin-left: 0px;
   }
+  #blog_div {
+    max-width: 530px;
+  }
 }
 
 @media screen and (max-width: 791px) {
@@ -207,6 +211,7 @@ a:-webkit-any-link {
   }
   #blog_div {
     height: 57vh;
+    max-width: 400px;
   }
 }
 
@@ -237,7 +242,12 @@ a:-webkit-any-link {
     margin: 0px;
   }
   #blog_div {
-    height: 50vh;
+    height: 60vh;
+    max-width: 320px;
+  }
+  #blog_post_img {
+    height: 200px;
+    width: 200px;
   }
 }
 
@@ -253,6 +263,10 @@ a:-webkit-any-link {
   }
   h2 {
     font-size: 20px;
+  }
+  #blog_div {
+    height: 50vh;
+    max-width: 300px;
   }
 }
 

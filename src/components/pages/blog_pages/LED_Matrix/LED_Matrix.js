@@ -26,6 +26,7 @@ import Filament from "./images/Filament.JPG"
 import LEDs from "./images/LEDs.JPG"
 import Power from "./images/Power.JPG"
 import Wire from "./images/Wire.JPG"
+import Matrix from "./images/Matrix.gif"
 
 // import led_matrix_images from "./led_matrix_images.json"
 import Modal from "../../../Modal/Modal";
@@ -80,7 +81,7 @@ function LED_Matrix() {
         <h1 id="about_h1">10x10 Ping Pong Ball LED Matrix</h1>
         <div id="blog_div">
           <div id="" className="banner_div tooltip_h">
-            <img id="blog_post_banner" className="responsive" src={header_img} alt="blog_post_banner" onClick={showModal} />
+            <img id="blog_post_banner" className="responsive" src={Matrix} alt="blog_post_banner" onClick={showModal} />
             <span id="blog_post_pop_up" className="tooltiptext_h">View More Images</span>
 
           </div>
@@ -121,8 +122,6 @@ function LED_Matrix() {
             <li>Pliers</li>
             <li>Hot Glue Gun</li>
           </ul>
-
-          <img id="" className="responsive blog_post_img" src={Supplies} alt="blog_post_banner"/>
           
           <h2 className="blog_post_h2">Printing:</h2>
           <h3 id="about_h3">Printer Settings:</h3>
@@ -170,6 +169,12 @@ function LED_Matrix() {
             <li>Female End First</li>
           </ol>
 
+          
+          <div className="blog_post_div">
+            <img id="" className="responsive blog_post_img" src={Off_Back} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={Off_LED} alt="blog_post_banner"/>
+          </div>
+
           <h4 id="about_h3">Solder to Arduino with Group of 3 Wires</h4>
 
           <ol>
@@ -188,12 +193,22 @@ function LED_Matrix() {
             <li>Place the Toggle switch into the hole next to the arduino</li>
           </ol>
 
+          <div className="blog_post_div">
+            <img id="" className="responsive blog_post_img" src={Off_Components} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={Off_Plug_In} alt="blog_post_banner"/>
+          </div>
+
           <h4 id="about_h3">Solder to Power Adapter head and toggle switch with Group of 2 Wires</h4>
 
           <ol>
             <li>Take the 2 wires that are left on the LEDs and connect the one with the dashed lines to the negative side of the power adapter head, and the other wire will attach to the bottom pin on the toggle switch</li>
             <li>Then Solder a short piece of wire to the middle pin of the toggle switch, which then will connect to the positive side of the power adapter head (I will post a wiring diagram in the pictures)</li>
           </ol>
+
+          <div className="blog_post_div">
+            <img id="" className="responsive blog_post_img" src={Off_Power_Adapter} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={Off_Switch} alt="blog_post_banner"/>
+          </div>
 
           <h4 id="about_h3">Inject Power to other half of LEDs</h4>
 
@@ -208,6 +223,12 @@ function LED_Matrix() {
             <li>Again I will post a wiring diagram that would probably be way easier to follow</li>
           </ol>
 
+          
+          <div className="blog_post_div">
+            <img id="" className="responsive blog_post_img" src={Off_Power_Injection_1} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={Off_Back} alt="blog_post_banner"/>
+          </div>
+
           <h3 id="about_h3">Ping Pong Balls - Ok almost there:</h3>
           <ol>
             <li>So now that you electronics are all hooked up</li>
@@ -221,6 +242,11 @@ function LED_Matrix() {
             <li>Glue the ping pong balls over each led</li>
             <li>Repeat this 100 times</li>
           </ol>
+
+          <div className="blog_post_div">
+            <img id="" className="responsive blog_post_img" src={Balls} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={Off_Corner} alt="blog_post_banner"/>
+          </div>
 
           <h3 id="about_h3">Programming Matrix:</h3>
 
