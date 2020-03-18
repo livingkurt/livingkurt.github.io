@@ -26,6 +26,16 @@
   height: 55vh;
 }
 
+.blog_post_div {
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+  overflow-y: auto;
+  margin-top: 20px;
+  width: 80vh;
+  /* height: 55vh; */
+}
+
 .blog_post_h2 {
   font-weight: bold;
   color: unset;

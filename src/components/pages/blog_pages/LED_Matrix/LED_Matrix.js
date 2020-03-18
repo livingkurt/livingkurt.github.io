@@ -19,6 +19,13 @@ import Prusa_Slicer_1 from "./images/Prusa_Slicer_1.png"
 import Prusa_Slicer_2 from "./images/Prusa_Slicer_2.png"
 import Prusa_Slicer_3 from "./images/Prusa_Slicer_3.png"
 import Prusa_Slicer_4 from "./images/Prusa_Slicer_4.png"
+import Supplies from "./images/Supplies.JPG"
+import Arduino from "./images/Arduino.JPG"
+import Balls from "./images/Balls.JPG"
+import Filament from "./images/Filament.JPG"
+import LEDs from "./images/LEDs.JPG"
+import Power from "./images/Power.JPG"
+import Wire from "./images/Wire.JPG"
 
 // import led_matrix_images from "./led_matrix_images.json"
 import Modal from "../../../Modal/Modal";
@@ -39,7 +46,13 @@ const led_matrix_images = [
   Prusa_Slicer_1,
   Prusa_Slicer_2,
   Prusa_Slicer_3,
-  Prusa_Slicer_4
+  Prusa_Slicer_4,
+  Supplies,
+  Arduino,
+  Balls,
+  Filament,
+  LEDs,
+  Wire
 ]
 
 function LED_Matrix() {
@@ -92,6 +105,13 @@ function LED_Matrix() {
             <li>100 Ping Pong Balls <a className="blog_post_links" id="" href="https://www.amazon.com/gp/product/B07JMTLW88/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1" target="_blank" rel="noopener noreferrer">Amazon</a></li>
             <li>A little bit of spare 20-24 AWG wire <a className="blog_post_links" id="" href="https://www.digikey.com/product-detail/en/general-cable-carol-brand/C1356.21.01/C1356-21-100-ND/5461648" target="_blank" rel="noopener noreferrer">Amazon</a></li>
           </ul>
+          <div className="blog_post_div">
+            <img id="" className="responsive blog_post_img" src={Arduino} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={Balls} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={Filament} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={LEDs} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={Wire} alt="blog_post_banner"/>
+          </div>
           <h3 id="about_h3">Tools:</h3>
           <ul>
             <li>Super Glue</li>
@@ -101,14 +121,17 @@ function LED_Matrix() {
             <li>Pliers</li>
             <li>Hot Glue Gun</li>
           </ul>
+
+          <img id="" className="responsive blog_post_img" src={Supplies} alt="blog_post_banner"/>
+          
           <h2 className="blog_post_h2">Printing:</h2>
           <h3 id="about_h3">Printer Settings:</h3>
           <ul>
             <li>Resolution: 0.32mm</li>
             <li>Infill: 5%</li>
-
           </ul>
 
+          <h3 id="about_h3">Printer Procedure:</h3>
           <ol>
             <li>First Print all Pieces</li>
             <li>The body pieces should take about ~8 hours each.</li>
@@ -123,6 +146,13 @@ function LED_Matrix() {
           <p className="blog_p">Meaning, the print head my start and stop somewhere in between the infill causing it curl up.</p>
           <p className="blog_p">So what I do, in prusa slicer is use a modifier slab and position it right where the printer would need to start printing the top layer and then give that little slice a higher infill. </p>
           <p className="blog_p">Look through the pictures to see what I mean</p>
+
+          <div className="blog_post_div">
+            <img id="" className="responsive blog_post_img" src={Prusa_Slicer_1} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={Prusa_Slicer_2} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={Prusa_Slicer_3} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={Prusa_Slicer_4} alt="blog_post_banner"/>
+          </div>
 
           <h2 className="blog_post_h2">Assembly:</h2>
 
@@ -192,7 +222,7 @@ function LED_Matrix() {
             <li>Repeat this 100 times</li>
           </ol>
 
-          <h3 id="about_h3">Ping Pong Balls - Ok almost there:</h3>
+          <h3 id="about_h3">Programming Matrix:</h3>
 
           <ol>
             <li>I wish I could tell how to program this in very in-depth way, but I don’t know that much about it</li>
