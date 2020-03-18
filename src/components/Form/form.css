@@ -9,7 +9,12 @@ form {
   font-size: 16px;
   border-radius: 5px;
   border: 1px silver solid;
+  /* border: 0px; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 1px 1px 10px #555 inset */
+  /* outline: none; */
+  /* box-shadow: border-box; */
+  /* box-shadow: -4px -4px 10px rgba(255, 255, 255, 1), inset 4px 4px 10px rgba(0, 0, 0, 0.2), inset -4px -4px 10px rgba(255, 255, 255, 1), 4px 4px 10px rgba(0, 0, 0, 0.2); */
 }
 
 textarea {

@@ -30,7 +30,6 @@
       "Node.js",
       "MySQL",
       "Sequalize",
-      "Mongoose.js",
       "Mapquest API",
       "Leaflet",
       "Open Street Map API"
@@ -38,6 +37,21 @@
   },
   {
     "id": 3,
+    "name": "Ping Pong Ball LED Matrix",
+    "image": "/images/LED_Matrix_Logo.png",
+    "date_created": "1/25/20",
+    "date_completed": "2/10/20",
+    "url": "https://www.thingiverse.com/thing:4212043",
+    "github": "https://github.com/livingkurt/FastLED-Practice",
+    "description": "This is a fully 3D Printed LED Matrix with Ping Pong Balls as diffusers. I created this because of my love for LEDs and my drive to learn how to program them.",
+    "technologies": [
+      "100 WS2811 LEDs",
+      "Arduino",
+      "5V 6A 30W Power Supply, Overture White PETG, 100 Ping Pong Balls"
+    ]
+  },
+  {
+    "id": 4,
     "name": "Weather Dashboard",
     "image": "/images/Weather_Dashboard.png",
     "date_created": "12/23/19",
@@ -48,14 +62,14 @@
     "technologies": ["Javacript", "Open Weather Map API", "Open Street Map API"]
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Date Night Recipes",
     "image": "/images/Date_Night_Recipes.png",
     "date_created": "1/6/20",
     "date_completed": "1/10/20",
     "url": "https://livingkurt.github.io/Date-Night-Recipes/",
     "github": "https://github.com/livingkurt/Date-Night-Recipes",
-    "description": "Have you ever been preparing for a date, deciding to stay in or go out. But terrified of what you'll make if you stay in? Well look no further. Date Night Recipes can provide you with gormet meals and cocktail recipes all in one place. Giving you the best date experice that you have ever had!",
+    "description": "Have you ever been preparing for a date, deciding to stay in or go out. But terrified of what you'll make if you stay in? Well look no further. Date Night Recipes can provide you with gourmet meals and cocktail recipes all in one place. Giving you the best date experice that you have ever had!",
     "technologies": ["Javascrpt", "Mealdb API", "Cocktaildb API", "UiKit"]
   },
   {
@@ -70,7 +84,7 @@
     "technologies": ["Javacript", "JQuery"]
   },
   {
-    "id": 5,
+    "id": 7,
     "name": "Password Generator",
     "image": "/images/password_generator.png",
     "date_created": "12/11/19",

@@ -26,14 +26,14 @@ function NavTabs() {
         </Link>
 
       </li>
-      {/* <li className="nav_items">
+      <li className="nav_items">
         <Link to="/blog">
           <i id="blog_i" className={location.pathname === "/blog" ? "fas fa-th-large tooltip icon_active zoom_h" : "fas fa-th-large tooltip icon_inactive zoom_h"}>
             <span id="blog_pop_up" className="tooltiptext">Blog</span>
           </i>
         </Link>
 
-      </li> */}
+      </li>
       <li className="nav_items">
         <Link to="/projects">
           <i id="projects_i" className={location.pathname === "/projects" ? "fas fa-folder tooltip icon_active zoom_h" : " fas fa-folder tooltip icon_inactive zoom_h"}>

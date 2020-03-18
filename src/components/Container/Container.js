@@ -6,6 +6,7 @@ import About from "../pages/About";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
 import Blog from "../pages/Blog";
+import LED_Matrix from "../pages/blog_pages/LED_Matrix/LED_Matrix";
 import './container.css'
 
 
@@ -17,7 +18,8 @@ function Container() {
         <div className="content_div">
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
-          {/* <Route exact path="/blog" component={Blog} /> */}
+          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/blog/led-matrix" component={LED_Matrix} />
           <Route exact path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
         </div>
