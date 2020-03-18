@@ -3,8 +3,44 @@ import "../../pages.css"
 
 import header_img from "./images/LED_Matrix_Header_Img.JPG"
 // import header_img from "./images/LED_Matrix_Header_Img.JPG"
+
+import Off_Back from "./images/Off_Back.JPG"
+import Off_Components from "./images/Off_Components.JPG"
+import Off_Corner from "./images/Off_Corner.JPG"
+import Off_Front from "./images/Off_Front.JPG"
+import Off_LED from "./images/Off_LED.JPG"
+import Off_Plug_In from "./images/Off_Plug_In.JPG"
+import Off_Power_Adapter from "./images/Off_Power_Adapter.JPG"
+import Off_Power_Injection_1 from "./images/Off_Power_Injection_1.JPG"
+import Off_Power_Injection_2 from "./images/Off_Power_Injection_2.JPG"
+import Off_Switch from "./images/Off_Switch.JPG"
+import On_Front from "./images/On_Front.JPG"
+import Prusa_Slicer_1 from "./images/Prusa_Slicer_1.png"
+import Prusa_Slicer_2 from "./images/Prusa_Slicer_2.png"
+import Prusa_Slicer_3 from "./images/Prusa_Slicer_3.png"
+import Prusa_Slicer_4 from "./images/Prusa_Slicer_4.png"
+
+// import led_matrix_images from "./led_matrix_images.json"
 import Modal from "../../../Modal/Modal";
 import stl_files from "./stl_files.zip"
+
+const led_matrix_images = [
+  Off_Back, 
+  Off_Components,
+  Off_Corner,
+  Off_Front,
+  Off_LED,
+  Off_Plug_In,
+  Off_Power_Adapter,
+  Off_Power_Injection_1,
+  Off_Power_Injection_2,
+  Off_Switch,
+  On_Front,
+  Prusa_Slicer_1,
+  Prusa_Slicer_2,
+  Prusa_Slicer_3,
+  Prusa_Slicer_4
+]
 
 function LED_Matrix() {
 
@@ -18,6 +54,13 @@ function LED_Matrix() {
   const hideModal = () => {
     setModalState({ show: false });
   };
+  // function importAll(r) {
+  //   let images = {};
+  //   r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  //   return images;
+  // }
+
+  // const images = importAll(require.context('./images', false, '/\.jpg/'));
   return (
     <div id="home_container_div">
       <div id="">
@@ -29,8 +72,11 @@ function LED_Matrix() {
 
           </div>
           <Modal show={modalState.show} handleClose={hideModal}>
-            <img id="" className="responsive blog_post_img" src={header_img} alt="blog_post_img" onClick={showModal} />
-            <img id="" className="responsive blog_post_img" src={header_img} alt="blog_post_img" onClick={showModal} />
+            {led_matrix_images.map((image, index) => (
+              console.log(index),
+              console.log(image),
+              < img key={index} className="responsive blog_post_img" src={image} alt="blog_post_img"/>
+            ))}
           </Modal>
           {/* <Link to={`/blog/${props.route}`} className="zoom_p tooltip_p">
             <img id="blog_post_banner" className="responsive zoom_p tooltip_p" src={header_img} alt="blog_post_banner" />
