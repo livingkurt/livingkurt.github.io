@@ -17,10 +17,15 @@
   transform: translate(-50%, -50%);
   border-radius: 20px;
   padding: 20px;
+  margin-top: 20px;
+}
+
+.modal-container {
+  height: 94%;
+  border-radius: 20px;
   overflow: scroll;
   overflow-x: auto;
-  margin-top: 20px;
-  /* height: 50vh; */
+  margin: 20px;
 }
 
 .display-block {

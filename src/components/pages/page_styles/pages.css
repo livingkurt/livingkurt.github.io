@@ -27,6 +27,11 @@
   width: 50vh;
 }
 
+#blog_post_img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
 .blog_post_div {
   display: flex;
   justify-content: space-between;
