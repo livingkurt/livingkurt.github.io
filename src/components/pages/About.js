@@ -1,6 +1,6 @@
 import React from "react";
 // import Head_Shot from "./Head_Shot.jpeg"
-import Head_Shot from "./Head_Shot.jpeg"
+import Head_Shot from "./images/Head_Shot.jpeg"
 import "./page_styles/about.css"
 
 function About() {

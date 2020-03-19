@@ -1,7 +1,7 @@
 import React from "react";
-import Head_Shot from "./Head_Shot.jpeg"
+import Head_Shot from "./images/Head_Shot.jpeg"
 // import Head_Shot from "./Head_Shot.jpeg"
-import Thingiverse from "./Thingiverse_Logo.png"
+import Thingiverse from "./images/Thingiverse_Logo.png"
 import { Link } from "react-router-dom";
 import "./page_styles/pages.css"
 
@@ -12,9 +12,9 @@ function Home() {
         <div id="words_div">
           <h1 id="home_h1">Kurt LaVacque</h1>
           <div id="small_header_div">
-            <h2 class="" id="web_developer_h2">Web Developer</h2>
-            <h2 class="" id="creator_h2">Creator</h2>
-            <h2 class="" id="thinker_h2">Thinker</h2>
+            <h2 className="" id="web_developer_h2">Web Developer</h2>
+            <h2 className="" id="creator_h2">Creator</h2>
+            <h2 className="" id="thinker_h2">Thinker</h2>
           </div>
         </div>
         <div id="icon_container">

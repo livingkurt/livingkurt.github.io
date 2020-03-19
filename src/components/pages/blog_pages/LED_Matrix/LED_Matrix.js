@@ -1,64 +1,13 @@
 import React, { useState } from "react";
 import "../../page_styles/pages.css"
-
-import header_img from "./images/LED_Matrix_Header_Img.JPG"
-// import header_img from "./images/LED_Matrix_Header_Img.JPG"
-
-import Off_Back from "./images/Off_Back.JPG"
-import Off_Components from "./images/Off_Components.JPG"
-import Off_Corner from "./images/Off_Corner.JPG"
-import Off_Front from "./images/Off_Front.JPG"
-import Off_LED from "./images/Off_LED.JPG"
-import Off_Plug_In from "./images/Off_Plug_In.JPG"
-import Off_Power_Adapter from "./images/Off_Power_Adapter.JPG"
-import Off_Power_Injection_1 from "./images/Off_Power_Injection_1.JPG"
-import Off_Power_Injection_2 from "./images/Off_Power_Injection_2.JPG"
-import Off_Switch from "./images/Off_Switch.JPG"
-import On_Front from "./images/On_Front.JPG"
-import Prusa_Slicer_1 from "./images/Prusa_Slicer_1.png"
-import Prusa_Slicer_2 from "./images/Prusa_Slicer_2.png"
-import Prusa_Slicer_3 from "./images/Prusa_Slicer_3.png"
-import Prusa_Slicer_4 from "./images/Prusa_Slicer_4.png"
-import Supplies from "./images/Supplies.JPG"
-import Arduino from "./images/Arduino.JPG"
-import Balls from "./images/Balls.JPG"
-import Filament from "./images/Filament.JPG"
-import LEDs from "./images/LEDs.JPG"
-import Power from "./images/Power.JPG"
-import Wire from "./images/Wire.JPG"
+import led_matrix_images from './image_export'
 import Matrix from "./images/Matrix.gif"
-
-// import led_matrix_images from "./led_matrix_images.json"
 import Modal from "../../../Modal/Modal";
 import stl_files from "./stl_files.zip"
 
-const led_matrix_images = [
-  Off_Back, 
-  Off_Components,
-  Off_Corner,
-  Off_Front,
-  Off_LED,
-  Off_Plug_In,
-  Off_Power_Adapter,
-  Off_Power_Injection_1,
-  Off_Power_Injection_2,
-  Off_Switch,
-  On_Front,
-  Prusa_Slicer_1,
-  Prusa_Slicer_2,
-  Prusa_Slicer_3,
-  Prusa_Slicer_4,
-  Supplies,
-  Arduino,
-  Balls,
-  Filament,
-  LEDs,
-  Wire
-]
 
 function LED_Matrix() {
-
-  // state = { show: false };
+  console.log(led_matrix_images)
 
   const [modalState, setModalState] = useState({ show: false });
   const showModal = () => {
@@ -68,19 +17,12 @@ function LED_Matrix() {
   const hideModal = () => {
     setModalState({ show: false });
   };
-  // function importAll(r) {
-  //   let images = {};
-  //   r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-  //   return images;
-  // }
-
-  // const images = importAll(require.context('./images', false, '/\.jpg/'));
   return (
     <div id="home_container_div">
       <div id="">
         <h1 id="about_h1">10x10 Ping Pong Ball LED Matrix</h1>
         <div id="blog_div">
-          <div id="" className="banner_div tooltip_h">
+          <div id="banner_div" className=" tooltip_h">
             <img id="blog_post_banner" className="responsive" src={Matrix} alt="blog_post_banner" onClick={showModal} />
             <span id="blog_post_pop_up" className="tooltiptext_h">View More Images</span>
 
@@ -89,7 +31,7 @@ function LED_Matrix() {
             {led_matrix_images.map((image, index) => (
               console.log(index),
               console.log(image),
-              < img key={index} className="responsive blog_post_img" src={image} alt="blog_post_img"/>
+              < img key={index} className="responsive blog_post_img" src={image.path} alt={image.filename} />
             ))}
           </Modal>
           {/* <Link to={`/blog/${props.route}`} className="zoom_p tooltip_p">
@@ -107,11 +49,11 @@ function LED_Matrix() {
             <li>A little bit of spare 20-24 AWG wire <a className="blog_post_links" id="" href="https://www.digikey.com/product-detail/en/general-cable-carol-brand/C1356.21.01/C1356-21-100-ND/5461648" target="_blank" rel="noopener noreferrer">Amazon</a></li>
           </ul>
           <div className="blog_post_div">
-            <img id="" className="responsive blog_post_img" src={Arduino} alt="blog_post_banner"/>
-            <img id="" className="responsive blog_post_img" src={Balls} alt="blog_post_banner"/>
-            <img id="" className="responsive blog_post_img" src={Filament} alt="blog_post_banner"/>
-            <img id="" className="responsive blog_post_img" src={LEDs} alt="blog_post_banner"/>
-            <img id="" className="responsive blog_post_img" src={Wire} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[16].path} alt={led_matrix_images[16].filename} />
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[17].path} alt={led_matrix_images[17].filename} />
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[18].path} alt={led_matrix_images[18].filename} />
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[19].path} alt={led_matrix_images[19].filename} />
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[21].path} alt={led_matrix_images[21].filename} />
           </div>
           <h3 id="about_h3">Tools:</h3>
           <ul>
@@ -122,7 +64,7 @@ function LED_Matrix() {
             <li>Pliers</li>
             <li>Hot Glue Gun</li>
           </ul>
-          
+
           <h2 className="blog_post_h2">Printing:</h2>
           <h3 id="about_h3">Printer Settings:</h3>
           <ul>
@@ -147,10 +89,10 @@ function LED_Matrix() {
           <p className="blog_p">Look through the pictures to see what I mean</p>
 
           <div className="blog_post_div">
-            <img id="" className="responsive blog_post_img" src={Prusa_Slicer_1} alt="blog_post_banner"/>
-            <img id="" className="responsive blog_post_img" src={Prusa_Slicer_2} alt="blog_post_banner"/>
-            <img id="" className="responsive blog_post_img" src={Prusa_Slicer_3} alt="blog_post_banner"/>
-            <img id="" className="responsive blog_post_img" src={Prusa_Slicer_4} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[12].path} alt={led_matrix_images[12].filename} />
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[11].path} alt={led_matrix_images[11].filename} />
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[13].path} alt={led_matrix_images[13].filename} />
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[14].path} alt={led_matrix_images[14].filename} />
           </div>
 
           <h2 className="blog_post_h2">Assembly:</h2>
@@ -169,10 +111,10 @@ function LED_Matrix() {
             <li>Female End First</li>
           </ol>
 
-          
+
           <div className="blog_post_div">
-            <img id="" className="responsive blog_post_img" src={Off_Back} alt="blog_post_banner"/>
-            <img id="" className="responsive blog_post_img" src={Off_LED} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[4].path} alt={led_matrix_images[4].filename} />
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[0].path} alt={led_matrix_images[0].filename} />
           </div>
 
           <h4 id="about_h3">Solder to Arduino with Group of 3 Wires</h4>
@@ -194,8 +136,8 @@ function LED_Matrix() {
           </ol>
 
           <div className="blog_post_div">
-            <img id="" className="responsive blog_post_img" src={Off_Components} alt="blog_post_banner"/>
-            <img id="" className="responsive blog_post_img" src={Off_Plug_In} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[1].path} alt={led_matrix_images[1].filename} />
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[5].path} alt={led_matrix_images[5].filename} />
           </div>
 
           <h4 id="about_h3">Solder to Power Adapter head and toggle switch with Group of 2 Wires</h4>
@@ -206,8 +148,8 @@ function LED_Matrix() {
           </ol>
 
           <div className="blog_post_div">
-            <img id="" className="responsive blog_post_img" src={Off_Power_Adapter} alt="blog_post_banner"/>
-            <img id="" className="responsive blog_post_img" src={Off_Switch} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[6].path} alt={led_matrix_images[6].filename} />
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[9].path} alt={led_matrix_images[9].filename} />
           </div>
 
           <h4 id="about_h3">Inject Power to other half of LEDs</h4>
@@ -223,10 +165,10 @@ function LED_Matrix() {
             <li>Again I will post a wiring diagram that would probably be way easier to follow</li>
           </ol>
 
-          
+
           <div className="blog_post_div">
-            <img id="" className="responsive blog_post_img" src={Off_Power_Injection_1} alt="blog_post_banner"/>
-            <img id="" className="responsive blog_post_img" src={Off_Back} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[7].path} alt={led_matrix_images[7].filename} />
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[0].path} alt={led_matrix_images[0].filename} />
           </div>
 
           <h3 id="about_h3">Ping Pong Balls - Ok almost there:</h3>
@@ -244,8 +186,8 @@ function LED_Matrix() {
           </ol>
 
           <div className="blog_post_div">
-            <img id="" className="responsive blog_post_img" src={Balls} alt="blog_post_banner"/>
-            <img id="" className="responsive blog_post_img" src={Off_Corner} alt="blog_post_banner"/>
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[17].path} alt={led_matrix_images[17].filename} />
+            <img id="" className="responsive blog_post_img" src={led_matrix_images[2].path} alt={led_matrix_images[2].filename} />
           </div>
 
           <h3 id="about_h3">Programming Matrix:</h3>
