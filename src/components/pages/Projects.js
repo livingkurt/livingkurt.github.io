@@ -2,6 +2,8 @@ import React from "react";
 import Project from "../Project/Project"
 import projects_data from "../../utils/projects.json"
 import "./page_styles/pages.css"
+import "./page_styles/animations.css"
+import "./page_styles/media_queries.css"
 
 function Projects() {
   return (
