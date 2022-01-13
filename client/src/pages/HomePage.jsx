@@ -7,6 +7,7 @@ import {
 	StickyHeader
 } from '../components/ContainerComponents';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-scroll';
 
 const HomePage = () => {
 	return (
@@ -35,69 +36,51 @@ const HomePage = () => {
 					</GlassContainer>
 				</div>
 			</Fade>
-			{/* <div className="geeks" /> */}
-			<div className="bob center fs-20px fade_in">Join Me</div>
-			<div className="arrows fade_in" />
-			<div style={{ zIndex: 1, top: '100vh' }} className="pos-abs w-100per jc-c">
-				{/* <div className="pos-abs h-700px max-w-600px w-100per m-auto ">
-					<Fade bottom>
-					
-					</Fade>
-				</div> */}
-
-				<div className="w-100per ">
-					<FadeInContainer height="700px" width="900px" fade={'left'} hover={true}>
-						<div className="">
-							<h2 className="fs-50px ta-c">About Me</h2>
-							<p className="lh-30px">
-								My name is <strong>Kurt LaVacque</strong> and I am an <strong>innovator</strong>!
-							</p>
-							<p className="lh-30px">
-								I use the <strong>foundation</strong> of old concepts to sculpt{' '}
-								<strong>new ideas</strong>.
-							</p>
-							<p className="lh-30px">
-								I learn, create, and make the world around me into a <strong>well-oiled machine</strong>,
-								constantly improving every day.
-							</p>
-							<p className="lh-30px">
-								I live in <strong>Austin, TX</strong>.
-							</p>
-							<p className="lh-30px">
-								I am a <strong>web developer</strong> by day and <strong>CAD designer</strong> by night.
-							</p>
-							<p className="lh-30px">
-								I believe that if I'm not <strong>moving forwards</strong>, then I must be{' '}
-								<strong>moving backwards</strong>.
-							</p>
-							<p className="lh-30px">
-								<strong>Skills:</strong> Javascript (MERN Stack), MySQL, Python, Ableton Live 9, Fusion
-								360
-							</p>
-						</div>
-					</FadeInContainer>
-					<FadeInContainer width="900px" top="300px" fade={'right'} hover={true}>
-						{/* <div className="">
-							<h2 className="fs-50px ta-c">Skills</h2>
-							<p className="lh-30px">
-								<b>Technical Skills</b>
-							</p>
-							<p className="lh-30px">
-								<b>Front End: </b>HTML5, CSS3, Javascript, React.js, React Hooks, Redux, jQuery
-							</p>
-							<p className="lh-30px">
-								<b>Back End:</b> MongoDB, Mongoose.js, MySQL, Node.js, Express.js, MERN Stack, Python,
-								Django, EasyPost
-							</p>
-							<p className="lh-30px">
-								<b>Other Technologies:</b> Arduino/C++, Git, RESTful APIs, TypeScript, Passport.js,
-								OAuth, Stripe API, SEO
-							</p>
-							<p className="lh-30px">
-								<b>Applications:</b> Microsoft Excel, Fusion 360, Postman, Robo 3T,<span className="Apple-converted-space">  </span>Adobe
-								Illustrator, Photoshop, Premiere
-							</p>
-						</div> */}
+			<div className="pos-abs" style={{ top: '70vh', left: '50%' }}>
+				<Link activeClass="active" to="content" spy={true} smooth={true} duration={2000} offset={-200}>
+					<div className="bob center fs-20px fade_in">Join Me</div>
+					<div className="arrows fade_in" />
+				</Link>
+			</div>
+			<div className="w-100per pos-abs" id="content" style={{ zIndex: 1, top: '100vh' }}>
+				<FadeInContainer height="700px" width="900px" fade={'left'} hover={true}>
+					<div className="p-20px">
+						<h2 className="fs-50px ta-c">About Me</h2>
+						<p className="lh-30px">
+							My name is <strong>Kurt LaVacque</strong> and I am an <strong>innovator</strong>!
+						</p>
+						<p className="lh-30px">
+							I use the <strong>foundation</strong> of old concepts to sculpt <strong>new ideas</strong>.
+						</p>
+						<p className="lh-30px">
+							I learn, create, and make the world around me into a <strong>well-oiled machine</strong>,
+							constantly improving every day.
+						</p>
+						<p className="lh-30px">
+							I live in <strong>Austin, TX</strong>.
+						</p>
+						<p className="lh-30px">
+							I am a <strong>web developer</strong> by day and <strong>CAD designer</strong> by night.
+						</p>
+						<p className="lh-30px">
+							I believe that if I'm not <strong>moving forwards</strong>, then I must be{' '}
+							<strong>moving backwards</strong>.
+						</p>
+						<p className="lh-30px">
+							<strong>Skills:</strong> Javascript (MERN Stack), MySQL, Python, Ableton Live 9, Fusion 360
+						</p>
+					</div>
+				</FadeInContainer>
+				<div className="pos-rel" style={{ top: '23vh', left: '50%' }}>
+					<Link activeClass="active" to="skills" spy={true} smooth={true} duration={2000} offset={-200}>
+						<div className="bob center fs-20px fade_in">Follow Me</div>
+						<div className="arrows fade_in" />
+					</Link>
+				</div>
+			</div>
+			<div className="w-100per pos-rel" id="skills" style={{ zIndex: 1, top: '100vh' }}>
+				<FadeInContainer width="900px" fade={'right'} hover={true}>
+					<div className="p-20px">
 						<h2 className="fs-50px ta-c">Skills</h2>
 						<div class="wrapper jc-c m-auto mt-2rem">
 							<div className="w-100per">
@@ -200,84 +183,129 @@ const HomePage = () => {
 								</div>
 							</div>
 						</div>
-					</FadeInContainer>
-
-					<FadeInContainer height="700px" width="900px" top="500px" fade={'left'} hover={true}>
-						<div className="">
-							<h2 className="fs-50px ta-c">Experience</h2>
-							<p className="ta-lh-30px p2">
-								<b>Work Experience</b>
-							</p>
-							<p className="lh-30px">
-								Glow LEDs | https://github.com/livingkurt/Glow-LEDs | https://glow-leds.com/<span className="Apple-converted-space">                  </span>March
-								2020 - Present
-							</p>
-							<p className="lh-30px">
-								<b>
-									Lead Developer<span className="Apple-tab-span"> </span>
-									<span className="Apple-tab-span"> </span>
-									<span className="Apple-tab-span"> </span>
-									<span className="Apple-tab-span"> </span>
-									<span className="Apple-tab-span"> </span>
-								</b>
+					</div>
+				</FadeInContainer>
+				<div className="pos-rel" style={{ top: '25vh', left: '50%' }}>
+					<Link activeClass="active" to="experience" spy={true} smooth={true} duration={2000} offset={-200}>
+						<div className="bob center fs-20px fade_in">Follow Me</div>
+						<div className="arrows fade_in" />
+					</Link>
+				</div>
+			</div>
+			<div className="w-100per pos-rel" id="experience" style={{ zIndex: 1, top: '150vh' }}>
+				<FadeInContainer height="700px" width="900px" fade={'left'} hover={true}>
+					<div className="p-20px">
+						<h2 className="fs-50px ta-c">Experience</h2>
+						<p className="ta-lh-30px p2">
+							<b>Work Experience</b>
+						</p>
+						<p className="lh-30px">
+							Glow LEDs | https://github.com/livingkurt/Glow-LEDs | https://glow-leds.com/<span className="Apple-converted-space">                  </span>March
+							2020 - Present
+						</p>
+						<p className="lh-30px">
+							<b>
+								Lead Developer<span className="Apple-tab-span"> </span>
 								<span className="Apple-tab-span"> </span>
 								<span className="Apple-tab-span"> </span>
 								<span className="Apple-tab-span"> </span>
-								<span className="Apple-tab-span"> </span>{' '}
-								<span className="Apple-converted-space">
-									 <span className="Apple-tab-span"> </span>                {' '}
-								</span>Austin, TX
-							</p>
-							<p dir="rtl" className="lh-30px">
-								<b>
-									<span className="Apple-tab-span"> </span>•<span className="Apple-tab-span"> </span>Created
-								</b>{' '}
-								and maintain website using the <b>MERN</b> Stack with <b>Typescript</b>, Redux and SCSS.
-							</p>
-							<p dir="rtl" className="lh-30px">
-								<b>
-									<span className="Apple-tab-span"> </span>•<span className="Apple-tab-span"> </span>Design
-								</b>{' '}
-								and <b>manufacture</b> products in house using Fusion 360, and Arduino to program LEDs.
-							</p>
-							<p dir="rtl" className="lh-30px">
-								<b>
-									<span className="Apple-tab-span"> </span>•<span className="Apple-tab-span"> </span>Developed
-								</b>{' '}
-								an <b>automated</b> a shipping label system using the EasyPost API to generate labels
-								for customer orders.
-							</p>
-							<p dir="rtl" className="lh-30px">
-								<b>
-									<span className="Apple-tab-span"> </span>•<span className="Apple-tab-span"> </span>Optimized
-								</b>{' '}
-								SEO by making human readable <b>pathnames</b> and setting up a sitemap.<span className="Apple-converted-space"> </span>
-							</p>
-							<p dir="rtl" className="lh-30px">
-								<span className="Apple-tab-span"> </span>•<span className="Apple-tab-span"> </span>Manage
-								an <b>affiliate</b> team of 20+ people to participate in <b>marketing campaigns</b> and
-								product releases.
-							</p>
-							<p dir="rtl" className="lh-30px">
-								<b>
-									<span className="Apple-tab-span"> </span>•<span className="Apple-tab-span"> </span>Responsible
-								</b>{' '}
-								for Customer Service, Product Development, <b>Project Management</b>, Data Analytics,{' '}
-								<b>SEO</b>, Marketing, and Business Management within the company.
-							</p>
-							<p className="lh-30px">
-								Apple (via Apex)<span className="Apple-tab-span"> </span>
 								<span className="Apple-tab-span"> </span>
-								<span className="Apple-converted-space">
-									            <span className="Apple-tab-span"> </span>           <span className="Apple-tab-span"> </span>{' '}
-									   <span className="Apple-tab-span"> </span>
-									<span className="Apple-tab-span"> </span>
-									<span className="Apple-tab-span"> </span>        {' '}
-								</span>March 2018 - December 2019
-							</p>
-						</div>
-					</FadeInContainer>
-					{/* <FadeInContainer width="900px" top="300px" fade={'right'}>
+							</b>
+							<span className="Apple-tab-span"> </span>
+							<span className="Apple-tab-span"> </span>
+							<span className="Apple-tab-span"> </span>
+							<span className="Apple-tab-span"> </span>{' '}
+							<span className="Apple-converted-space">
+								 <span className="Apple-tab-span"> </span>                {' '}
+							</span>Austin, TX
+						</p>
+						<p dir="rtl" className="lh-30px">
+							<b>
+								<span className="Apple-tab-span"> </span>•<span className="Apple-tab-span"> </span>Created
+							</b>{' '}
+							and maintain website using the <b>MERN</b> Stack with <b>Typescript</b>, Redux and SCSS.
+						</p>
+						<p dir="rtl" className="lh-30px">
+							<b>
+								<span className="Apple-tab-span"> </span>•<span className="Apple-tab-span"> </span>Design
+							</b>{' '}
+							and <b>manufacture</b> products in house using Fusion 360, and Arduino to program LEDs.
+						</p>
+						<p dir="rtl" className="lh-30px">
+							<b>
+								<span className="Apple-tab-span"> </span>•<span className="Apple-tab-span"> </span>Developed
+							</b>{' '}
+							an <b>automated</b> a shipping label system using the EasyPost API to generate labels for
+							customer orders.
+						</p>
+						<p dir="rtl" className="lh-30px">
+							<b>
+								<span className="Apple-tab-span"> </span>•<span className="Apple-tab-span"> </span>Optimized
+							</b>{' '}
+							SEO by making human readable <b>pathnames</b> and setting up a sitemap.<span className="Apple-converted-space"> </span>
+						</p>
+						<p dir="rtl" className="lh-30px">
+							<span className="Apple-tab-span"> </span>•<span className="Apple-tab-span"> </span>Manage an{' '}
+							<b>affiliate</b> team of 20+ people to participate in <b>marketing campaigns</b> and product
+							releases.
+						</p>
+						<p dir="rtl" className="lh-30px">
+							<b>
+								<span className="Apple-tab-span"> </span>•<span className="Apple-tab-span"> </span>Responsible
+							</b>{' '}
+							for Customer Service, Product Development, <b>Project Management</b>, Data Analytics,{' '}
+							<b>SEO</b>, Marketing, and Business Management within the company.
+						</p>
+						<p className="lh-30px">
+							Apple (via Apex)<span className="Apple-tab-span"> </span>
+							<span className="Apple-tab-span"> </span>
+							<span className="Apple-converted-space">
+								            <span className="Apple-tab-span"> </span>           <span className="Apple-tab-span"> </span>{' '}
+								   <span className="Apple-tab-span"> </span>
+								<span className="Apple-tab-span"> </span>
+								<span className="Apple-tab-span"> </span>        {' '}
+							</span>March 2018 - December 2019
+						</p>
+					</div>
+				</FadeInContainer>
+				<div className="pos-rel" style={{ top: '25vh', left: '50%' }}>
+					<Link activeClass="active" to="more" spy={true} smooth={true} duration={2000} offset={-200}>
+						<div className="bob center fs-20px fade_in">Meet Me</div>
+						<div className="arrows fade_in" />
+					</Link>
+				</div>
+			</div>
+			<div className="w-100per pos-rel " id="more" style={{ zIndex: 1, top: '500vh' }}>
+				<FadeInContainer height="700px" width="900px" fade={'left'} hover={true}>
+					<div className="p-20px ">
+						<h2 className="fs-50px ta-c">About Me</h2>
+						<p className="lh-30px">
+							My name is <strong>Kurt LaVacque</strong> and I am an <strong>innovator</strong>!
+						</p>
+						<p className="lh-30px">
+							I use the <strong>foundation</strong> of old concepts to sculpt <strong>new ideas</strong>.
+						</p>
+						<p className="lh-30px">
+							I learn, create, and make the world around me into a <strong>well-oiled machine</strong>,
+							constantly improving every day.
+						</p>
+						<p className="lh-30px">
+							I live in <strong>Austin, TX</strong>.
+						</p>
+						<p className="lh-30px">
+							I am a <strong>web developer</strong> by day and <strong>CAD designer</strong> by night.
+						</p>
+						<p className="lh-30px">
+							I believe that if I'm not <strong>moving forwards</strong>, then I must be{' '}
+							<strong>moving backwards</strong>.
+						</p>
+						<p className="lh-30px">
+							<strong>Skills:</strong> Javascript (MERN Stack), MySQL, Python, Ableton Live 9, Fusion 360
+						</p>
+					</div>
+				</FadeInContainer>
+			</div>
+			{/* <FadeInContainer width="900px" top="300px" fade={'right'}>
 						<div>
 							<p className="ta-c p1">Kurt LaVacque</p>
 							<p className="ta-c p2">lavacquek@icloud.com | 906-284-2208 | Austin, TX</p>
@@ -495,8 +523,8 @@ const HomePage = () => {
 							</p>
 						</div>
 					</FadeInContainer> */}
-				</div>
-				{/* <Fade bottom>
+			{/* </div> */}
+			{/* <Fade bottom>
 					<div className="mt-50px ">
 						<GlassContainer className="h-900px max-w-1000px m-auto" hover={true}>
 							<p>Hello</p>
@@ -510,8 +538,8 @@ const HomePage = () => {
 						</GlassContainer>
 					</div>
 				</Fade> */}
-				{/* </div> */}
-			</div>
+			{/* </div> */}
+			{/* </div> */}
 		</div>
 	);
 };

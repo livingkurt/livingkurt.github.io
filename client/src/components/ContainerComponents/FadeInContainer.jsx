@@ -40,7 +40,7 @@ const FadeInContainer = ({ children, className, style, height, width, top, fade,
 				left={fade === 'left' && true}
 			>
 				<div className="mt-50px m-auto">
-					<GlassContainer className={`h-${height} max-w-${width}`} hover={hover}>
+					<GlassContainer className={`h-${height} max-w-${width} ${className}`} hover={hover}>
 						{children}
 					</GlassContainer>
 				</div>

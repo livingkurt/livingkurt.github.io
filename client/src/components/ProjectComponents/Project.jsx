@@ -16,12 +16,12 @@ const Project = ({ project }) => {
 		set_children(
 			<div>
 				{' '}
-				<h3 className="fs-30px mb-2rem ">{name}</h3>
+				<h3 className="fs-30px mb-2rem  modal-paragraph fc-black">{name}</h3>
 				<div className="row">
-					<img src={image} alt={name} className="br-20px w-100per max-h-300px max-w-300px m-10px" />
+					<img src={image} alt={name} className="br-20px w-100per h-auto max-h-275px max-w-300px m-10px" />
 					{/* <span className="tooltiptext_p p-2rem">View Project</span> */}
 					<div>
-						<div className="modal-paragraph fc-black">{description}</div>
+						<p className="modal-paragraph fc-black lh-30px">{description}</p>
 						<a className="" id="words" href={url} target="_blank" rel="noopener noreferrer">
 							<button className="btn hover">View Deploy</button>
 						</a>
