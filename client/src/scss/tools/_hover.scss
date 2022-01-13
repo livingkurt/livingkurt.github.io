@@ -25,6 +25,21 @@
 	margin: auto;
 }
 
+.blur_hover {
+	filter: blur(2px);
+	transition: all .5s;
+}
+.blur_hover:hover {
+	filter: blur(0px);
+}
+.unblur_hover {
+	filter: blur(0px);
+	transition: all .5s;
+}
+.unblur_hover:hover {
+	filter: blur(2px);
+}
+
 .backdrop-filter {
 	backdrop-filter: blur(5px);
 }

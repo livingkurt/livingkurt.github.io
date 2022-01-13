@@ -3,8 +3,6 @@ import Validator from 'validator';
 import axios, { AxiosResponse } from 'axios';
 import invariant from 'tiny-invariant';
 import { API_Products } from '.';
-import { determine_secondary_product_name } from './react_helper_functions';
-import { getTracking } from 'ts-tracking-number';
 
 interface errors {
 	email: string;
@@ -71,18 +69,6 @@ export const shuffle = (array: any) => {
 // 		? '?secondary=' + item.size ? item.size : item.option_product_name
 // 		: ''}`;
 // };
-export const determnine_link = (item: any) => {
-	// console.log({ [item.name]: item });
-	const link = `/collections/all/products/${item.pathname}${item.color
-		? '?color=' + item.color
-		: ''}${item.secondary_color ? '?secondary_color=' + item.secondary_color : ''}${item.option_product
-		? '?option=' + item.size
-		: ''}${item.secondary_product_name
-		? '?secondary=' + determine_secondary_product_name(item.secondary_product_name, item.category, item.subcategory)
-		: ''}`;
-	// console.log({ [item.name]: link });
-	return link;
-};
 
 // item.size ? item.size : item.option_product_name
 // export const determnine_link = (item: any) => {
@@ -101,31 +87,6 @@ export const determnine_link = (item: any) => {
 // export const snake_case = (str: string) => {
 // 	return str.replace(/\W+/g, ' ').split(/ |\B(?=[A-Z])/).map((word) => word.toLowerCase()).join('_');
 // };
-
-export const determine_tracking_number = (tracking_number: string) => {
-	if (tracking_number) {
-		const tracking: any = getTracking(tracking_number);
-		if (tracking.name.includes('USPS')) {
-			return 'https://tools.usps.com/go/TrackConfirmAction_input?qtc_tLabels1=' + tracking_number;
-		}
-		if (tracking.name.includes('UPS')) {
-			return (
-				'https://wwwapps.ups.com/WebTracking/processInputRequest?AgreeToTermsAndConditions=yes&loc=en_US&tracknum=' +
-				tracking_number +
-				'&requester=ST/trackdetails'
-			);
-		}
-		if (tracking.name.includes('FedEx')) {
-			return (
-				'https://www.fedex.com/fedextrack/?trknbr=' +
-				tracking_number +
-				'&trkqual=2459474000~' +
-				tracking_number +
-				'~FX'
-			);
-		}
-	}
-};
 
 export const prnt = (info: any) => {
 	console.log(info);

@@ -5,9 +5,9 @@ const content_styles = {
 	backdropFilter: 'blur(5px)'
 };
 
-const GlassContainer = ({ children, className }) => {
+const GlassContainer = ({ children, className, hover }) => {
 	return (
-		<div className={`${className} w-100per br-20px hover p-20px`} style={content_styles}>
+		<div className={`${className} w-100per br-20px ${hover ? 'hover' : ''} p-20px`} style={content_styles}>
 			{children}
 		</div>
 	);

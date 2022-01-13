@@ -47,6 +47,22 @@
 	margin-bottom: 30px;
 }
 
+#frontend-bar {
+	animation: frontend-fill 2s forwards;
+}
+@keyframes frontend-fill {
+	100% {
+		width: 95%;
+	}
+}
+#backend-bar {
+	animation: backend-fill 2s forwards;
+}
+@keyframes backend-fill {
+	100% {
+		width: 82%;
+	}
+}
 #react-bar {
 	animation: react-fill 2s forwards;
 }
@@ -71,6 +87,22 @@
 @keyframes py-fill {
 	100% {
 		width: 61%;
+	}
+}
+#mongodb-bar {
+	animation: mongodb-fill 2s forwards;
+}
+@keyframes mongodb-fill {
+	100% {
+		width: 61%;
+	}
+}
+#mysql-bar {
+	animation: mysql-fill 2s forwards;
+}
+@keyframes mysql-fill {
+	100% {
+		width: 30%;
 	}
 }
 

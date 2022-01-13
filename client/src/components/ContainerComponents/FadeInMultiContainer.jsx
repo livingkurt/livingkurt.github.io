@@ -30,7 +30,7 @@ const content_styles = {
 	backdropFilter: 'blur(5px)'
 };
 
-const FadeInContainer = ({ children, className, style, height, width, top, fade, hover }) => {
+const FadeInMultiContainer = ({ children, className, style, height, width, top, fade }) => {
 	return (
 		<div className={`pos-rel w-100per m-auto h-${height} max-w-${width}  top-${top}`}>
 			<Fade
@@ -39,14 +39,13 @@ const FadeInContainer = ({ children, className, style, height, width, top, fade,
 				top={fade === 'top' && true}
 				left={fade === 'left' && true}
 			>
-				<div className="mt-50px m-auto">
-					<GlassContainer className={`h-${height} max-w-${width}`} hover={hover}>
-						{children}
-					</GlassContainer>
+				<div className={`mt-50px m-autoh-${height} max-w-${width}`}>
+					<GlassContainer className={`h-400px max-w-400px`}>{children}</GlassContainer>
+					<GlassContainer className={`h-400px max-w-400px`}>{children}</GlassContainer>
 				</div>
 			</Fade>
 		</div>
 	);
 };
 
-export default FadeInContainer;
+export default FadeInMultiContainer;

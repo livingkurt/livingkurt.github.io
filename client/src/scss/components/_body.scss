@@ -25,4 +25,26 @@ body {
 
 *:focus {
 	outline: none;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.link {
+}
+
+.form_input::placeholder {
+	color: white;
+}
+
+.projects {
+	display: grid;
+	// grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	column-gap: 2rem;
+	row-gap: 2rem;
+	place-items: center;
 }

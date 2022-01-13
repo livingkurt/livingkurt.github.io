@@ -2,6 +2,10 @@
 	-webkit-animation: 2s ease 0s normal forwards 1 fadein;
 	animation: 2s ease 0s normal forwards 1 fadein;
 }
+.fade_in_fast {
+	-webkit-animation: .5s ease-out 0s normal forwards 1 fadein;
+	animation: .5s ease-out 0s normal forwards 1 fadein;
+}
 
 /* Safari, Chrome and Opera > 12.1 */
 

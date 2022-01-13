@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Headroom from 'react-headroom';
+import { Link, useHistory } from 'react-router-dom';
 
 function Header() {
 	const header_styles = {
@@ -6,14 +8,27 @@ function Header() {
 		backdropFilter: 'blur(10px)',
 		boxShadow: 'rgb(255 255 255 / 50%) 0px 0px 20px 5px'
 	};
+	const [ blur, set_blur ] = useState();
 	// const header_styles = { boxShadow: 'inset 0 0 2000px rgba(255, 255, 255, .5)', filter: 'blur(10px)' };
 	return (
-		<header style={header_styles} className="w-100per  h-100px ai-c fade_in">
-			<h1 className="fs-30px pl-50px">Kurt LaVacque</h1>
-			<p className="fs-25px pl-50px" style={{ filter: 'blur(2px)' }}>
-				creator of worlds
-			</p>
-			{/* <div id="icon_container">
+		<Headroom>
+			<header style={header_styles} className="w-100per  h-100px ai-c fade_in">
+				<div className="jc-b w-100per">
+					<div className="ai-c">
+						<Link to="/" className="fc-white">
+							<h1 className="fs-30px pl-50px unblur_hover">Kurt LaVacque</h1>
+						</Link>
+
+						<Link to="/projects" className="fc-white">
+							<p className="fs-20px pl-50px blur_hover">creator of worlds</p>
+						</Link>
+					</div>
+
+					<Link to="/contact" className="fc-white">
+						<p className="fs-16px pr-50px unblur_hover">contact</p>
+					</Link>
+				</div>
+				{/* <div id="icon_container">
 				<a href="https://www.glow-leds.com/" target="_blank" rel="noopener noreferrer">
 					<img
 						src="/images/glow_logo_optimized.png"
@@ -29,7 +44,8 @@ function Header() {
 					<i className="fab fa-linkedin icon zoom_i" />
 				</a>
 			</div> */}
-		</header>
+			</header>
+		</Headroom>
 	);
 }
 
