@@ -2,7 +2,6 @@ import React, { useState, useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import { GlassModal } from '../ContainerComponents';
 import ModalContext from '../../context/ModalContext';
-import { set } from 'js-cookie';
 
 const content_styles = {
 	backgroundColor: 'rgba(255, 255, 255, .15)',
@@ -18,13 +17,17 @@ const Project = ({ project }) => {
 			<div>
 				{' '}
 				<h3 className="fs-30px mb-2rem ">{name}</h3>
-				<div className="ai-c wrap">
+				<div className="row">
 					<img src={image} alt={name} className="br-20px w-100per max-h-300px max-w-300px m-10px" />
 					{/* <span className="tooltiptext_p p-2rem">View Project</span> */}
 					<div>
 						<div className="modal-paragraph fc-black">{description}</div>
-						<button className="btn">View Deploy</button>
-						<button className="btn">View Github Repo</button>
+						<a className="" id="words" href={url} target="_blank" rel="noopener noreferrer">
+							<button className="btn hover">View Deploy</button>
+						</a>
+						<a className="" id="words" href={github} target="_blank" rel="noopener noreferrer">
+							<button className="btn hover">View Github Repo</button>
+						</a>
 					</div>
 				</div>
 			</div>

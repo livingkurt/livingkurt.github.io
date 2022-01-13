@@ -7,7 +7,7 @@
 		"date_completed": "Present",
 		"url": "https://glow-leds.herokuapp.com/",
 		"github": "https://github.com/livingkurt/Glow-LEDs",
-		"description": "Glow LEDs is a personal e-commerce website designed to sell personal products that I design, 3D Print and assemble.",
+		"description": "Created and maintain website using the MERN Stack with Typescript, Redux and SCSS. Design and manufacture products in house using Fusion 360, and Arduino to program LEDs.Developed an automated a shipping label system using the EasyPost API to generate labels for customer orders. Optimized SEO by making human readable pathnames and setting up a sitemap.  Manage an affiliate team of 20+ people to participate in marketing campaigns and product releases. Responsible for Customer Service, Product Development, Project Management, Data Analytics, SEO, Marketing, and Business Management within the company.",
 		"technologies": [ "Javascript", "MERN Stack", "Redux", "Nodemailer" ]
 	},
 	{

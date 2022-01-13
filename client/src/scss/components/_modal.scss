@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 .modal-floating {
-	display: none; /* Hidden by default */
+	// display: none; /* Hidden by default */
 	// position: fixed; /* Stay in place */
 	z-index: 1; /* Sit on top */
 	position: fixed;
@@ -10,7 +10,7 @@
 	left: 0;
 	right: 0;
 	z-index: 5;
-
+	// opacity: 0;
 	margin: auto;
 	width: 100%; /* Full width */
 	height: 100%; /* Full height */
