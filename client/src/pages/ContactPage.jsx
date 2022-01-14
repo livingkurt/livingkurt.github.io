@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { FadeInContainer } from '../components/ContainerComponents';
+import { useWindowDimensions } from '../components/Hooks';
 import { API_Contact } from '../utils';
+import { responsive_font } from '../utils/helper_functions';
 
 const ContactPage = () => {
 	const [ name, set_name ] = useState();
@@ -38,12 +40,14 @@ const ContactPage = () => {
 		background:
 			'linear-gradient(30deg, rgb(29 8 186 / 50%), rgb(28 128 157 / 50%) , rgb(204 120 56 / 50%) , rgb(173 7 91 / 50%), rgb(39 134 163 / 50%) )'
 	};
-
+	const { height, width } = useWindowDimensions();
 	return (
-		<div>
-			<FadeInContainer width="900px" fade={'left'} hover={false}>
-				<div className="">
-					<h2 className="fs-50px ta-c">Let's Talk About it</h2>
+		<div className="mt-20px">
+			<FadeInContainer width="900px" fade={'left'} hover={false} screen_width={width}>
+				<div className="p-20px">
+					<h2 className="ta-c" style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}>
+						Let's Talk About it
+					</h2>
 					<p className="mv-2rem ta-c">Reach out with any project ideas or questions about anything!</p>
 					<form className="column" onSubmit={(e) => sendEmail(e)}>
 						<label htmlFor="first_nam">First Name</label>

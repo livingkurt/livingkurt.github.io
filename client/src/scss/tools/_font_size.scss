@@ -21,6 +21,26 @@
 		font-size: $i + px !important;
 	}
 }
+@for $i from 0 to 200 {
+	.fs-#{$i}vh {
+		font-size: $i + vh !important;
+	}
+}
+@for $i from 0 to 200 {
+	.fs-#{$i}vw {
+		font-size: $i + vw !important;
+	}
+}
+@for $i from 0 to 200 {
+	.fs-#{$i}vmin {
+		font-size: $i + vmin !important;
+	}
+}
+@for $i from 0 to 200 {
+	.fs-#{$i}vmax {
+		font-size: $i + vmax !important;
+	}
+}
 
 @for $i from 0 to 1000 {
 	.fw-#{$i} {

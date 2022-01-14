@@ -6,39 +6,122 @@ import {
 	InvisibleContainer,
 	StickyHeader
 } from '../components/ContainerComponents';
+import { InvisibleButtons } from '../components/UniversalComponents';
+import { useWindowDimensions } from '../components/Hooks';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
+import { responsive_font } from '../utils/helper_functions';
 
 const HomePage = () => {
+	// Takes the viewport widths in pixels and the font sizes in rem
+	function clampBuilder(minWidthPx, maxWidthPx, minFontSize, maxFontSize) {
+		const root = document.querySelector('html');
+		const pixelsPerRem = Number(getComputedStyle(root).fontSize.slice(0, -2));
+
+		const minWidth = minWidthPx / pixelsPerRem;
+		const maxWidth = maxWidthPx / pixelsPerRem;
+
+		const slope = (maxFontSize - minFontSize) / (maxWidth - minWidth);
+		const yAxisIntersection = -minWidth * slope + minFontSize;
+
+		return `clamp( ${minFontSize}rem, ${yAxisIntersection}rem + ${slope * 100}vw, ${maxFontSize}rem )`;
+	}
+
+	// clampBuilder( 360, 840, 1, 3.5 ) -> "clamp( 1rem, -0.875rem + 8.333vw, 3.5rem )"
+
+	const { height, width } = useWindowDimensions();
 	return (
 		<div className="pos-rel">
-			<div className="pos-rel" style={{ top: '20vh' }}>
+			<InvisibleButtons />
+			<div className="pos-rel" style={{ top: '10vh' }}>
 				<Fade bottom effect="backdrop-filter">
-					<div>
-						<GlassContainer className="h-300px max-w-700px m-auto p-40px" hover={true}>
-							<div className="">
+					<div className={`${width < 737 ? 'm-20px' : ''}`}>
+						<GlassContainer className="max-w-700px m-auto " hover={true}>
+							<div className={` ${width < 737 ? 'p-20px' : 'p-40px'}`}>
 								<Fade bottom>
-									<h2 className="fs-30px " style={{ color: 'white', mixBlendMode: 'multiply' }}>
+									<h2
+										className=" "
+										style={{
+											color: 'white',
+											fontSize: responsive_font(width, 500, 1040, '3vw', '2.5rem', '3rem')
+										}}
+									>
 										Hello,{' '}
 									</h2>
 								</Fade>
 								<Fade bottom>
-									<h2 className="fs-40px ">
-										My name is <span className="fs-100px">Kurt</span>,
-									</h2>
+									<label
+										className="title_font "
+										style={{
+											display: 'inline',
+											fontSize: responsive_font(width, 500, 1040, '4vw', '1.6rem', '4rem')
+										}}
+									>
+										My name is{' '}
+									</label>
+									<label
+										className="title_font"
+										style={{
+											display: 'inline',
+											fontSize: responsive_font(width, 500, 1040, '9vw', '5rem', '10rem')
+										}}
+									>
+										Kurt,
+									</label>{' '}
 								</Fade>
 								<Fade bottom>
-									<h2 className="fs-40px ">
-										<span className="fs-70px">I</span> make <span className="fs-70px">Places</span>{' '}
-										on the <span className="fs-70px">Internet</span>
-									</h2>
+									<label
+										className="title_font"
+										style={{
+											display: 'inline',
+											fontSize: responsive_font(width, 500, 1040, '6vw', '3rem', '7rem')
+										}}
+									>
+										I{' '}
+									</label>
+									<label
+										className="title_font"
+										style={{
+											display: 'inline',
+											fontSize: responsive_font(width, 500, 1040, '3vw', '1.6rem', '4rem')
+										}}
+									>
+										make{' '}
+									</label>
+									<label
+										className="title_font"
+										style={{
+											display: 'inline',
+											fontSize: responsive_font(width, 500, 1040, '6vw', '3rem', '7rem')
+										}}
+									>
+										Places{' '}
+									</label>
+									<label
+										className="title_font"
+										style={{
+											display: 'inline',
+											fontSize: responsive_font(width, 500, 1040, '3vw', '1.6rem', '4rem')
+										}}
+									>
+										on the{' '}
+									</label>
+									<label
+										className="title_font"
+										style={{
+											display: 'inline',
+											fontSize: responsive_font(width, 500, 1040, '6vw', '3rem', '7rem')
+										}}
+									>
+										Internet
+									</label>
 								</Fade>
 							</div>
 						</GlassContainer>
 					</div>
 				</Fade>
 				<div className="pos-rel h-100px" style={{ top: '20vh', left: '50%' }}>
-					<Link activeClass="active" to="content" spy={true} smooth={true} duration={2000} offset={-200}>
+					<Link activeClass="active" to="content" spy={true} smooth={true} duration={2000} offset={-20}>
 						<div className="fade_in bob fs-20px " style={{ marginLeft: '-41px', marginTop: '-57px' }}>
 							Join Me
 						</div>
@@ -46,10 +129,21 @@ const HomePage = () => {
 					</Link>
 				</div>
 			</div>
-			<div className="w-100per pos-rel" id="content" style={{ zIndex: 1, top: '70vh' }}>
-				<FadeInContainer height="700px" width="900px" fade={'left'} hover={true}>
+			<div className="w-100per pos-rel" id="content" style={{ top: '80vh' }}>
+				<FadeInContainer
+					width="900px"
+					screen_width={width}
+					fade={'left'}
+					hover={true}
+					// className={`${width < 850 ? 'm-20px' : ''}`}
+				>
 					<div className="p-20px">
-						<h2 className="fs-50px ta-c">About Me</h2>
+						<h2
+							className="ta-c"
+							style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}
+						>
+							About Me
+						</h2>
 						<p className="lh-30px">
 							My name is <strong>Kurt LaVacque</strong> and I am an <strong>innovator</strong>!
 						</p>
@@ -84,106 +178,111 @@ const HomePage = () => {
 					</Link>
 				</div>
 			</div>
-			<div className="w-100per pos-rel" id="skills" style={{ zIndex: 1, top: '120vh' }}>
-				<FadeInContainer width="900px" fade={'right'} hover={true}>
+			<div className="w-100per pos-rel" id="skills" style={{ top: '120vh' }}>
+				<FadeInContainer width="900px" fade={'right'} hover={true} screen_width={width}>
 					<div className="p-20px">
-						<h2 className="fs-50px ta-c">Skills</h2>
-						<div class="wrapper jc-c m-auto mt-2rem">
-							<div className="w-100per">
+						<h2
+							className=" ta-c"
+							style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}
+						>
+							Skills
+						</h2>
+						<div className=" mt-2rem">
+							<div className="">
 								{/* <h3 className="ta-c fs-20px">Skill Quantifier </h3> */}
-								<div class="skills">
-									<div class="details">
+								<div className="skills">
+									<div className="details">
 										<span>Javascript</span>
 										{/* <span>86%</span> */}
 									</div>
-									<div class="bar">
+									<div className="bar">
 										<div id="javascript-bar" />
 									</div>
 								</div>
-								<div class="skills">
-									<div class="details">
+								<div className="skills">
+									<div className="details">
 										<span>FrontEnd</span>
 										{/* <span>86%</span> */}
 									</div>
-									<div class="bar">
+									<div className="bar">
 										<div id="frontend-bar" />
 									</div>
 								</div>
 								<div className="ml-4rem mb-3rem">
-									<div class="skills">
-										<div class="details">
+									<div className="skills">
+										<div className="details">
 											<span>React</span>
 											{/* <span>85%</span> */}
 										</div>
-										<div class="bar">
+										<div className="bar">
 											<div id="react-bar" />
 										</div>
 									</div>
-									<div class="skills">
-										<div class="details">
+									<div className="skills">
+										<div className="details">
 											<span>HTML</span>
 											{/* <span>90%</span> */}
 										</div>
-										<div class="bar">
+										<div className="bar">
 											<div id="html-bar" />
 										</div>
 									</div>
-									<div class="skills">
-										<div class="details">
+									<div className="skills">
+										<div className="details">
 											<span>CSS</span>
 											{/* <span>75%</span> */}
 										</div>
-										<div class="bar">
+										<div className="bar">
 											<div id="css-bar" />
 										</div>
 									</div>
 								</div>
-								<div class="skills">
-									<div class="details">
+								<div className="skills">
+									<div className="details">
 										<span>BackEnd</span>
 										{/* <span>86%</span> */}
 									</div>
-									<div class="bar">
+									<div className="bar">
 										<div id="backend-bar" />
 									</div>
 								</div>
 								<div className="ml-4rem mb-3rem">
-									<div class="skills">
-										<div class="details">
+									<div className="skills">
+										<div className="details">
 											<span>MongoDB</span>
 											{/* <span>85%</span> */}
 										</div>
-										<div class="bar">
+										<div className="bar">
 											<div id="mongodb-bar" />
 										</div>
 									</div>
-									<div class="skills">
-										<div class="details">
+									<div className="skills">
+										<div className="details">
 											<span>MySQL</span>
 											{/* <span>85%</span> */}
 										</div>
-										<div class="bar">
+										<div className="bar">
 											<div id="mysql-bar" />
 										</div>
 									</div>
 								</div>
 
-								<div class="skills">
-									<div class="details">
+								<div className="skills">
+									<div className="details">
 										<span>Python</span>
 										{/* <span>61%</span> */}
 									</div>
-									<div class="bar">
+									<div className="bar">
 										<div id="python-bar" />
 									</div>
 								</div>
 
-								<div class="skills">
-									<div class="details">
+								<div className="skills">
+									<div className="details">
 										<span>Excel</span>
 										{/* <span>68%</span> */}
 									</div>
-									<div class="bar">
+									<div className="bar">
 										<div id="Excel-bar" />
 									</div>
 								</div>
@@ -200,10 +299,15 @@ const HomePage = () => {
 					</Link>
 				</div>
 			</div>
-			<div className="w-100per pos-rel" id="experience" style={{ zIndex: 1, top: '165vh' }}>
-				<FadeInContainer height="700px" width="900px" fade={'left'} hover={true}>
+			<div className="w-100per pos-rel" id="experience" style={{ top: '165vh' }}>
+				<FadeInContainer width="900px" fade={'left'} hover={true} screen_width={width}>
 					<div className="p-20px">
-						<h2 className="fs-50px ta-c">Experience</h2>
+						<h2
+							className=" ta-c"
+							style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}
+						>
+							Experience
+						</h2>
 						<p className="ta-lh-30px p2">
 							<b>Work Experience</b>
 						</p>
@@ -285,8 +389,8 @@ const HomePage = () => {
 					</Link>
 				</div>
 			</div>
-			<div className="w-100per pos-rel " id="more" style={{ zIndex: 1, top: '500vh' }}>
-				<FadeInContainer height="700px" width="900px" fade={'left'} hover={true}>
+			<div className="w-100per pos-rel " id="more" style={{ top: '500vh' }}>
+				<FadeInContainer height="700px" width="900px" fade={'left'} hover={true} screen_width={width}>
 					<div className="p-20px ">
 						<h2 className="fs-50px ta-c">About Me</h2>
 						<p className="lh-30px">

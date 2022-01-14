@@ -16,6 +16,7 @@ html {
 body {
 	font: 1.6rem Helvetica;
 	font-family: $phrase_font;
+	font-size: calc(0.75em + 1vmin);
 	margin: 0;
 	background-color: $theme_color_dark;
 	color: $theme_color_phrase_font;
