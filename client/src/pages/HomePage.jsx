@@ -11,38 +11,42 @@ import { Link } from 'react-scroll';
 
 const HomePage = () => {
 	return (
-		<div>
-			<Fade bottom effect="backdrop-filter">
-				<div className="mt-500px mb-1000px">
-					<GlassContainer className="h-300px max-w-700px m-auto p-40px" hover={true}>
-						<div className="">
-							<Fade bottom>
-								<h2 className="fs-30px " style={{ color: 'white', mixBlendMode: 'multiply' }}>
-									Hello,{' '}
-								</h2>
-							</Fade>
-							<Fade bottom>
-								<h2 className="fs-40px ">
-									My name is <span className="fs-100px">Kurt</span>,
-								</h2>
-							</Fade>
-							<Fade bottom>
-								<h2 className="fs-40px ">
-									<span className="fs-70px">I</span> make <span className="fs-70px">Places</span> on
-									the <span className="fs-70px">Internet</span>
-								</h2>
-							</Fade>
+		<div className="pos-rel">
+			<div className="pos-rel" style={{ top: '20vh' }}>
+				<Fade bottom effect="backdrop-filter">
+					<div>
+						<GlassContainer className="h-300px max-w-700px m-auto p-40px" hover={true}>
+							<div className="">
+								<Fade bottom>
+									<h2 className="fs-30px " style={{ color: 'white', mixBlendMode: 'multiply' }}>
+										Hello,{' '}
+									</h2>
+								</Fade>
+								<Fade bottom>
+									<h2 className="fs-40px ">
+										My name is <span className="fs-100px">Kurt</span>,
+									</h2>
+								</Fade>
+								<Fade bottom>
+									<h2 className="fs-40px ">
+										<span className="fs-70px">I</span> make <span className="fs-70px">Places</span>{' '}
+										on the <span className="fs-70px">Internet</span>
+									</h2>
+								</Fade>
+							</div>
+						</GlassContainer>
+					</div>
+				</Fade>
+				<div className="pos-rel h-100px" style={{ top: '20vh', left: '50%' }}>
+					<Link activeClass="active" to="content" spy={true} smooth={true} duration={2000} offset={-200}>
+						<div className="fade_in bob fs-20px " style={{ marginLeft: '-41px', marginTop: '-57px' }}>
+							Join Me
 						</div>
-					</GlassContainer>
+						<div className="arrows fade_in" />
+					</Link>
 				</div>
-			</Fade>
-			<div className="pos-abs" style={{ top: '70vh', left: '50%' }}>
-				<Link activeClass="active" to="content" spy={true} smooth={true} duration={2000} offset={-200}>
-					<div className="bob center fs-20px fade_in">Join Me</div>
-					<div className="arrows fade_in" />
-				</Link>
 			</div>
-			<div className="w-100per pos-abs" id="content" style={{ zIndex: 1, top: '100vh' }}>
+			<div className="w-100per pos-rel" id="content" style={{ zIndex: 1, top: '70vh' }}>
 				<FadeInContainer height="700px" width="900px" fade={'left'} hover={true}>
 					<div className="p-20px">
 						<h2 className="fs-50px ta-c">About Me</h2>
@@ -71,14 +75,16 @@ const HomePage = () => {
 						</p>
 					</div>
 				</FadeInContainer>
-				<div className="pos-rel" style={{ top: '23vh', left: '50%' }}>
+				<div className="pos-rel" style={{ top: '20vh', left: '50%' }}>
 					<Link activeClass="active" to="skills" spy={true} smooth={true} duration={2000} offset={-200}>
-						<div className="bob center fs-20px fade_in">Follow Me</div>
+						<div className="bob fs-20px fade_in" style={{ marginLeft: '-50px', marginTop: '-57px' }}>
+							Follow Me
+						</div>
 						<div className="arrows fade_in" />
 					</Link>
 				</div>
 			</div>
-			<div className="w-100per pos-rel" id="skills" style={{ zIndex: 1, top: '100vh' }}>
+			<div className="w-100per pos-rel" id="skills" style={{ zIndex: 1, top: '120vh' }}>
 				<FadeInContainer width="900px" fade={'right'} hover={true}>
 					<div className="p-20px">
 						<h2 className="fs-50px ta-c">Skills</h2>
@@ -185,14 +191,16 @@ const HomePage = () => {
 						</div>
 					</div>
 				</FadeInContainer>
-				<div className="pos-rel" style={{ top: '25vh', left: '50%' }}>
+				<div className="pos-rel" style={{ top: '15vh', left: '50%' }}>
 					<Link activeClass="active" to="experience" spy={true} smooth={true} duration={2000} offset={-200}>
-						<div className="bob center fs-20px fade_in">Follow Me</div>
+						<div className="bob fs-20px fade_in" style={{ marginLeft: '-50px', marginTop: '-57px' }}>
+							Follow Me
+						</div>
 						<div className="arrows fade_in" />
 					</Link>
 				</div>
 			</div>
-			<div className="w-100per pos-rel" id="experience" style={{ zIndex: 1, top: '150vh' }}>
+			<div className="w-100per pos-rel" id="experience" style={{ zIndex: 1, top: '165vh' }}>
 				<FadeInContainer height="700px" width="900px" fade={'left'} hover={true}>
 					<div className="p-20px">
 						<h2 className="fs-50px ta-c">Experience</h2>
@@ -268,9 +276,11 @@ const HomePage = () => {
 						</p>
 					</div>
 				</FadeInContainer>
-				<div className="pos-rel" style={{ top: '25vh', left: '50%' }}>
+				<div className="pos-rel" style={{ top: '20vh', left: '50%' }}>
 					<Link activeClass="active" to="more" spy={true} smooth={true} duration={2000} offset={-200}>
-						<div className="bob center fs-20px fade_in">Meet Me</div>
+						<div className="bob fs-20px fade_in" style={{ marginLeft: '-44px', marginTop: '-57px' }}>
+							Meet Me
+						</div>
 						<div className="arrows fade_in" />
 					</Link>
 				</div>
