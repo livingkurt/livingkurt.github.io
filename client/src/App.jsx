@@ -42,29 +42,23 @@ function App() {
 	const [ children, set_children ] = useState(false);
 	console.log({ show_modal });
 	return (
-		<div className="pos-rel">
-			<div className="" style={background} />
-			<GlassModal set_show_modal={set_show_modal} show_modal={show_modal}>
-				{children}
-			</GlassModal>
-			<div style={{ zIndex: -10 }}>
-				<Particles params={particlesjs_config} style={{ position: 'absolute' }} />
+		<Router>
+			<div className="">
+				<div style={background} />
+				<GlassModal set_show_modal={set_show_modal} show_modal={show_modal}>
+					{children}
+				</GlassModal>
+				<div style={{ zIndex: -10 }} className="">
+					<Particles params={particlesjs_config} />
+				</div>
+				<Header />
+				<ModalContext.Provider value={{ show_modal, set_show_modal, children, set_children }}>
+					<Route exact path="/" component={HomePage} />
+					<Route exact path="/contact" component={ContactPage} />
+					<Route exact path="/projects" component={ProjectsPage} />
+				</ModalContext.Provider>
 			</div>
-			<div>
-				<Router>
-					<div>
-						<Header />
-						<div className="content_div">
-							<ModalContext.Provider value={{ show_modal, set_show_modal, children, set_children }}>
-								<Route exact path="/" component={HomePage} />
-								<Route exact path="/contact" component={ContactPage} />
-								<Route exact path="/projects" component={ProjectsPage} />
-							</ModalContext.Provider>
-						</div>
-					</div>
-				</Router>
-			</div>
-		</div>
+		</Router>
 	);
 }
 

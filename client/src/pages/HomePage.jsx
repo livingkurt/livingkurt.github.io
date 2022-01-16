@@ -10,25 +10,10 @@ import { InvisibleButtons } from '../components/UniversalComponents';
 import { useWindowDimensions } from '../components/Hooks';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
-import { responsive_font } from '../utils/helper_functions';
+import { is_desktop, responsive_font } from '../utils/helper_functions';
+import { isMobile, BrowserView, MobileView } from 'react-device-detect';
 
 const HomePage = () => {
-	// Takes the viewport widths in pixels and the font sizes in rem
-	function clampBuilder(minWidthPx, maxWidthPx, minFontSize, maxFontSize) {
-		const root = document.querySelector('html');
-		const pixelsPerRem = Number(getComputedStyle(root).fontSize.slice(0, -2));
-
-		const minWidth = minWidthPx / pixelsPerRem;
-		const maxWidth = maxWidthPx / pixelsPerRem;
-
-		const slope = (maxFontSize - minFontSize) / (maxWidth - minWidth);
-		const yAxisIntersection = -minWidth * slope + minFontSize;
-
-		return `clamp( ${minFontSize}rem, ${yAxisIntersection}rem + ${slope * 100}vw, ${maxFontSize}rem )`;
-	}
-
-	// clampBuilder( 360, 840, 1, 3.5 ) -> "clamp( 1rem, -0.875rem + 8.333vw, 3.5rem )"
-
 	const { height, width } = useWindowDimensions();
 	return (
 		<div className="pos-rel">
@@ -120,23 +105,29 @@ const HomePage = () => {
 						</GlassContainer>
 					</div>
 				</Fade>
-				<div className="pos-rel h-100px" style={{ top: '20vh', left: '50%' }}>
-					<Link activeClass="active" to="content" spy={true} smooth={true} duration={2000} offset={-20}>
-						<div className="fade_in bob fs-20px " style={{ marginLeft: '-41px', marginTop: '-57px' }}>
-							Join Me
-						</div>
-						<div className="arrows fade_in" />
-					</Link>
-				</div>
+				<Link activeClass="active" to="content" spy={true} smooth={true} duration={2000} offset={-200}>
+					<div
+						className="fade_in bob pos-rel w-100per jc-c"
+						style={{
+							fontSize: responsive_font(width, 500, 700, '3vw', '1.6rem', '2rem'),
+							top: '18vh'
+						}}
+					>
+						Join Me
+					</div>
+					<div
+						className="w-100per pos-rel"
+						style={{
+							top: '20vh',
+							left: '50%'
+						}}
+					>
+						<div className={`${isMobile ? 'arrows' : 'arrows_large'} fade_in`} />
+					</div>
+				</Link>
 			</div>
 			<div className="w-100per pos-rel" id="content" style={{ top: '80vh' }}>
-				<FadeInContainer
-					width="900px"
-					screen_width={width}
-					fade={'left'}
-					hover={true}
-					// className={`${width < 850 ? 'm-20px' : ''}`}
-				>
+				<FadeInContainer width="900px" screen_width={width} fade={'left'} hover={true}>
 					<div className="p-20px">
 						<h2
 							className="ta-c"
@@ -169,14 +160,26 @@ const HomePage = () => {
 						</p>
 					</div>
 				</FadeInContainer>
-				<div className="pos-rel" style={{ top: '20vh', left: '50%' }}>
-					<Link activeClass="active" to="skills" spy={true} smooth={true} duration={2000} offset={-200}>
-						<div className="bob fs-20px fade_in" style={{ marginLeft: '-50px', marginTop: '-57px' }}>
-							Follow Me
-						</div>
-						<div className="arrows fade_in" />
-					</Link>
-				</div>
+				<Link activeClass="active" to="skills" spy={true} smooth={true} duration={2000} offset={-200}>
+					<div
+						className="fade_in bob pos-rel w-100per jc-c"
+						style={{
+							fontSize: responsive_font(width, 500, 700, '3vw', '1.6rem', '2rem'),
+							top: '18vh'
+						}}
+					>
+						Follow Me
+					</div>
+					<div
+						className="w-100per pos-rel"
+						style={{
+							top: '20vh',
+							left: '50%'
+						}}
+					>
+						<div className={`${isMobile ? 'arrows' : 'arrows_large'} fade_in`} />
+					</div>
+				</Link>
 			</div>
 			<div className="w-100per pos-rel" id="skills" style={{ top: '120vh' }}>
 				<FadeInContainer width="900px" fade={'right'} hover={true} screen_width={width}>
@@ -290,14 +293,26 @@ const HomePage = () => {
 						</div>
 					</div>
 				</FadeInContainer>
-				<div className="pos-rel" style={{ top: '15vh', left: '50%' }}>
-					<Link activeClass="active" to="experience" spy={true} smooth={true} duration={2000} offset={-200}>
-						<div className="bob fs-20px fade_in" style={{ marginLeft: '-50px', marginTop: '-57px' }}>
-							Follow Me
-						</div>
-						<div className="arrows fade_in" />
-					</Link>
-				</div>
+				<Link activeClass="active" to="experience" spy={true} smooth={true} duration={2000} offset={-200}>
+					<div
+						className="fade_in bob pos-rel w-100per jc-c"
+						style={{
+							fontSize: responsive_font(width, 500, 700, '3vw', '1.6rem', '2rem'),
+							top: '13vh'
+						}}
+					>
+						Follow Me
+					</div>
+					<div
+						className="w-100per pos-rel"
+						style={{
+							top: '15vh',
+							left: '50%'
+						}}
+					>
+						<div className={`${isMobile ? 'arrows' : 'arrows_large'} fade_in`} />
+					</div>
+				</Link>
 			</div>
 			<div className="w-100per pos-rel" id="experience" style={{ top: '165vh' }}>
 				<FadeInContainer width="900px" fade={'left'} hover={true} screen_width={width}>
@@ -380,14 +395,26 @@ const HomePage = () => {
 						</p>
 					</div>
 				</FadeInContainer>
-				<div className="pos-rel" style={{ top: '20vh', left: '50%' }}>
-					<Link activeClass="active" to="more" spy={true} smooth={true} duration={2000} offset={-200}>
-						<div className="bob fs-20px fade_in" style={{ marginLeft: '-44px', marginTop: '-57px' }}>
-							Meet Me
-						</div>
-						<div className="arrows fade_in" />
-					</Link>
-				</div>
+				<Link activeClass="active" to="more" spy={true} smooth={true} duration={2000} offset={-200}>
+					<div
+						className="fade_in bob pos-rel w-100per jc-c"
+						style={{
+							fontSize: responsive_font(width, 500, 700, '3vw', '1.6rem', '2rem'),
+							top: '18vh'
+						}}
+					>
+						Follow Me
+					</div>
+					<div
+						className="w-100per pos-rel"
+						style={{
+							top: '20vh',
+							left: '50%'
+						}}
+					>
+						<div className={`${isMobile ? 'arrows' : 'arrows_large'} fade_in`} />
+					</div>
+				</Link>
 			</div>
 			<div className="w-100per pos-rel " id="more" style={{ top: '500vh' }}>
 				<FadeInContainer height="700px" width="900px" fade={'left'} hover={true} screen_width={width}>

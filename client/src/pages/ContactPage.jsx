@@ -10,9 +10,10 @@ const ContactPage = () => {
 	const [ email, set_email ] = useState();
 	const [ message, set_message ] = useState('');
 
-	const sendEmail = (e) => {
+	const sendEmail = async (e) => {
 		e.preventDefault();
-		const send_email = API_Contact.send_email(name, subject, email, message);
+		const send_email = await API_Contact.send_email(name, subject, email, message);
+		console.log({ send_email });
 	};
 
 	const glass_input = {
@@ -49,8 +50,8 @@ const ContactPage = () => {
 						Let's Talk About it
 					</h2>
 					<p className="mv-2rem ta-c">Reach out with any project ideas or questions about anything!</p>
-					<form className="column" onSubmit={(e) => sendEmail(e)}>
-						<label htmlFor="first_nam">First Name</label>
+					<form className="column">
+						<label htmlFor="name">Name</label>
 						<input
 							onChange={(e) => set_name(e.target.value)}
 							defaultValue={name}
@@ -60,9 +61,9 @@ const ContactPage = () => {
 							type="text"
 							name="name"
 							id="name"
-							placeholder="First Name"
+							placeholder="Name"
 						/>
-						<label htmlFor="subject">Last Name</label>
+						<label htmlFor="subject">Subject</label>
 						<input
 							onChange={(e) => set_subject(e.target.value)}
 							defaultValue={subject}
@@ -72,7 +73,7 @@ const ContactPage = () => {
 							type="text"
 							name="subject"
 							id="subject"
-							placeholder="Last Name"
+							placeholder="Subject"
 						/>
 						<label htmlFor="email">Email</label>
 						<input
@@ -102,7 +103,7 @@ const ContactPage = () => {
 								style={glass_button}
 								className="zoom_b btn primary br-10px w-100per hover gradient-btn"
 								id="button"
-								type="submit"
+								onClick={(e) => sendEmail(e)}
 							>
 								Send
 							</button>
