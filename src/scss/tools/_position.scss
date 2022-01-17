@@ -1,0 +1,191 @@
+@use 'sass:math';
+// Left px
+@for $i from 0 to 40 {
+	.left-#{$i}rem {
+		left: $i + rem !important;
+	}
+}
+// Left rem
+@for $i from 0 to 5000 {
+	.left-#{$i}px {
+		left: $i + px !important;
+	}
+}
+// Left rem
+@for $i from 0 to 200 {
+	.left-#{$i}vh {
+		left: $i + vh !important;
+	}
+}
+// Left rem
+@for $i from 0 to 100 {
+	.left-#{$i}per {
+		left: percentage(math.div($i, 100)) !important;
+	}
+}
+
+// Top rem
+@for $i from 0 to 40 {
+	.top-#{$i}rem {
+		top: $i + rem !important;
+	}
+}
+// Top px
+@for $i from 0 to 5000 {
+	.top-#{$i}px {
+		top: $i + px !important;
+	}
+}
+// Top px
+@for $i from 0 to 200 {
+	.top-#{$i}vh {
+		top: $i + vh !important;
+	}
+}
+// Top px
+@for $i from 0 to 100 {
+	.top-#{$i}per {
+		top: percentage(math.div($i, 100)) !important;
+	}
+}
+// Right rem
+@for $i from 0 to 40 {
+	.right-#{$i}rem {
+		right: $i + rem !important;
+	}
+}
+// Right px
+@for $i from 0 to 5000 {
+	.right-#{$i}px {
+		right: $i + px !important;
+	}
+}
+// Right px
+@for $i from 0 to 200 {
+	.right-#{$i}vh {
+		right: $i + vh !important;
+	}
+}
+// Right px
+@for $i from 0 to 100 {
+	.right-#{$i}per {
+		right: percentage(math.div($i, 100)) !important;
+	}
+}
+// Bottom rem
+@for $i from 0 to 40 {
+	.bottom-#{$i}rem {
+		bottom: $i + rem !important;
+	}
+}
+// Bottom px
+@for $i from 0 to 5000 {
+	.bottom-#{$i}px {
+		bottom: $i + px !important;
+	}
+}
+// Bottom px
+@for $i from 0 to 200 {
+	.bottom-#{$i}vh {
+		bottom: $i + vh !important;
+	}
+}
+// Bottom px
+@for $i from 0 to 100 {
+	.bottom-#{$i}per {
+		bottom: percentage(math.div($i, 100)) !important;
+	}
+}
+
+// - Left px
+@for $i from 0 to 40 {
+	.left-n#{$i}rem {
+		left: -$i + rem !important;
+	}
+}
+// - Left rem
+@for $i from 0 to 5000 {
+	.left-n#{$i}px {
+		left: -$i + px !important;
+	}
+}
+// - Left rem
+@for $i from 0 to 200 {
+	.left-n#{$i}vh {
+		left: -$i + vh !important;
+	}
+}
+
+// Top rem
+@for $i from 0 to 40 {
+	.top-n#{$i}rem {
+		top: -$i + rem !important;
+	}
+}
+// Top px
+@for $i from 0 to 5000 {
+	.top-n#{$i}px {
+		top: -$i + px !important;
+	}
+}
+// Top px
+@for $i from 0 to 200 {
+	.top-n#{$i}vh {
+		top: -$i + vh !important;
+	}
+}
+
+// Right rem
+@for $i from 0 to 40 {
+	.right-n#{$i}rem {
+		right: -$i + rem !important;
+	}
+}
+// Right px
+@for $i from 0 to 5000 {
+	.right-n#{$i}px {
+		right: -$i + px !important;
+	}
+}
+// Right px
+@for $i from 0 to 200 {
+	.right-n#{$i}vh {
+		right: -$i + vh !important;
+	}
+}
+
+// Bottom rem
+@for $i from 0 to 40 {
+	.bottom-n#{$i}rem {
+		bottom: $i + rem !important;
+	}
+}
+// Bottom px
+@for $i from 0 to 5000 {
+	.bottom-n#{$i}px {
+		bottom: -$i + px !important;
+	}
+}
+// Bottom px
+@for $i from 0 to 200 {
+	.bottom-n#{$i}vh {
+		bottom: -$i + vh !important;
+	}
+}
+
+.pos-rel {
+	position: relative !important;
+}
+
+.pos-abs {
+	position: absolute !important;
+}
+.pos-fix {
+	position: fixed !important;
+}
+.vis-hid {
+	visibility: hidden !important;
+}
+.overflow-s {
+	overflow-x: scroll !important;
+}
