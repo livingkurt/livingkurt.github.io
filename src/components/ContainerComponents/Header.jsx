@@ -4,6 +4,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { responsive_font } from '../../utils/helper_functions';
 import { useWindowDimensions } from '../Hooks';
 import { Link as ScrollLink } from 'react-scroll';
+import { isBrowser, isMobile } from 'react-device-detect';
 
 function Header() {
 	const header_styles = {
@@ -20,20 +21,24 @@ function Header() {
 				<div className="jc-b w-100per ai-c">
 					<div className="ai-c">
 						<Link to="/" className="fc-white">
-							<h1 className="pl-30px unblur-hover fs-30px">{width < 650 ? 'KL' : 'Kurt LaVacque'}</h1>
+							<h1 className={`pl-30px ${isBrowser && 'unblur-hover'} fs-30px`}>
+								{width < 650 ? 'KL' : 'Kurt LaVacque'}
+							</h1>
 						</Link>
 
-						<Link to="/projects" className="fc-white">
-							<p
-								className="fs-20px blur-1px"
-								style={{
-									fontSize: responsive_font(width, 600, 1040, '2vw', '1.6rem', '2rem'),
-									paddingLeft: responsive_font(width, 600, 1040, '3vw', '1.6rem', '3rem')
-								}}
-							>
-								creator of worlds
-							</p>
-						</Link>
+						{width > 370 && (
+							<Link to="/projects" className="fc-white">
+								<p
+									className="fs-20px blur-1px"
+									style={{
+										fontSize: responsive_font(width, 600, 1040, '2vw', '1.6rem', '2rem'),
+										paddingLeft: responsive_font(width, 600, 1040, '3vw', '1.6rem', '3rem')
+									}}
+								>
+									creator of worlds
+								</p>
+							</Link>
+						)}
 						{width > 970 && (
 							<div className="row">
 								<ScrollLink

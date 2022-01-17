@@ -152,6 +152,10 @@ const HomePage = () => {
 						>
 							Who am I?
 						</h2>
+						<div
+							className="mt-10px mb-20px w-100per max-w-600px m-auto"
+							style={{ borderBottom: '2px solid white' }}
+						/>
 						<p className="lh-30px">
 							My name is Kurt, from an early age I had a facination with learning and understanding, I
 							learned to play the piano, juggle, ride a unicycle, and solve a rubiks cube just to see if I
@@ -166,6 +170,7 @@ const HomePage = () => {
 							hands in as many different languages and skillsets as I can handle. There is no knowledge
 							that I deem unlearnable or unnecessary to learn.
 						</p>
+
 						<Link to="/contact" className="fc-white">
 							<span
 								className="lh-30px title_font br-10px p-10px"
@@ -237,106 +242,120 @@ const HomePage = () => {
 						>
 							Skills
 						</h2>
+						<div
+							className="mt-10px mb-20px w-100per max-w-600px m-auto"
+							style={{ borderBottom: '2px solid white' }}
+						/>
 						<div className=" mt-2rem">
-							<div className="">
-								{/* <h3 className="ta-c fs-20px">Skill Quantifier </h3> */}
+							<div className="skills">
+								<div className="details">
+									<span className="fs-16px">Javascript</span>
+								</div>
+								<div className="bar">
+									<div id="javascript-bar" />
+								</div>
+							</div>
+							<div className="skills">
+								<div className="details">
+									<span className="fs-16px">FrontEnd</span>
+								</div>
+								<div className="bar">
+									<div id="frontend-bar" />
+								</div>
+							</div>
+							<div className="ml-4rem mb-3rem">
 								<div className="skills">
 									<div className="details">
-										<span>Javascript</span>
-										{/* <span>86%</span> */}
+										<span className="fs-16px">React</span>
 									</div>
 									<div className="bar">
-										<div id="javascript-bar" />
-									</div>
-								</div>
-								<div className="skills">
-									<div className="details">
-										<span>FrontEnd</span>
-										{/* <span>86%</span> */}
-									</div>
-									<div className="bar">
-										<div id="frontend-bar" />
-									</div>
-								</div>
-								<div className="ml-4rem mb-3rem">
-									<div className="skills">
-										<div className="details">
-											<span>React</span>
-											{/* <span>85%</span> */}
-										</div>
-										<div className="bar">
-											<div id="react-bar" />
-										</div>
-									</div>
-									<div className="skills">
-										<div className="details">
-											<span>HTML</span>
-											{/* <span>90%</span> */}
-										</div>
-										<div className="bar">
-											<div id="html-bar" />
-										</div>
-									</div>
-									<div className="skills">
-										<div className="details">
-											<span>CSS</span>
-											{/* <span>75%</span> */}
-										</div>
-										<div className="bar">
-											<div id="css-bar" />
-										</div>
+										<div id="react-bar" />
 									</div>
 								</div>
 								<div className="skills">
 									<div className="details">
-										<span>BackEnd</span>
-										{/* <span>86%</span> */}
+										<span className="fs-16px">HTML</span>
 									</div>
 									<div className="bar">
-										<div id="backend-bar" />
+										<div id="html-bar" />
 									</div>
 								</div>
-								<div className="ml-4rem mb-3rem">
-									<div className="skills">
-										<div className="details">
-											<span>MongoDB</span>
-											{/* <span>85%</span> */}
-										</div>
-										<div className="bar">
-											<div id="mongodb-bar" />
-										</div>
-									</div>
-									<div className="skills">
-										<div className="details">
-											<span>MySQL</span>
-											{/* <span>85%</span> */}
-										</div>
-										<div className="bar">
-											<div id="mysql-bar" />
-										</div>
-									</div>
-								</div>
-
 								<div className="skills">
 									<div className="details">
-										<span>Python</span>
-										{/* <span>61%</span> */}
+										<span className="fs-16px">CSS</span>
 									</div>
 									<div className="bar">
-										<div id="python-bar" />
-									</div>
-								</div>
-
-								<div className="skills">
-									<div className="details">
-										<span>Excel</span>
-										{/* <span>68%</span> */}
-									</div>
-									<div className="bar">
-										<div id="Excel-bar" />
+										<div id="css-bar" />
 									</div>
 								</div>
 							</div>
+							<div className="skills">
+								<div className="details">
+									<span className="fs-16px">BackEnd</span>
+								</div>
+								<div className="bar">
+									<div id="backend-bar" />
+								</div>
+							</div>
+							<div className="ml-4rem mb-3rem">
+								<div className="skills">
+									<div className="details">
+										<span className="fs-16px">MongoDB</span>
+									</div>
+									<div className="bar">
+										<div id="mongodb-bar" />
+									</div>
+								</div>
+								<div className="skills">
+									<div className="details">
+										<span className="fs-16px">MySQL</span>
+									</div>
+									<div className="bar">
+										<div id="mysql-bar" />
+									</div>
+								</div>
+							</div>
+
+							<div className="skills">
+								<div className="details">
+									<span>Python</span>
+								</div>
+								<div className="bar">
+									<div id="python-bar" />
+								</div>
+							</div>
+
+							<div className="skills">
+								<div className="details">
+									<span>Excel</span>
+								</div>
+								<div className="bar">
+									<div id="Excel-bar" />
+								</div>
+							</div>
+
+							<p className="lh-30px ta-c">
+								<h3 className="fs-20px">Skills</h3>
+							</p>
+							<div
+								className="mt-10px mb-20px w-100per max-w-400px m-auto"
+								style={{ borderBottom: '2px solid white' }}
+							/>
+							<p className="lh-30px">
+								<h3>Front End: </h3>HTML5, CSS3, Javascript, React.js, React Hooks, Redux, jQuery
+							</p>
+							<p className="lh-30px">
+								<h3>Back End:</h3> MongoDB, Mongoose.js, MySQL, Node.js, Express.js, MERN Stack, Python,
+								Django, EasyPost
+							</p>
+							<p className="lh-30px">
+								<h3>Other Technologies:</h3> Arduino/C++, Git, RESTful APIs, TypeScript, Passport.js,
+								OAuth, Stripe API, SEO
+							</p>
+							<p className="lh-30px">
+								<h3>Applications:</h3> Microsoft Excel, Fusion 360, Postman, Robo 3T,<span className="Apple-converted-space">  </span>Adobe
+								Illustrator, Photoshop, Premiere
+							</p>
 						</div>
 					</div>
 				</FadeInContainer>
@@ -370,6 +389,10 @@ const HomePage = () => {
 						>
 							Experience
 						</h2>
+						<div
+							className="mt-10px mb-20px w-100per max-w-600px m-auto"
+							style={{ borderBottom: '2px solid white' }}
+						/>
 						<p className="ta-lh-30px p2">
 							<b>Work Experience</b>
 						</p>
@@ -442,28 +465,31 @@ const HomePage = () => {
 						</p>
 					</div>
 				</FadeInContainer>
-				<ScrollLink activeClass="active" to="more" spy={true} smooth={true} duration={2000} offset={-200}>
+				<Link activeClass="active" to="/projects">
 					<div
 						className="fade_in bob pos-rel w-100per jc-c"
 						style={{
 							fontSize: responsive_font(width, 500, 700, '3vw', '1.6rem', '2rem'),
-							top: '18vh'
+							top: '30vh'
 						}}
 					>
-						Meet Me
+						See What I've Built
 					</div>
+					{/* <div className="pulsating-circle" /> */}
 					<div
-						className="w-100per pos-rel"
+						className="w-100per pos-rel  mb-200px"
 						style={{
-							top: '20vh',
+							top: '35vh',
 							left: '50%'
 						}}
 					>
-						<div className={`${isMobile ? 'arrows' : 'arrows_large'} fade_in`} />
+						{/* <div className={`${isMobile ? 'arrows' : 'arrows_large'} fade_in`} /> */}
+						<div className="pulsating-circle fade_in  mb-200px" />
+						<div className="pos-rel h-200px" style={{ top: '20vh' }} />
 					</div>
-				</ScrollLink>
+				</Link>
 			</div>
-			<div className="w-100per pos-rel " id="more" style={{ top: '500vh' }}>
+			{/* <div className="w-100per pos-rel " id="more" style={{ top: '500vh' }}>
 				<FadeInContainer height="700px" width="900px" fade={'left'} hover={true} screen_width={width}>
 					<div className="p-20px ">
 						<h2 className="fs-50px ta-c">About Me</h2>
@@ -492,7 +518,7 @@ const HomePage = () => {
 						</p>
 					</div>
 				</FadeInContainer>
-			</div>
+			</div> */}
 			{/* <FadeInContainer width="900px" top="300px" fade={'right'}>
 						<div>
 							<p className="ta-c p1">Kurt LaVacque</p>

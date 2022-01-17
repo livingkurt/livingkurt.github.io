@@ -8,7 +8,7 @@ import { BrowserView, MobileView } from 'react-device-detect';
 const ProjectsPage = () => {
 	return (
 		<div>
-			<div className={`w-100per m-auto h-700px max-w-1000px projects mt-20px`}>
+			<div className={`w-100per m-auto h-700px max-w-1000px projects`}>
 				{projects.map((project, index) => <Project project={project} key={index} />)}
 			</div>
 		</div>

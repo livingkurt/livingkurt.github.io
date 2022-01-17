@@ -63,7 +63,7 @@ const ProjectPage = (props) => {
 							<div className="">
 								<div className="w-100per max-w-600px">
 									<p className="modal-paragraph fc-black lh-30px ">
-										<div className="p-20px"> {project.description}</div>
+										<div className="p-20px "> {project.description}</div>
 									</p>
 								</div>
 								<div className="jc-a w-100per">

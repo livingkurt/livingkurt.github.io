@@ -60,9 +60,9 @@ const Project = ({ project }) => {
 		</Fade>
 	);
 	return (
-		<div>
+		<div className="">
 			<BrowserView>
-				<div className="pos-rel" onClick={() => set_modal()}>
+				<div className="pos-rel m-10px" onClick={() => set_modal()}>
 					<Fade top>
 						<div className="br-20px p-20px hover ta-c" style={content_styles}>
 							<h3 className="ta-c fs-16px mb-2rem">{name}</h3>
@@ -74,7 +74,7 @@ const Project = ({ project }) => {
 			<MobileView>
 				<Link to={'/project/' + pathname}>
 					<Fade top>
-						<div className="br-20px p-20px glass_glow m-10px ta-c" style={content_styles}>
+						<div className="br-20px p-20px glass_glow m-10px ta-c m-10px" style={content_styles}>
 							<h3 className="ta-c fs-16px mb-2rem">{name}</h3>
 							<div>
 								<img src={image} alt={name} className="br-20px w-100per max-w-300px " />
