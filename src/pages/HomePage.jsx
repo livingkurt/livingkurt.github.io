@@ -8,7 +8,7 @@ import {
 } from '../components/ContainerComponents';
 import { InvisibleButtons } from '../components/UniversalComponents';
 import { useWindowDimensions } from '../components/Hooks';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 import { Link as ScrollLink } from 'react-scroll';
 import { is_desktop, responsive_font } from '../utils/helper_functions';
@@ -16,6 +16,22 @@ import { isMobile, BrowserView, MobileView } from 'react-device-detect';
 
 const HomePage = () => {
 	const { height, width } = useWindowDimensions();
+	const location = useLocation();
+
+	useEffect(
+		() => {
+			if (location.hash) {
+				let elem = document.getElementById(location.hash.slice(1));
+				if (elem) {
+					elem.scrollIntoView({ behavior: 'smooth' });
+				}
+			} else {
+				window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+			}
+		},
+		[ location ]
+	);
+
 	return (
 		<div className="pos-rel">
 			<InvisibleButtons />

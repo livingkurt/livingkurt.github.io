@@ -44,60 +44,72 @@ const ContactPage = () => {
 						Reach out with any project ideas or questions about anything!
 					</p>
 					<form className="column">
-						<label htmlFor="name" className="fs-16px">
-							Name
-						</label>
-						<input
-							onChange={(e) => set_name(e.target.value)}
-							defaultValue={name}
-							value={name}
-							className="zoom_f form_input"
-							style={glass_input}
-							type="text"
-							name="name"
-							id="name"
-							placeholder="Name"
-						/>
-						<label htmlFor="subject" className="fs-16px">
-							Subject
-						</label>
-						<input
-							onChange={(e) => set_subject(e.target.value)}
-							defaultValue={subject}
-							value={subject}
-							className="zoom_f form_input"
-							style={glass_input}
-							type="text"
-							name="subject"
-							id="subject"
-							placeholder="Subject"
-						/>
-						<label htmlFor="email" className="fs-16px">
-							Email
-						</label>
-						<input
-							onChange={(e) => set_email(e.target.value)}
-							defaultValue={email}
-							value={email}
-							className="zoom_f form_input"
-							style={glass_input}
-							type="text"
-							name="email"
-							id="email"
-							placeholder="Email"
-						/>
-						<label htmlFor="message" className="fs-16px">
-							Message
-						</label>
-						<textarea
-							onChange={(e) => set_message(e.target.value)}
-							defaultValue={message}
-							className="zoom_f form_input"
-							style={glass_input}
-							name="message"
-							id="message"
-							placeholder="Enter Message Here"
-						/>
+						<div className="w-100per column pos-rel place_div mb-1rem">
+							<input
+								onChange={(e) => set_name(e.target.value)}
+								defaultValue={name}
+								value={name}
+								className="zoom_f form_input place_input"
+								style={glass_input}
+								type="text"
+								name="name"
+								id="name"
+								required
+								spellcheck="false"
+							/>
+							<span htmlFor="name" className="fs-16px pos-abs place_holder">
+								Name
+							</span>
+						</div>
+						<div className="w-100per column pos-rel place_div mb-1rem">
+							<input
+								onChange={(e) => set_subject(e.target.value)}
+								defaultValue={subject}
+								value={subject}
+								className="zoom_f form_input place_input"
+								style={glass_input}
+								type="text"
+								name="subject"
+								id="subject"
+								required
+								spellcheck="false"
+							/>
+							<span htmlFor="subject" className="fs-16px pos-abs place_holder">
+								Subject
+							</span>
+						</div>
+						<div className="w-100per column pos-rel place_div mb-1rem">
+							<input
+								onChange={(e) => set_email(e.target.value)}
+								defaultValue={email}
+								value={email}
+								className="zoom_f form_input place_input"
+								style={glass_input}
+								type="text"
+								name="email"
+								id="email"
+								required
+								spellcheck="false"
+							/>
+							<span htmlFor="email" className="fs-16px pos-abs place_holder">
+								Email
+							</span>
+						</div>
+						<div className="w-100per column pos-rel place_div mb-1rem">
+							<textarea
+								onChange={(e) => set_message(e.target.value)}
+								defaultValue={message}
+								className="zoom_f form_input place_input"
+								style={glass_input}
+								name="message"
+								id="message"
+								required
+								spellcheck="false"
+							/>
+							<span htmlFor="message" className="fs-16px pos-abs place_holder">
+								Message
+							</span>
+						</div>
 
 						<div>
 							<button

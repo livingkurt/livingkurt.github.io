@@ -36,7 +36,14 @@ function Header() {
 						</Link>
 						{width > 970 && (
 							<div className="row">
-								<ScrollLink to="about_me" className="fc-white">
+								<ScrollLink
+									to="about_me"
+									className="fc-white"
+									spy={true}
+									smooth={true}
+									duration={2000}
+									offset={-200}
+								>
 									<span
 										className="fs-20spanx blur-2px"
 										style={{
@@ -48,7 +55,14 @@ function Header() {
 										about me
 									</span>
 								</ScrollLink>
-								<ScrollLink to="skills" className="fc-white">
+								<ScrollLink
+									to="skills"
+									className="fc-white"
+									spy={true}
+									smooth={true}
+									duration={2000}
+									offset={-200}
+								>
 									<span
 										className="fs-20px blur-3px"
 										style={{
@@ -60,7 +74,14 @@ function Header() {
 										skills
 									</span>
 								</ScrollLink>
-								<ScrollLink to="experience" className="fc-white">
+								<ScrollLink
+									to="experience"
+									className="fc-white"
+									spy={true}
+									smooth={true}
+									duration={2000}
+									offset={-200}
+								>
 									<span
 										className="fs-20px blur-4px"
 										style={{
