@@ -105,7 +105,7 @@ const HomePage = () => {
 						</GlassContainer>
 					</div>
 				</Fade>
-				<Link activeClass="active" to="content" spy={true} smooth={true} duration={2000} offset={-200}>
+				<Link activeClass="active" to="about_me" spy={true} smooth={true} duration={2000} offset={-200}>
 					<div
 						className="fade_in bob pos-rel w-100per jc-c"
 						style={{
@@ -126,38 +126,36 @@ const HomePage = () => {
 					</div>
 				</Link>
 			</div>
-			<div className="w-100per pos-rel" id="content" style={{ top: isMobile ? '47vh' : '80vh' }}>
+			<div className="w-100per pos-rel" id="about_me" style={{ top: isMobile ? '47vh' : '80vh' }}>
 				<FadeInContainer width="900px" screen_width={width} fade={'left'} hover={true}>
 					<div className="p-20px">
 						<h2
 							className="ta-c"
 							style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}
 						>
-							About Me
+							Who am I?
 						</h2>
-						<p className="lh-30px">
-							My name is <strong>Kurt LaVacque</strong> and I am an <strong>innovator</strong>!
+						<p className="lh-30px br-20px p-10px w-75per" style={{ backgroundColor: '#8f2855' }}>
+							My name is Kurt, from an early age I had a facination with learning and understanding, I
+							learned to play the piano, juggle, ride a unicycle, and solve a rubiks cube just to see if I
+							could.
 						</p>
 						<p className="lh-30px">
-							I use the <strong>foundation</strong> of old concepts to sculpt <strong>new ideas</strong>.
+							Fast-forward to today, I currently live in the US and I love creating and making things
+							beautiful on the web and IRL (in real life)!
 						</p>
 						<p className="lh-30px">
-							I learn, create, and make the world around me into a <strong>well-oiled machine</strong>,
-							constantly improving every day.
+							I am a Full-Stack Web Developer by day and Arduino/C++ 3D Printing maestro by night with my
+							hands in as many different languages and skillsets as I can handle. There is no knowledge
+							that I deem unlearnable or unnecessary to learn.
 						</p>
-						<p className="lh-30px">
-							I live in <strong>Austin, TX</strong>.
-						</p>
-						<p className="lh-30px">
-							I am a <strong>web developer</strong> by day and <strong>CAD designer</strong> by night.
-						</p>
-						<p className="lh-30px">
-							I believe that if I'm not <strong>moving forwards</strong>, then I must be{' '}
-							<strong>moving backwards</strong>.
-						</p>
-						<p className="lh-30px">
-							<strong>Skills:</strong> Javascript (MERN Stack), MySQL, Python, Ableton Live 9, Fusion 360
-						</p>
+						<Link to="/contact" className="fc-white">
+							<p className="lh-30px">Let's talk about it</p>
+						</Link>
+						{/* <p className="lh-30px">
+							Creative, Problem Solvering, aficionado with the need to provide and have as much
+							customability as possible
+						</p> */}
 					</div>
 				</FadeInContainer>
 				<Link activeClass="active" to="skills" spy={true} smooth={true} duration={2000} offset={-200}>
@@ -181,7 +179,7 @@ const HomePage = () => {
 					</div>
 				</Link>
 			</div>
-			<div className="w-100per pos-rel" id="skills" style={{ top: isMobile ? '88vh' : '120vh' }}>
+			<div className="w-100per pos-rel" id="skills" style={{ top: isMobile ? '88vh' : '150vh' }}>
 				<FadeInContainer width="900px" fade={'right'} hover={true} screen_width={width}>
 					<div className="p-20px">
 						<h2
@@ -314,7 +312,7 @@ const HomePage = () => {
 					</div>
 				</Link>
 			</div>
-			<div className="w-100per pos-rel" id="experience" style={{ top: isMobile ? '120vh' : '165vh' }}>
+			<div className="w-100per pos-rel" id="experience" style={{ top: isMobile ? '120vh' : '195vh' }}>
 				<FadeInContainer width="900px" fade={'left'} hover={true} screen_width={width}>
 					<div className="p-20px">
 						<h2
@@ -403,7 +401,7 @@ const HomePage = () => {
 							top: '18vh'
 						}}
 					>
-						Follow Me
+						Meet Me
 					</div>
 					<div
 						className="w-100per pos-rel"

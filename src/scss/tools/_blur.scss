@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+@for $i from 0 to 200 {
+	.blur-#{$i}px {
+		filter: blur($i + px) !important;
+		transition: all .5s;
+	}
+}
+@for $i from 0 to 200 {
+	.blur-#{$i}px:hover {
+		filter: blur(0px) !important;
+	}
+}

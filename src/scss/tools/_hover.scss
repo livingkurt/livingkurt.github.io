@@ -33,18 +33,18 @@
 	margin: auto;
 }
 
-.blur_hover {
+.blur-hover {
 	filter: blur(2px);
 	transition: all .5s;
 }
-.blur_hover:hover {
+.blur-hover:hover {
 	filter: blur(0px);
 }
-.unblur_hover {
+.unblur-hover {
 	filter: blur(0px);
 	transition: all .5s;
 }
-.unblur_hover:hover {
+.unblur-hover:hover {
 	filter: blur(2px);
 }
 

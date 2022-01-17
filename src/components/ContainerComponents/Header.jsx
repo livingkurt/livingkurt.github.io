@@ -3,6 +3,7 @@ import Headroom from 'react-headroom';
 import { Link, useHistory } from 'react-router-dom';
 import { responsive_font } from '../../utils/helper_functions';
 import { useWindowDimensions } from '../Hooks';
+import { Link as ScrollLink } from 'react-scroll';
 
 function Header() {
 	const header_styles = {
@@ -19,12 +20,12 @@ function Header() {
 				<div className="jc-b w-100per ai-c">
 					<div className="ai-c">
 						<Link to="/" className="fc-white">
-							<h1 className="pl-30px unblur_hover fs-30px">{width < 650 ? 'KL' : 'Kurt LaVacque'}</h1>
+							<h1 className="pl-30px unblur-hover fs-30px">{width < 650 ? 'KL' : 'Kurt LaVacque'}</h1>
 						</Link>
 
 						<Link to="/projects" className="fc-white">
 							<p
-								className="fs-20px blur_hover"
+								className="fs-20px blur-1px"
 								style={{
 									fontSize: responsive_font(width, 600, 1040, '2vw', '1.6rem', '2rem'),
 									paddingLeft: responsive_font(width, 600, 1040, '3vw', '1.6rem', '3rem')
@@ -33,11 +34,51 @@ function Header() {
 								creator of worlds
 							</p>
 						</Link>
+						{width > 970 && (
+							<div className="row">
+								<ScrollLink to="about_me" className="fc-white">
+									<span
+										className="fs-20spanx blur-2px"
+										style={{
+											fontSize: responsive_font(width, 600, 1040, '2vw', '1.6rem', '2rem'),
+											paddingLeft: responsive_font(width, 600, 1040, '3vw', '1.6rem', '3rem'),
+											cursor: 'pointer'
+										}}
+									>
+										about me
+									</span>
+								</ScrollLink>
+								<ScrollLink to="skills" className="fc-white">
+									<span
+										className="fs-20px blur-3px"
+										style={{
+											fontSize: responsive_font(width, 600, 1040, '2vw', '1.6rem', '2rem'),
+											paddingLeft: responsive_font(width, 600, 1040, '3vw', '1.6rem', '3rem'),
+											cursor: 'pointer'
+										}}
+									>
+										skills
+									</span>
+								</ScrollLink>
+								<ScrollLink to="experience" className="fc-white">
+									<span
+										className="fs-20px blur-4px"
+										style={{
+											fontSize: responsive_font(width, 600, 1040, '2vw', '1.6rem', '2rem'),
+											paddingLeft: responsive_font(width, 600, 1040, '3vw', '1.6rem', '3rem'),
+											cursor: 'pointer'
+										}}
+									>
+										experience
+									</span>
+								</ScrollLink>
+							</div>
+						)}
 					</div>
 
 					<Link to="/contact" className="fc-white">
 						<p
-							className="fs-16px  unblur_hover title_font"
+							className="fs-16px  unblur-hover title_font"
 							style={{ paddingRight: responsive_font(width, 600, 1040, '3vw', '1.6rem', '3rem') }}
 						>
 							contact
