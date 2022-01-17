@@ -3,6 +3,7 @@ import { FadeInContainer } from '../components/ContainerComponents';
 import { useWindowDimensions } from '../components/Hooks';
 import { API_Contact } from '../utils';
 import { responsive_font } from '../utils/helper_functions';
+import { isMobile, BrowserView, MobileView } from 'react-device-detect';
 
 const ContactPage = () => {
 	const [ name, set_name ] = useState();
@@ -28,25 +29,15 @@ const ContactPage = () => {
 		margin: '1rem 0',
 		fontFamily: 'Helvetica'
 	};
-	const glass_button = {
-		backgroundColor: 'rgba(255, 255, 255, .15)',
-		backdropFilter: 'blur(20px)',
-		borderRadius: '10px',
-		border: 0,
-		boxShadow: 'inset rgb(255 255 255 / 20%) 0px 0px 10px 5px',
-		fontSize: '16px',
-		padding: '10px',
-		color: 'white',
-		margin: '1rem 0',
-		background:
-			'linear-gradient(30deg, rgb(29 8 186 / 50%), rgb(28 128 157 / 50%) , rgb(204 120 56 / 50%) , rgb(173 7 91 / 50%), rgb(39 134 163 / 50%) )'
-	};
 	const { height, width } = useWindowDimensions();
 	return (
-		<div className="mt-20px">
+		<div className="pos-rel" style={{ top: isMobile ? '1vh' : '10vh' }}>
 			<FadeInContainer width="900px" fade={'left'} hover={false} screen_width={width}>
 				<div className="p-20px">
-					<h2 className="ta-c" style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}>
+					<h2
+						className="ta-c"
+						style={{ fontSize: responsive_font(width, 350, 900, '6vw', '2.3rem', '5rem') }}
+					>
 						Let's Talk About it
 					</h2>
 					<p className="mv-2rem ta-c">Reach out with any project ideas or questions about anything!</p>
@@ -100,8 +91,7 @@ const ContactPage = () => {
 
 						<div>
 							<button
-								style={glass_button}
-								className="zoom_b btn primary br-10px w-100per hover gradient-btn"
+								className="zoom_b btn primary br-10px w-100per hover btn-glass gradient-btn"
 								id="button"
 								onClick={(e) => sendEmail(e)}
 							>

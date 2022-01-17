@@ -31,3 +31,23 @@
 	box-shadow: rgb(255 255 255 / 50%) 0px 0px 20px 5px;
 	transform: scale(1.02);
 }
+
+.btn-glass {
+	background-color: rgba(255 255 255 /50%);
+	backdrop-filter: blur(20px);
+	border-radius: 10px;
+	border: 0px;
+	box-shadow: inset rgb(255 255 255 / 20%) 0px 0px 10px 5px;
+	font-size: 16px;
+	padding: 10px;
+	color: white;
+	margin: 1rem 0;
+	// background: linear-gradient(
+	// 	30deg,
+	// 	rgb(29 8 186 / 50%),
+	// 	rgb(28 128 157 / 50%),
+	// 	rgb(204 120 56 / 50%),
+	// 	rgb(173 7 91 / 50%),
+	// 	rgb(39 134 163 / 50%)
+	// );
+}

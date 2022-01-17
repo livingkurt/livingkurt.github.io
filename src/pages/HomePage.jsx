@@ -8,8 +8,9 @@ import {
 } from '../components/ContainerComponents';
 import { InvisibleButtons } from '../components/UniversalComponents';
 import { useWindowDimensions } from '../components/Hooks';
+import { Link, useHistory } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import { is_desktop, responsive_font } from '../utils/helper_functions';
 import { isMobile, BrowserView, MobileView } from 'react-device-detect';
 
@@ -105,7 +106,7 @@ const HomePage = () => {
 						</GlassContainer>
 					</div>
 				</Fade>
-				<Link activeClass="active" to="about_me" spy={true} smooth={true} duration={2000} offset={-200}>
+				<ScrollLink activeClass="active" to="about_me" spy={true} smooth={true} duration={2000} offset={-200}>
 					<div
 						className="fade_in bob pos-rel w-100per jc-c"
 						style={{
@@ -124,7 +125,7 @@ const HomePage = () => {
 					>
 						<div className={`${isMobile ? 'arrows' : 'arrows_large'} fade_in`} />
 					</div>
-				</Link>
+				</ScrollLink>
 			</div>
 			<div className="w-100per pos-rel" id="about_me" style={{ top: isMobile ? '47vh' : '80vh' }}>
 				<FadeInContainer width="900px" screen_width={width} fade={'left'} hover={true}>
@@ -135,7 +136,7 @@ const HomePage = () => {
 						>
 							Who am I?
 						</h2>
-						<p className="lh-30px br-20px p-10px w-75per" style={{ backgroundColor: '#8f2855' }}>
+						<p className="lh-30px">
 							My name is Kurt, from an early age I had a facination with learning and understanding, I
 							learned to play the piano, juggle, ride a unicycle, and solve a rubiks cube just to see if I
 							could.
@@ -150,15 +151,47 @@ const HomePage = () => {
 							that I deem unlearnable or unnecessary to learn.
 						</p>
 						<Link to="/contact" className="fc-white">
-							<p className="lh-30px">Let's talk about it</p>
+							<span
+								className="lh-30px title_font br-10px p-10px"
+								style={{
+									color: 'white',
+
+									display: 'inline-block',
+									boxShadow: 'inset rgb(255 255 255 / 20%) 0px 0px 10px 5px',
+									filter: 'blur(0px)',
+									cursor: 'pointer'
+								}}
+							>
+								Let's talk about it
+							</span>
 						</Link>
+
+						{/* <p className="lh-30px br-20px p-10px w-75per" style={{ backgroundColor: '#8f285552' }}>
+							My name is Kurt, from an early age I had a facination with learning and understanding, I
+							learned to play the piano, juggle, ride a unicycle, and solve a rubiks cube just to see if I
+							could.
+						</p>
+						<p className="lh-30px br-20px p-10px w-50per ml-auto" style={{ backgroundColor: '#21809f52' }}>
+							Fast-forward to today, I currently live in the US and I love creating and making things
+							beautiful on the web and IRL (in real life)!
+						</p>
+						<p className="lh-30px br-20px p-10px w-75per" style={{ backgroundColor: '#50176852' }}>
+							I am a Full-Stack Web Developer by day and Arduino/C++ 3D Printing maestro by night with my
+							hands in as many different languages and skillsets as I can handle. There is no knowledge
+							that I deem unlearnable or unnecessary to learn.
+						</p>
+						<ScrollLink to="/contact">
+							<button className="zoom_b title_font btn primary br-10px hover btn-glass" id="button">
+								Let's talk about it
+							</button>
+						</ScrollLink> */}
 						{/* <p className="lh-30px">
 							Creative, Problem Solvering, aficionado with the need to provide and have as much
 							customability as possible
 						</p> */}
 					</div>
 				</FadeInContainer>
-				<Link activeClass="active" to="skills" spy={true} smooth={true} duration={2000} offset={-200}>
+				<ScrollLink activeClass="active" to="skills" spy={true} smooth={true} duration={2000} offset={-200}>
 					<div
 						className="fade_in bob pos-rel w-100per jc-c"
 						style={{
@@ -177,7 +210,7 @@ const HomePage = () => {
 					>
 						<div className={`${isMobile ? 'arrows' : 'arrows_large'} fade_in`} />
 					</div>
-				</Link>
+				</ScrollLink>
 			</div>
 			<div className="w-100per pos-rel" id="skills" style={{ top: isMobile ? '88vh' : '150vh' }}>
 				<FadeInContainer width="900px" fade={'right'} hover={true} screen_width={width}>
@@ -291,7 +324,7 @@ const HomePage = () => {
 						</div>
 					</div>
 				</FadeInContainer>
-				<Link activeClass="active" to="experience" spy={true} smooth={true} duration={2000} offset={-200}>
+				<ScrollLink activeClass="active" to="experience" spy={true} smooth={true} duration={2000} offset={-200}>
 					<div
 						className="fade_in bob pos-rel w-100per jc-c"
 						style={{
@@ -310,7 +343,7 @@ const HomePage = () => {
 					>
 						<div className={`${isMobile ? 'arrows' : 'arrows_large'} fade_in`} />
 					</div>
-				</Link>
+				</ScrollLink>
 			</div>
 			<div className="w-100per pos-rel" id="experience" style={{ top: isMobile ? '120vh' : '195vh' }}>
 				<FadeInContainer width="900px" fade={'left'} hover={true} screen_width={width}>
@@ -393,7 +426,7 @@ const HomePage = () => {
 						</p>
 					</div>
 				</FadeInContainer>
-				<Link activeClass="active" to="more" spy={true} smooth={true} duration={2000} offset={-200}>
+				<ScrollLink activeClass="active" to="more" spy={true} smooth={true} duration={2000} offset={-200}>
 					<div
 						className="fade_in bob pos-rel w-100per jc-c"
 						style={{
@@ -412,7 +445,7 @@ const HomePage = () => {
 					>
 						<div className={`${isMobile ? 'arrows' : 'arrows_large'} fade_in`} />
 					</div>
-				</Link>
+				</ScrollLink>
 			</div>
 			<div className="w-100per pos-rel " id="more" style={{ top: '500vh' }}>
 				<FadeInContainer height="700px" width="900px" fade={'left'} hover={true} screen_width={width}>

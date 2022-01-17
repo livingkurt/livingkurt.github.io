@@ -16,7 +16,7 @@ const FadeInContainer = ({ children, className, style, height, width, top, fade,
 				top={fade === 'top' && true}
 				left={fade === 'left' && true}
 			>
-				<div className={`${screen_width < 850 ? 'm-20px' : 'm-auto'}`}>
+				<div className={`${screen_width < 950 ? 'm-20px' : 'm-auto'}`}>
 					<GlassContainer className={`h-${height} max-w-${width} ${className}`} hover={hover}>
 						{children}
 					</GlassContainer>
