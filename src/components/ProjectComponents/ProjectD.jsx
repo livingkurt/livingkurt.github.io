@@ -29,7 +29,7 @@ const Project = ({ project }) => {
 					{name}
 				</h3>
 				<div className="wrap jc-c">
-					<img src={image} alt={name} className="br-20px w-100per h-auto max-h-200px max-w-200px m-10px" />
+					<img src={image} alt={name} className="br-20px w-100per h-auto max-h-275px max-w-300px m-10px" />
 					{/* <span className="tooltiptext_p p-2rem">View Project</span> */}
 					<div className="">
 						<div className="w-100per max-w-600px">
@@ -50,15 +50,6 @@ const Project = ({ project }) => {
 			</div>
 		);
 	};
-
-	const container = (
-		<Fade top>
-			<div className="br-20px p-20px hover ta-c" style={content_styles}>
-				<h3 className="ta-c fs-16px mb-2rem">{name}</h3>
-				<img src={image} alt={name} className="br-20px w-100per max-w-300px " />
-			</div>
-		</Fade>
-	);
 	return (
 		<div>
 			<BrowserView>
@@ -74,11 +65,9 @@ const Project = ({ project }) => {
 			<MobileView>
 				<Link to={'/project/' + pathname}>
 					<Fade top>
-						<div className="br-20px p-20px glass_glow m-10px ta-c" style={content_styles}>
+						<div className="br-20px p-20px hover ta-c" style={content_styles}>
 							<h3 className="ta-c fs-16px mb-2rem">{name}</h3>
-							<div>
-								<img src={image} alt={name} className="br-20px w-100per max-w-300px " />
-							</div>
+							<img src={image} alt={name} className="br-20px w-100per max-w-300px " />
 						</div>
 					</Fade>
 				</Link>

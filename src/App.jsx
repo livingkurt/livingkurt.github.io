@@ -4,7 +4,7 @@ import particlesjs_config from './particlesjs-config.json';
 import Particles from 'react-tsparticles';
 import { GlassModal, Header, InvisibleContainer } from './components/ContainerComponents';
 import Fade from 'react-reveal/Fade';
-import { HomePage, ContactPage, ProjectsPage } from './pages';
+import { HomePage, ContactPage, ProjectsPage, ProjectPage } from './pages';
 import ModalContext from './context/ModalContext';
 
 function App() {
@@ -48,7 +48,7 @@ function App() {
 				<GlassModal set_show_modal={set_show_modal} show_modal={show_modal}>
 					{children}
 				</GlassModal>
-				<div style={{ overflow: show_modal ? 'hidden' : 'unset', position: show_modal ? 'fixed' : 'static' }}>
+				<div>
 					<div style={{ zIndex: -10 }} className="">
 						<Particles params={particlesjs_config} />
 					</div>
@@ -57,6 +57,7 @@ function App() {
 						<Route exact path="/" component={HomePage} />
 						<Route exact path="/contact" component={ContactPage} />
 						<Route exact path="/projects" component={ProjectsPage} />
+						<Route exact path="/project/:pathname" component={ProjectPage} />
 					</ModalContext.Provider>
 				</div>
 			</div>

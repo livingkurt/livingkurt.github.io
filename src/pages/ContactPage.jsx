@@ -40,9 +40,13 @@ const ContactPage = () => {
 					>
 						Let's Talk About it
 					</h2>
-					<p className="mv-2rem ta-c">Reach out with any project ideas or questions about anything!</p>
+					<p className="mv-2rem ta-c fs-16px">
+						Reach out with any project ideas or questions about anything!
+					</p>
 					<form className="column">
-						<label htmlFor="name">Name</label>
+						<label htmlFor="name" className="fs-16px">
+							Name
+						</label>
 						<input
 							onChange={(e) => set_name(e.target.value)}
 							defaultValue={name}
@@ -54,7 +58,9 @@ const ContactPage = () => {
 							id="name"
 							placeholder="Name"
 						/>
-						<label htmlFor="subject">Subject</label>
+						<label htmlFor="subject" className="fs-16px">
+							Subject
+						</label>
 						<input
 							onChange={(e) => set_subject(e.target.value)}
 							defaultValue={subject}
@@ -66,7 +72,9 @@ const ContactPage = () => {
 							id="subject"
 							placeholder="Subject"
 						/>
-						<label htmlFor="email">Email</label>
+						<label htmlFor="email" className="fs-16px">
+							Email
+						</label>
 						<input
 							onChange={(e) => set_email(e.target.value)}
 							defaultValue={email}
@@ -78,7 +86,9 @@ const ContactPage = () => {
 							id="email"
 							placeholder="Email"
 						/>
-						<label htmlFor="message">Message</label>
+						<label htmlFor="message" className="fs-16px">
+							Message
+						</label>
 						<textarea
 							onChange={(e) => set_message(e.target.value)}
 							defaultValue={message}
