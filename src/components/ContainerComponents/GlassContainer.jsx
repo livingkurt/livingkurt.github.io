@@ -9,7 +9,7 @@ const content_styles = {
 const GlassContainer = ({ children, className, hover }) => {
 	return (
 		<div
-			className={`${className} w-100per br-20px ${!isMobile ? (hover ? 'hover' : '') : ''} `}
+			className={`${className} w-100per br-20px glass_glow ${!isMobile ? (hover ? 'hover' : '') : ''} `}
 			style={content_styles}
 		>
 			{children}

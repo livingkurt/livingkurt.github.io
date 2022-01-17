@@ -1,3 +1,7 @@
+.glass_glow {
+	box-shadow: rgb(255 255 255 / 50%) 0px 0px 20px 5px;
+}
+
 .hover {
 	box-shadow: rgb(255 255 255 / 50%) 0px 0px 20px 5px;
 	transition: all .5s;
@@ -6,6 +10,10 @@
 .hover:hover {
 	box-shadow: rgb(255 255 255 / 50%) 0px 0px 20px 20px;
 	transform: scale(1.02);
+}
+.invisible_glow {
+	box-shadow: rgba(255, 255, 255, .05) 0px 0px 20px 5px;
+	backdrop-filter: blur(5px);
 }
 .invisible_hover {
 	box-shadow: rgba(255, 255, 255, .05) 0px 0px 20px 5px;

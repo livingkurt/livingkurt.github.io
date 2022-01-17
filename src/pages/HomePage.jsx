@@ -126,7 +126,7 @@ const HomePage = () => {
 					</div>
 				</Link>
 			</div>
-			<div className="w-100per pos-rel" id="content" style={{ top: '80vh' }}>
+			<div className="w-100per pos-rel" id="content" style={{ top: isMobile ? '47vh' : '80vh' }}>
 				<FadeInContainer width="900px" screen_width={width} fade={'left'} hover={true}>
 					<div className="p-20px">
 						<h2
@@ -181,7 +181,7 @@ const HomePage = () => {
 					</div>
 				</Link>
 			</div>
-			<div className="w-100per pos-rel" id="skills" style={{ top: '120vh' }}>
+			<div className="w-100per pos-rel" id="skills" style={{ top: isMobile ? '88vh' : '120vh' }}>
 				<FadeInContainer width="900px" fade={'right'} hover={true} screen_width={width}>
 					<div className="p-20px">
 						<h2
@@ -314,7 +314,7 @@ const HomePage = () => {
 					</div>
 				</Link>
 			</div>
-			<div className="w-100per pos-rel" id="experience" style={{ top: '165vh' }}>
+			<div className="w-100per pos-rel" id="experience" style={{ top: isMobile ? '120vh' : '165vh' }}>
 				<FadeInContainer width="900px" fade={'left'} hover={true} screen_width={width}>
 					<div className="p-20px">
 						<h2
