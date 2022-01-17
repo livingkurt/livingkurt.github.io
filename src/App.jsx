@@ -48,15 +48,17 @@ function App() {
 				<GlassModal set_show_modal={set_show_modal} show_modal={show_modal}>
 					{children}
 				</GlassModal>
-				<div style={{ zIndex: -10 }} className="">
-					<Particles params={particlesjs_config} />
+				<div style={{ overflow: show_modal ? 'hidden' : 'unset', position: show_modal ? 'fixed' : 'static' }}>
+					<div style={{ zIndex: -10 }} className="">
+						<Particles params={particlesjs_config} />
+					</div>
+					<Header />
+					<ModalContext.Provider value={{ show_modal, set_show_modal, children, set_children }}>
+						<Route exact path="/" component={HomePage} />
+						<Route exact path="/contact" component={ContactPage} />
+						<Route exact path="/projects" component={ProjectsPage} />
+					</ModalContext.Provider>
 				</div>
-				<Header />
-				<ModalContext.Provider value={{ show_modal, set_show_modal, children, set_children }}>
-					<Route exact path="/" component={HomePage} />
-					<Route exact path="/contact" component={ContactPage} />
-					<Route exact path="/projects" component={ProjectsPage} />
-				</ModalContext.Provider>
 			</div>
 		</Router>
 	);

@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { GlassModal } from '../ContainerComponents';
 import ModalContext from '../../context/ModalContext';
 import { useWindowDimensions } from '../Hooks';
+import { isMobile } from 'react-device-detect';
 
 const content_styles = {
 	backgroundColor: 'rgba(255, 255, 255, .15)',
@@ -18,12 +19,21 @@ const Project = ({ project }) => {
 		set_children(
 			<div>
 				{' '}
-				<h3 className="fs-30px mb-2rem  modal-paragraph fc-black">{name}</h3>
+				<h3
+					className="fs-30px mb-2rem  modal-paragraph fc-black p-20px"
+					style={{
+						textAlign: isMobile ? 'center' : 'left'
+					}}
+				>
+					{name}
+				</h3>
 				<div className="wrap jc-c">
 					<img src={image} alt={name} className="br-20px w-100per h-auto max-h-275px max-w-300px m-10px" />
 					{/* <span className="tooltiptext_p p-2rem">View Project</span> */}
 					<div className="">
-						<p className="modal-paragraph fc-black lh-30px w-100per max-w-600px">{description}</p>
+						<div className="w-100per max-w-600px">
+							<p className="modal-paragraph fc-black lh-30px w-100per p-20px">{description}</p>
+						</div>
 						<div className="jc-a w-100per">
 							<a className="" id="words" href={url} target="_blank" rel="noopener noreferrer">
 								<button className="btn hover">View Deploy</button>
