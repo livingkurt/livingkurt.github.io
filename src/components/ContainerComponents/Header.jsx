@@ -112,13 +112,7 @@ function Header() {
 							>
 								<i class="fas fa-comment-dots" />
 							</p>
-							<div
-								className=" link-content"
-								style={{
-									backgroundColor: 'rgba(255, 255, 255, .15)',
-									backdropFilter: 'blur(5px)'
-								}}
-							>
+							<div className=" link-content">
 								<p className="fs-20px mb-20px unblur-hover title_font pos-abs facebook-link">
 									<a
 										href="https://www.facebook.com/kurt.lavacque/"
