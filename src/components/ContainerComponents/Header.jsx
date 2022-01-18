@@ -101,15 +101,75 @@ function Header() {
 							</div>
 						)}
 					</div>
-
-					<Link to="/contact" className="fc-white">
-						<p
-							className="fs-16px  unblur-hover title_font"
-							style={{ paddingRight: responsive_font(width, 600, 1040, '3vw', '1.6rem', '3rem') }}
-						>
-							contact
-						</p>
-					</Link>
+					<div className="row">
+						<div className="link-container">
+							<p
+								className="fs-20px unblur-hover  title_font"
+								style={{
+									paddingRight: responsive_font(width, 600, 1040, '3vw', '1.6rem', '3rem'),
+									zIndex: 10
+								}}
+							>
+								<i class="fas fa-comment-dots" />
+							</p>
+							<div
+								className=" link-content"
+								style={{
+									backgroundColor: 'rgba(255, 255, 255, .15)',
+									backdropFilter: 'blur(5px)'
+								}}
+							>
+								<p className="fs-20px mb-20px unblur-hover title_font pos-abs facebook-link">
+									<a
+										href="https://www.facebook.com/kurt.lavacque/"
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label="Facebook"
+									>
+										<i class="fab fa-facebook-f" />
+									</a>
+								</p>
+								<p className="fs-20px mb-20px unblur-hover title_font pos-abs instagram-link">
+									<a
+										href="https://www.instagram.com/faded_ntre/"
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label="Instagram"
+									>
+										<i class="fab fa-instagram" />
+									</a>
+								</p>
+								<p className="fs-20px mb-20px unblur-hover title_font pos-abs linkedin-link">
+									<a
+										href="https://www.linkedin.com/in/kurt-lavacque/"
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label="LinkedIn"
+									>
+										<i class="fab fa-linkedin-in" />
+									</a>
+								</p>
+								<p className="fs-20px mb-20px unblur-hover title_font pos-abs soundcloud-link">
+									<a
+										href="https://soundcloud.com/ntre"
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label="LinkedIn"
+									>
+										<i class="fab fa-soundcloud" />
+									</a>
+								</p>
+							</div>
+						</div>
+						<Link to="/contact" className="fc-white">
+							<p
+								className="fs-20px  unblur-hover title_font"
+								style={{ paddingRight: responsive_font(width, 600, 1040, '3vw', '1.6rem', '3rem') }}
+							>
+								<i class="fas fa-envelope" />
+							</p>
+						</Link>
+					</div>
 				</div>
 				{/* <div id="icon_container">
 				<a href="https://www.glow-leds.com/" target="_blank" rel="noopener noreferrer">
