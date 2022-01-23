@@ -189,212 +189,120 @@ const HomePage = () => {
 						</Link>
 					</div>
 				</FadeInContainer>
-				<ScrollLink activeClass="active" to="skills" spy={true} smooth={true} duration={2000} offset={-200}>
-					<div
-						className="fade_in bob pos-rel w-100per jc-c"
-						style={{
-							fontSize: responsive_font(width, 500, 700, '3vw', '1.6rem', '2rem'),
-							top: '18vh'
-						}}
-					>
-						Follow Me
-					</div>
-					<div
-						className="w-100per pos-rel"
-						style={{
-							top: '20vh',
-							left: '50%'
-						}}
-					>
-						<div className={`${isMobile ? 'arrows' : 'arrows_large'} fade_in`} />
-					</div>
-				</ScrollLink>
-			</div>
-			<div className="w-100per pos-rel" id="skills" style={{ top: isMobile ? '88vh' : '150vh' }}>
-				<FadeInContainer width="900px" fade={'right'} hover={true} screen_width={width}>
-					<div className="p-20px">
-						<h2
-							className=" ta-c"
-							style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}
-						>
-							Skills
-						</h2>
-						<div
-							className="mt-10px mb-20px w-100per max-w-600px m-auto"
-							style={{ borderBottom: '2px solid white' }}
-						/>
-						<p className="lh-30px ta-c">
-							<h3 className="fs-20px">Areas of Expertise</h3>
-						</p>
-						{/* <div
-							className="mt-10px mb-20px w-100per max-w-400px m-auto"
-							style={{ borderBottom: '2px solid white' }}
-						/> */}
-						<div className=" mt-2rem">
-							<div className="skills">
-								<div className="details">
-									<span className="fs-16px">Javascript</span>
-								</div>
-								<div className="bar">
-									<div id="javascript-bar" />
-								</div>
-							</div>
-							<div className="skills">
-								<div className="details">
-									<span className="fs-16px">Node.js</span>
-								</div>
-								<div className="bar">
-									<div id="javascript-bar" />
-								</div>
-							</div>
-							<div className="skills">
-								<div className="details">
-									<span className="fs-16px">React</span>
-								</div>
-								<div className="bar">
-									<div id="react-bar" />
-								</div>
-							</div>
-							{/* <div className="skills">
-								<div className="details">
-									<span className="fs-16px">Python</span>
-								</div>
-								<div className="bar">
-									<div id="python-bar" />
-								</div>
-							</div> */}
-
-							<div className="skills">
-								<div className="details">
-									<span className="fs-16px">Excel</span>
-								</div>
-								<div className="bar">
-									<div id="Excel-bar" />
-								</div>
-							</div>
-							{/* <div className="skills">
-								<div className="details">
-									<span className="fs-16px">FrontEnd</span>
-								</div>
-								<div className="bar">
-									<div id="frontend-bar" />
-								</div>
-							</div> */}
-							{/* <div className="ml-4rem mb-3rem">
-								<div className="skills">
-									<div className="details">
-										<span className="fs-16px">React</span>
-									</div>
-									<div className="bar">
-										<div id="react-bar" />
-									</div>
-								</div>
-								<div className="skills">
-									<div className="details">
-										<span className="fs-16px">HTML</span>
-									</div>
-									<div className="bar">
-										<div id="html-bar" />
-									</div>
-								</div>
-								<div className="skills">
-									<div className="details">
-										<span className="fs-16px">CSS</span>
-									</div>
-									<div className="bar">
-										<div id="css-bar" />
-									</div>
-								</div>
-							</div> */}
-							{/* <div className="skills">
-								<div className="details">
-									<span className="fs-16px">BackEnd</span>
-								</div>
-								<div className="bar">
-									<div id="backend-bar" />
-								</div>
-							</div> */}
-							{/* <div className="ml-4rem mb-3rem">
-								<div className="skills">
-									<div className="details">
-										<span className="fs-16px">MongoDB</span>
-									</div>
-									<div className="bar">
-										<div id="mongodb-bar" />
-									</div>
-								</div>
-								<div className="skills">
-									<div className="details">
-										<span className="fs-16px">MySQL</span>
-									</div>
-									<div className="bar">
-										<div id="mysql-bar" />
-									</div>
-								</div>
-							</div> */}
-
-							<p className="lh-30px ta-c">
-								<h3 className="fs-20px">Other Skills</h3>
-							</p>
-							{/* <div
-								className="mt-10px mb-20px w-100per max-w-400px m-auto"
-								style={{ borderBottom: '2px solid white' }}
-							/> */}
-							<p className="lh-30px">
-								<h3>Front End: </h3>HTML5, CSS3, Javascript, React.js, React Hooks, Redux, jQuery
-							</p>
-							<p className="lh-30px">
-								<h3>Back End:</h3> MongoDB, Mongoose.js, MySQL, Node.js, Express.js, MERN Stack, Python,
-								Django, EasyPost
-							</p>
-							<p className="lh-30px">
-								<h3>Other Technologies:</h3> Arduino/C++, Git, RESTful APIs, TypeScript, Passport.js,
-								OAuth, Stripe API, SEO
-							</p>
-							<p className="lh-30px">
-								<h3>Applications:</h3> Microsoft Excel, Fusion 360, Postman, Robo 3T,<span className="Apple-converted-space">  </span>Adobe
-								Illustrator, Photoshop, Premiere
-							</p>
-						</div>
-					</div>
-				</FadeInContainer>
 				<h2
 					className="ta-c mt-110px"
 					style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}
 				>
 					My Programming Journey
 				</h2>
+
 				<div className={`pos-rel w-100per m-auto  max-w-1200px mt-10rem`}>
-					<Fade right={true}>
-						<div className={`${width < 950 ? 'm-20px' : ''}`}>
-							<GlassContainer className={` max-w-600px `} hover={true}>
-								<div className="p-20px">
-									<h2
-										className="ta-c"
-										style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}
-									>
-										Music Production
-									</h2>
-									<div
-										className="mt-10px mb-20px w-100per max-w-600px m-auto"
-										style={{ borderBottom: '2px solid white' }}
-									/>
-									<p className="lh-30px">
-										So I began my obsession with learning in music production school. I learned
-										everything about recording and producing music, mostly with live music, but I
-										taught myself to make Electronic Music and loved the ways you can program sounds
-										and effects.
-									</p>
-									<br />
-									<p className="lh-30px">
-										I took a single class on Ableton Live and I fell in love! In that I learned
-										about a plugin inside of Live called Max for Live. This is when my programming
-										juices start to flow.
-									</p>
-								</div>
-							</GlassContainer>
+					<div class="timeline">
+						<div class="timeline-container left">
+							<div class="date">15 Dec</div>
+							{/* <i class="icon fa fa-home" /> */}
+							<div class="timeline-content">
+								<Fade right={true}>
+									<div className={`${width < 950 ? 'm-20px' : ''}`}>
+										<GlassContainer className={` max-w-600px `} hover={true}>
+											<div className="p-20px">
+												<h2
+													className="ta-c"
+													style={{
+														fontSize: responsive_font(
+															width,
+															600,
+															1040,
+															'5vw',
+															'3rem',
+															'5rem'
+														)
+													}}
+												>
+													Music Production
+												</h2>
+												<div
+													className="mt-10px mb-20px w-100per max-w-600px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/>
+												<p className="lh-30px">
+													So I began my obsession with learning in music production school. I
+													learned everything about recording and producing music, mostly with
+													live music, but I taught myself to make Electronic Music and loved
+													the ways you can program sounds and effects.
+												</p>
+												<br />
+												<p className="lh-30px">
+													I took a single class on Ableton Live and I fell in love! In that I
+													learned about a plugin inside of Live called Max for Live. This is
+													when my programming juices start to flow.
+												</p>
+											</div>
+										</GlassContainer>
+										<div
+											className="mt-10px mb-20px h-100per max-h-400px m-auto"
+											style={{ borderRight: '2px solid white' }}
+										/>
+									</div>
+								</Fade>
+							</div>
 						</div>
-					</Fade>
+						<div class="timeline-container right">
+							<div class="date">22 Oct</div>
+							<i class="icon fa fa-gift" />
+							<div class="timeline-content">
+								<h2>Lorem ipsum dolor sit amet</h2>
+								<p>
+									Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut
+									blandit semper pretium.
+								</p>
+							</div>
+						</div>
+						<div class="timeline-container left">
+							<div class="date">10 Jul</div>
+							<i class="icon fa fa-user" />
+							<div class="timeline-content">
+								<h2>Lorem ipsum dolor sit amet</h2>
+								<p>
+									Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut
+									blandit semper pretium.
+								</p>
+							</div>
+						</div>
+						<div class="timeline-container right">
+							<div class="date">18 May</div>
+							<i class="icon fa fa-running" />
+							<div class="timeline-content">
+								<h2>Lorem ipsum dolor sit amet</h2>
+								<p>
+									Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut
+									blandit semper pretium.
+								</p>
+							</div>
+						</div>
+						<div class="timeline-container left">
+							<div class="date">10 Feb</div>
+							<i class="icon fa fa-cog" />
+							<div class="timeline-content">
+								<h2>Lorem ipsum dolor sit amet</h2>
+								<p>
+									Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut
+									blandit semper pretium.
+								</p>
+							</div>
+						</div>
+						<div class="timeline-container right">
+							<div class="date">01 Jan</div>
+							<i class="icon fa fa-certificate" />
+							<div class="timeline-content">
+								<h2>Lorem ipsum dolor sit amet</h2>
+								<p>
+									Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut
+									blandit semper pretium.
+								</p>
+							</div>
+						</div>
+					</div>
 
 					<Fade left={true}>
 						<div className={`${width < 950 ? 'm-20px' : ''} jc-fe`}>
@@ -416,6 +324,13 @@ const HomePage = () => {
 										downloaded it and began working on my Work Break Timer.
 									</p>
 									<br />
+									<p className="lh-30px ta-c">
+										<h3 className="fs-20px">Work Break Timer V1</h3>
+									</p>
+									<div
+										className="mt-10px mb-20px w-100per max-w-400px m-auto"
+										style={{ borderBottom: '2px solid white' }}
+									/>
 									<p className="lh-30px">
 										My Work Break Timer was a timer that was built off of the 52/17 concept. 52
 										minutes of work, 17 minutes of break. I was really into working efficently so I
@@ -444,7 +359,7 @@ const HomePage = () => {
 										style={{ borderBottom: '2px solid white' }}
 									/>
 									<p className="lh-30px ta-c">
-										<h3 className="fs-20px">Work Break Timer</h3>
+										<h3 className="fs-20px">Work Break Timer V2</h3>
 									</p>
 									<div
 										className="mt-10px mb-20px w-100per max-w-400px m-auto"
@@ -465,7 +380,7 @@ const HomePage = () => {
 										that typing.
 									</p>
 									<p className="lh-30px ta-c">
-										<h3 className="fs-20px">Date Created</h3>
+										<h3 className="fs-20px">Homemade Version Control Manager</h3>
 									</p>
 									<div
 										className="mt-10px mb-20px w-100per max-w-400px m-auto"
@@ -503,16 +418,30 @@ const HomePage = () => {
 										className="mt-10px mb-20px w-100per max-w-600px m-auto"
 										style={{ borderBottom: '2px solid white' }}
 									/>
+									<p className="lh-30px ta-c">
+										<h3 className="fs-20px">Personal Expenses</h3>
+									</p>
+									<div
+										className="mt-10px mb-20px w-100per max-w-400px m-auto"
+										style={{ borderBottom: '2px solid white' }}
+									/>
 									<p className="lh-30px">
 										I loved keeping track of my own data like daily routes, expenses, workouts, all
 										sorts of things.
 									</p>
 									<p className="lh-30px">
-										I wasnt just taking the data and leaving it. I was also flowing the data into
+										I wasn't just taking the data and leaving it. I was also flowing the data into
 										different formats that allowed me to visualize the infomation in a meaningful
 										way. It was satisfying to see all of the data flow into its places.
 									</p>
 									<br />
+									<p className="lh-30px ta-c">
+										<h3 className="fs-20px">Daily Routines</h3>
+									</p>
+									<div
+										className="mt-10px mb-20px w-100per max-w-400px m-auto"
+										style={{ borderBottom: '2px solid white' }}
+									/>
 									<p className="lh-30px">
 										My Excel sheets would get pretty intense. To put it in perspective for you, I
 										had a daily routines excel sheet that would keep track of each nutrient that I
@@ -685,6 +614,175 @@ const HomePage = () => {
 						</div>
 					</Fade>
 				</div>
+				<ScrollLink activeClass="active" to="skills" spy={true} smooth={true} duration={2000} offset={-200}>
+					<div
+						className="fade_in bob pos-rel w-100per jc-c"
+						style={{
+							fontSize: responsive_font(width, 500, 700, '3vw', '1.6rem', '2rem'),
+							top: '18vh'
+						}}
+					>
+						Follow Me
+					</div>
+					<div
+						className="w-100per pos-rel"
+						style={{
+							top: '20vh',
+							left: '50%'
+						}}
+					>
+						<div className={`${isMobile ? 'arrows' : 'arrows_large'} fade_in`} />
+					</div>
+				</ScrollLink>
+			</div>
+			<div className="w-100per pos-rel" id="skills" style={{ top: isMobile ? '88vh' : '150vh' }}>
+				<FadeInContainer width="900px" fade={'right'} hover={true} screen_width={width}>
+					<div className="p-20px">
+						<h2
+							className=" ta-c"
+							style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}
+						>
+							Skills
+						</h2>
+						<div
+							className="mt-10px mb-20px w-100per max-w-600px m-auto"
+							style={{ borderBottom: '2px solid white' }}
+						/>
+						<p className="lh-30px ta-c">
+							<h3 className="fs-20px">Areas of Expertise</h3>
+						</p>
+						{/* <div
+							className="mt-10px mb-20px w-100per max-w-400px m-auto"
+							style={{ borderBottom: '2px solid white' }}
+						/> */}
+						<div className=" mt-2rem">
+							<div className="skills">
+								<div className="details">
+									<span className="fs-16px">Javascript</span>
+								</div>
+								<div className="bar">
+									<div id="javascript-bar" />
+								</div>
+							</div>
+							<div className="skills">
+								<div className="details">
+									<span className="fs-16px">Node.js</span>
+								</div>
+								<div className="bar">
+									<div id="javascript-bar" />
+								</div>
+							</div>
+							<div className="skills">
+								<div className="details">
+									<span className="fs-16px">React</span>
+								</div>
+								<div className="bar">
+									<div id="react-bar" />
+								</div>
+							</div>
+							{/* <div className="skills">
+								<div className="details">
+									<span className="fs-16px">Python</span>
+								</div>
+								<div className="bar">
+									<div id="python-bar" />
+								</div>
+							</div> */}
+
+							<div className="skills">
+								<div className="details">
+									<span className="fs-16px">Excel</span>
+								</div>
+								<div className="bar">
+									<div id="Excel-bar" />
+								</div>
+							</div>
+							{/* <div className="skills">
+								<div className="details">
+									<span className="fs-16px">FrontEnd</span>
+								</div>
+								<div className="bar">
+									<div id="frontend-bar" />
+								</div>
+							</div> */}
+							{/* <div className="ml-4rem mb-3rem">
+								<div className="skills">
+									<div className="details">
+										<span className="fs-16px">React</span>
+									</div>
+									<div className="bar">
+										<div id="react-bar" />
+									</div>
+								</div>
+								<div className="skills">
+									<div className="details">
+										<span className="fs-16px">HTML</span>
+									</div>
+									<div className="bar">
+										<div id="html-bar" />
+									</div>
+								</div>
+								<div className="skills">
+									<div className="details">
+										<span className="fs-16px">CSS</span>
+									</div>
+									<div className="bar">
+										<div id="css-bar" />
+									</div>
+								</div>
+							</div> */}
+							{/* <div className="skills">
+								<div className="details">
+									<span className="fs-16px">BackEnd</span>
+								</div>
+								<div className="bar">
+									<div id="backend-bar" />
+								</div>
+							</div> */}
+							{/* <div className="ml-4rem mb-3rem">
+								<div className="skills">
+									<div className="details">
+										<span className="fs-16px">MongoDB</span>
+									</div>
+									<div className="bar">
+										<div id="mongodb-bar" />
+									</div>
+								</div>
+								<div className="skills">
+									<div className="details">
+										<span className="fs-16px">MySQL</span>
+									</div>
+									<div className="bar">
+										<div id="mysql-bar" />
+									</div>
+								</div>
+							</div> */}
+
+							<p className="lh-30px ta-c">
+								<h3 className="fs-20px">Other Skills</h3>
+							</p>
+							{/* <div
+								className="mt-10px mb-20px w-100per max-w-400px m-auto"
+								style={{ borderBottom: '2px solid white' }}
+							/> */}
+							<p className="lh-30px">
+								<h3>Front End: </h3>HTML5, CSS3, Javascript, React.js, React Hooks, Redux, jQuery
+							</p>
+							<p className="lh-30px">
+								<h3>Back End:</h3> MongoDB, Mongoose.js, MySQL, Node.js, Express.js, MERN Stack, Python,
+								Django, EasyPost
+							</p>
+							<p className="lh-30px">
+								<h3>Other Technologies:</h3> Arduino/C++, Git, RESTful APIs, TypeScript, Passport.js,
+								OAuth, Stripe API, SEO
+							</p>
+							<p className="lh-30px">
+								<h3>Applications:</h3> Microsoft Excel, Fusion 360, Postman, Robo 3T,<span className="Apple-converted-space">  </span>Adobe
+								Illustrator, Photoshop, Premiere
+							</p>
+						</div>
+					</div>
+				</FadeInContainer>
 
 				<ScrollLink activeClass="active" to="experience" spy={true} smooth={true} duration={2000} offset={-200}>
 					<div
