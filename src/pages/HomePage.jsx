@@ -122,7 +122,14 @@ const HomePage = () => {
 						</GlassContainer>
 					</div>
 				</Fade>
-				<ScrollLink activeClass="active" to="about_me" spy={true} smooth={true} duration={2000} offset={-200}>
+				<ScrollLink
+					activeClassName="active"
+					to="about_me"
+					spy={true}
+					smooth={true}
+					duration={2000}
+					offset={-200}
+				>
 					<div
 						className="fade_in bob pos-rel w-100per jc-c"
 						style={{
@@ -193,15 +200,16 @@ const HomePage = () => {
 					className="ta-c mt-110px"
 					style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}
 				>
-					My Programming Journey
+					My Design and Programming Journey
 				</h2>
 
 				<div className={`pos-rel w-100per m-auto  max-w-1200px mt-10rem`}>
-					<div class="timeline">
-						<div class="timeline-container left">
-							<div class="date">15 Dec</div>
-							{/* <i class="icon fa fa-home" /> */}
-							<div class="timeline-content">
+					<div className="timeline">
+						{/* style={{ height: '3989px' }}> */}
+						<div className="timeline-container left">
+							<div className="date">2012</div>
+							{/* <i className="icon fa fa-home" /> */}
+							<div className="timeline-content">
 								<Fade right={true}>
 									<div className={`${width < 950 ? 'm-20px' : ''}`}>
 										<GlassContainer className={` max-w-600px `} hover={true}>
@@ -213,9 +221,9 @@ const HomePage = () => {
 															width,
 															600,
 															1040,
-															'5vw',
-															'3rem',
-															'5rem'
+															'3vw',
+															'2rem',
+															'3rem'
 														)
 													}}
 												>
@@ -247,348 +255,547 @@ const HomePage = () => {
 								</Fade>
 							</div>
 						</div>
-						<div class="timeline-container right">
-							<div class="date">22 Oct</div>
-							<i class="icon fa fa-gift" />
-							<div class="timeline-content">
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<p>
-									Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut
-									blandit semper pretium.
-								</p>
+						<div className="timeline-container right">
+							{/* style={{ top: '-222px' }}> */}
+							<div className="date">2013</div>
+							{/* <i className="icon fa fa-home" /> */}
+							<div className="timeline-content">
+								<Fade left={true}>
+									<div className={`${width < 950 ? 'm-20px' : ''}`}>
+										<GlassContainer className={` max-w-600px `} hover={true}>
+											<div className="p-20px">
+												<h2
+													className="ta-c"
+													style={{
+														fontSize: responsive_font(
+															width,
+															600,
+															1040,
+															'3vw',
+															'2rem',
+															'3rem'
+														)
+													}}
+												>
+													Photoshop
+												</h2>
+												<div
+													className="mt-10px mb-20px w-100per max-w-600px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/>
+												<p className="lh-30px">
+													So I began my obsession with learning in music production school. I
+													learned everything about recording and producing music, mostly with
+													live music, but I taught myself to make Electronic Music and loved
+													the ways you can program sounds and effects.
+												</p>
+												<br />
+												<p className="lh-30px">
+													I took a single class on Ableton Live and I fell in love! In that I
+													learned about a plugin inside of Live called Max for Live. This is
+													when my programming juices start to flow.
+												</p>
+											</div>
+										</GlassContainer>
+										<div
+											className="mt-10px mb-20px h-100per max-h-400px m-auto"
+											style={{ borderRight: '2px solid white' }}
+										/>
+									</div>
+								</Fade>
 							</div>
 						</div>
-						<div class="timeline-container left">
-							<div class="date">10 Jul</div>
-							<i class="icon fa fa-user" />
-							<div class="timeline-content">
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<p>
-									Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut
-									blandit semper pretium.
-								</p>
+						<div className="timeline-container left">
+							{/* style={{ top: '-426px' }}> */}
+							<div className="date">2014</div>
+							{/* <i className="icon fa fa-home" /> */}
+							<div className="timeline-content">
+								<Fade right={true}>
+									<div className={`${width < 950 ? 'm-20px' : ''}`}>
+										<GlassContainer className={` max-w-600px `} hover={true}>
+											<div className="p-20px">
+												<h2
+													className="ta-c"
+													style={{
+														fontSize: responsive_font(
+															width,
+															600,
+															1040,
+															'3vw',
+															'2rem',
+															'3rem'
+														)
+													}}
+												>
+													Illustrator
+												</h2>
+												<div
+													className="mt-10px mb-20px w-100per max-w-600px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/>
+												<p className="lh-30px">
+													So I began my obsession with learning in music production school. I
+													learned everything about recording and producing music, mostly with
+													live music, but I taught myself to make Electronic Music and loved
+													the ways you can program sounds and effects.
+												</p>
+												<br />
+												<p className="lh-30px">
+													I took a single class on Ableton Live and I fell in love! In that I
+													learned about a plugin inside of Live called Max for Live. This is
+													when my programming juices start to flow.
+												</p>
+											</div>
+										</GlassContainer>
+										<div
+											className="mt-10px mb-20px h-100per max-h-400px m-auto"
+											style={{ borderRight: '2px solid white' }}
+										/>
+									</div>
+								</Fade>
 							</div>
 						</div>
-						<div class="timeline-container right">
-							<div class="date">18 May</div>
-							<i class="icon fa fa-running" />
-							<div class="timeline-content">
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<p>
-									Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut
-									blandit semper pretium.
-								</p>
+						<div className="timeline-container right">
+							{/* style={{ top: '-620px' }}> */}
+							<div className="date">2016</div>
+							{/* <i className="icon fa fa-running" /> */}
+							<div className="timeline-content">
+								<Fade left={true}>
+									<div className={`${width < 950 ? 'm-20px' : ''} jc-fe`}>
+										<GlassContainer className={`w-100per max-w-600px `} hover={true}>
+											<div className="p-20px">
+												<h2
+													className="ta-c"
+													style={{
+														fontSize: responsive_font(
+															width,
+															600,
+															1040,
+															'3vw',
+															'2rem',
+															'3rem'
+														)
+													}}
+												>
+													Excel
+												</h2>
+												<div
+													className="mt-10px mb-20px w-100per max-w-600px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/>
+												<p className="lh-30px ta-c">
+													<h3 className="fs-20px">Personal Expenses</h3>
+												</p>
+												<div
+													className="mt-10px mb-20px w-100per max-w-400px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/>
+												<p className="lh-30px">
+													I loved keeping track of my own data like daily routes, expenses,
+													workouts, all sorts of things.
+												</p>
+												<p className="lh-30px">
+													I wasn't just taking the data and leaving it. I was also flowing the
+													data into different formats that allowed me to visualize the
+													infomation in a meaningful way. It was satisfying to see all of the
+													data flow into its places.
+												</p>
+												<br />
+												<p className="lh-30px ta-c">
+													<h3 className="fs-20px">Daily Routines</h3>
+												</p>
+												<div
+													className="mt-10px mb-20px w-100per max-w-400px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/>
+												<p className="lh-30px">
+													My Excel sheets would get pretty intense. To put it in perspective
+													for you, I had a daily routines excel sheet that would keep track of
+													each nutrient that I would eat, like on the back of the nutirition
+													label that would calculate up into its respective categories. That
+													excel would actually lag because of how many formulas that were
+													calucating. I am sure there were many things I was doing wrong but I
+													loved the flow of it. To calcuations is such a breeze in Excel.
+												</p>
+											</div>
+										</GlassContainer>
+									</div>
+								</Fade>
 							</div>
 						</div>
-						<div class="timeline-container left">
-							<div class="date">10 Feb</div>
-							<i class="icon fa fa-cog" />
-							<div class="timeline-content">
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<p>
-									Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut
-									blandit semper pretium.
-								</p>
+						<div className="timeline-container left">
+							{/* style={{ top: '-843px' }}> */}
+							<div className="date">2017</div>
+							{/* <i className="icon fa fa-gift" /> */}
+							<div className="timeline-content">
+								<Fade right={true}>
+									<div className={`${width < 950 ? 'm-20px' : ''} jc-s`}>
+										<GlassContainer className={` max-w-600px `} hover={true}>
+											<div className="p-20px">
+												<h2
+													className="ta-c"
+													style={{
+														fontSize: responsive_font(
+															width,
+															600,
+															1040,
+															'3vw',
+															'2rem',
+															'3rem'
+														)
+													}}
+												>
+													Max/MSP/Jitter
+												</h2>
+												<div
+													className="mt-10px mb-20px w-100per max-w-600px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/>
+												<p className="lh-30px">
+													Diving deeper into Max for Live I learned that Max was actually a
+													standalone application that uses Max, MSP and Jitter that you can
+													make actual apps with. I downloaded it and began working on my Work
+													Break Timer.
+												</p>
+												<br />
+												<p className="lh-30px ta-c">
+													<h3 className="fs-20px">Work Break Timer V1</h3>
+												</p>
+												<div
+													className="mt-10px mb-20px w-100per max-w-400px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/>
+												<p className="lh-30px">
+													My Work Break Timer was a timer that was built off of the 52/17
+													concept. 52 minutes of work, 17 minutes of break. I was really into
+													working efficently so I created an elborate timer system that kept
+													track of how much you worked and breaked among many other features.
+												</p>
+
+												<p className="lh-30px" />
+											</div>
+										</GlassContainer>
+									</div>
+								</Fade>
 							</div>
 						</div>
-						<div class="timeline-container right">
-							<div class="date">01 Jan</div>
-							<i class="icon fa fa-certificate" />
-							<div class="timeline-content">
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<p>
-									Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut
-									blandit semper pretium.
-								</p>
+						<div className="timeline-container right">
+							{/* style={{ top: '-1073px' }}> */}
+							<div className="date">2018</div>
+							{/* <i className="icon fa fa-user" /> */}
+							<div className="timeline-content">
+								<Fade left={true}>
+									<div className={`${width < 950 ? 'm-20px' : ''} jc-s`}>
+										<GlassContainer className={` max-w-600px `} hover={true}>
+											<div className="p-20px">
+												<h2
+													className="ta-c"
+													style={{
+														fontSize: responsive_font(
+															width,
+															600,
+															1040,
+															'3vw',
+															'2rem',
+															'3rem'
+														)
+													}}
+												>
+													Python
+												</h2>
+												<div
+													className="mt-10px mb-20px w-100per max-w-600px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/>
+												<p className="lh-30px ta-c">
+													<h3 className="fs-20px">Work Break Timer V2</h3>
+												</p>
+												<div
+													className="mt-10px mb-20px w-100per max-w-400px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/>
+												<p className="lh-30px">
+													My Excel jouney never really slowed down, but in the meantime I
+													taught myself Python. I was facinated with creating desktop
+													applications at the time so I learned to use tKinter, which I found
+													to be very hard to understand where to find and use the values from
+													interactive elements so a built a application building app.
+												</p>
+												<br />
+												<p className="lh-30px">
+													It asks for the name of the application, as wells the number of
+													buttons, inputs, sliders, etc. to create boiler plate with all of
+													your elements with their event functions already built in, so you
+													can get going on funcionality without all that typing.
+												</p>
+												<p className="lh-30px ta-c">
+													<h3 className="fs-20px">Homemade Version Control Manager</h3>
+												</p>
+												<div
+													className="mt-10px mb-20px w-100per max-w-400px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/>
+												<p className="lh-30px">
+													At this time I did not know what Github was or what a version
+													control system was but did that stop me from building my own version
+													control system. No that did not.
+												</p>
+												<br />
+												<p className="lh-30px">
+													I created a command line interface that will copy over my current
+													version onto a new version, and date and version the filename. If it
+													was the same day it would be keep the same date and add 1 to the
+													version. If it was a new day it would put the new date and 1 as the
+													version.
+												</p>
+
+												<p className="lh-30px" />
+											</div>
+										</GlassContainer>
+									</div>
+								</Fade>
+							</div>
+						</div>
+
+						<div className="timeline-container left">
+							{/* style={{ top: '-1462px' }}> */}
+							<div className="date" style={{ right: '-130px' }}>
+								Summer 2019
+							</div>
+							{/* <i className="icon fa fa-cog" /> */}
+							<div className="timeline-content">
+								<Fade right={true}>
+									<div className={`${width < 950 ? 'm-20px' : ''} jc-s`}>
+										<GlassContainer className={` max-w-600px `} hover={true}>
+											<div className="p-20px">
+												<h2
+													className="ta-c"
+													style={{
+														fontSize: responsive_font(
+															width,
+															600,
+															1040,
+															'3vw',
+															'2rem',
+															'3rem'
+														)
+													}}
+												>
+													3D Printing/CAD Design
+												</h2>
+												<div
+													className="mt-10px mb-20px w-100per max-w-600px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/>
+												<p className="lh-30px ta-c">
+													<h3 className="fs-20px">Coding Boot Camp</h3>
+												</p>
+												<div
+													className="mt-10px mb-20px w-100per max-w-400px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/>
+												<p className="lh-30px">
+													I found myself at a crossroads of what I wanted to do. I didn't feel
+													confidnet enough in my skills to find a job. So I joined a Coding
+													Boot Camp specializing in Web Development. I did the accelerated
+													course that took 3 months to complete.
+												</p>
+												<br />
+												<p className="lh-30px">
+													I will say that it was fast but the exact speed that I learned at.
+													It was wonderful. I felt like I really got a lot out of that class
+													and thats what solidified my coding existence.
+												</p>
+												<br />
+												{/* <div
+													className="mt-10px mb-20px w-100per max-w-400px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/> */}
+												<p className="lh-30px">
+													My Python experience made the Javascript way easier to understand.
+												</p>
+												<br />
+												<p className="lh-30px">
+													I created a command line interface that will copy over my current
+													version onto a new version, and date and version the filename. If it
+													was the same day it would be keep the same date and add 1 to the
+													version. If it was a new day it would put the new date and 1 as the
+													version.
+												</p>
+												{/* <p className="lh-30px ta-c">
+													<h3 className="fs-20px">Coding Boot Camp</h3>
+												</p>
+												<p className="lh-30px" /> */}
+											</div>
+										</GlassContainer>
+									</div>
+								</Fade>
+							</div>
+						</div>
+						<div className="timeline-container right">
+							{/* style={{ top: '-1858px' }}> */}
+							<div className="date" style={{ left: '-130px' }}>
+								Winter 2019
+							</div>
+							{/* <i className="icon fa fa-certificate" /> */}
+							<div className="timeline-content">
+								<Fade left={true}>
+									<div className={`${width < 950 ? 'm-20px' : ''} jc-fe`}>
+										<GlassContainer className={` max-w-600px `} hover={true}>
+											<div className="p-20px">
+												<h2
+													className="ta-c"
+													style={{
+														fontSize: responsive_font(
+															width,
+															600,
+															1040,
+															'3vw',
+															'2rem',
+															'3rem'
+														)
+													}}
+												>
+													Web Development and Beyond
+												</h2>
+												<div
+													className="mt-10px mb-20px w-100per max-w-600px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/>
+												<p className="lh-30px ta-c">
+													<h3 className="fs-20px">Coding Boot Camp</h3>
+												</p>
+												<p className="lh-30px">
+													I found myself at a crossroads of what I wanted to do. I didn't feel
+													confidnet enough in my skills to find a job.
+												</p>
+
+												<p className="lh-30px">
+													So I joined a Coding Boot Camp specializing in Web Development. I
+													did the accelerated course that took 3 months to complete.
+												</p>
+												<br />
+												<p className="lh-30px">
+													I will say that it was fast but the exact speed that I learned at.
+													It was wonderful. I felt like I really got a lot out of that class
+													and thats what solidified my coding existence.
+												</p>
+												<br />
+												{/* <div
+													className="mt-10px mb-20px w-100per max-w-400px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/> */}
+												<p className="lh-30px">
+													I used the knowledge in that class to create an ecommerce website
+													from scratch to sell my 3D Printed Products. Nobody said that that
+													was the best or easiest route to take but I wanted to test myself
+													and push my skills further. So I did.
+												</p>
+												<br />
+												<p className="lh-30px">
+													That project/business is called{' '}
+													<a
+														href="https://www.glow-leds.com"
+														target="_blank"
+														rel="noopener noreferrer"
+														aria-label="Glow LEDs"
+													>
+														<span
+															className="lh-30px title_font br-10px p-10px fs-16px"
+															style={{
+																color: 'white',
+
+																display: 'inline-block',
+																// boxShadow: 'inset rgb(255 255 255 / 20%) 0px 0px 10px 5px',
+																// filter: 'blur(0px)',
+																cursor: 'pointer'
+															}}
+														>
+															Glow LEDs
+														</span>
+													</a>{' '}
+													learn more about it here
+												</p>
+											</div>
+										</GlassContainer>
+									</div>
+								</Fade>
+							</div>
+						</div>
+						<div className="timeline-container left">
+							{/* style={{ top: '-2163px' }}> */}
+							<div className="date" style={{ right: '-130px' }}>
+								Spring 2020
+							</div>
+							{/* <i className="icon fa fa-certificate" /> */}
+							<div className="timeline-content">
+								<Fade right={true}>
+									<div className={`${width < 950 ? 'm-20px' : ''} jc-s`}>
+										<GlassContainer className={`w-100per max-w-600px `} hover={true}>
+											<div className="p-20px">
+												<h2
+													className="ta-c"
+													style={{
+														fontSize: responsive_font(
+															width,
+															600,
+															1040,
+															'3vw',
+															'2rem',
+															'3rem'
+														)
+													}}
+												>
+													Arduino/C++ and Addressable LEDs
+												</h2>
+												<div
+													className="mt-10px mb-20px w-100per max-w-600px m-auto"
+													style={{ borderBottom: '2px solid white' }}
+												/>
+												<p className="lh-30px">
+													I was very interested in learning to program LEDs via Arduino/C++
+													but with having a Python background, the curly brace syntax didn't
+													make sense at the time. Learning javascript at the bootcamp really
+													changed that for me.
+												</p>
+												<p className="lh-30px">
+													Using the Fast-LED library I learned to program Individually
+													Addressable LEDs such as WS2811 and WS2812B. This was fun, I dove
+													into building my won custom modes and even built my own single
+													button menu that you can navigate the modes and settings.
+												</p>
+												<br />
+												<p className="lh-30px">
+													I currently sell a product that I program myself called Glow Strings
+													V2!
+												</p>
+											</div>
+										</GlassContainer>
+									</div>
+								</Fade>
 							</div>
 						</div>
 					</div>
-
-					<Fade left={true}>
-						<div className={`${width < 950 ? 'm-20px' : ''} jc-fe`}>
-							<GlassContainer className={` max-w-600px `} hover={true}>
-								<div className="p-20px">
-									<h2
-										className="ta-c"
-										style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}
-									>
-										Max/MSP/Jitter
-									</h2>
-									<div
-										className="mt-10px mb-20px w-100per max-w-600px m-auto"
-										style={{ borderBottom: '2px solid white' }}
-									/>
-									<p className="lh-30px">
-										Diving deeper into Max for Live I learned that Max was actually a standalone
-										application that uses Max, MSP and Jitter that you can make actual apps with. I
-										downloaded it and began working on my Work Break Timer.
-									</p>
-									<br />
-									<p className="lh-30px ta-c">
-										<h3 className="fs-20px">Work Break Timer V1</h3>
-									</p>
-									<div
-										className="mt-10px mb-20px w-100per max-w-400px m-auto"
-										style={{ borderBottom: '2px solid white' }}
-									/>
-									<p className="lh-30px">
-										My Work Break Timer was a timer that was built off of the 52/17 concept. 52
-										minutes of work, 17 minutes of break. I was really into working efficently so I
-										created an elborate timer system that kept track of how much you worked and
-										breaked among many other features.
-									</p>
-
-									<p className="lh-30px" />
-								</div>
-							</GlassContainer>
+					{/* <div className="timeline-container left">
+						<div className="date" style={{ right: '-130px' }}>
+							Spring 2020
 						</div>
-					</Fade>
-
+					</div> */}
+					<div className="w-100per jc-c">
+						<div className="circle ta-c" />
+					</div>
+					<div className="present w-100per ta-c mv-2rem">Present</div>
 					<Fade right={true}>
 						<div className={`${width < 950 ? 'm-20px' : ''} jc-s`}>
-							<GlassContainer className={` max-w-600px `} hover={true}>
+							<GlassContainer className={`w-100per max-w-900px m-auto`} hover={true}>
 								<div className="p-20px">
 									<h2
 										className="ta-c"
-										style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}
+										style={{
+											fontSize: responsive_font(width, 600, 1040, '3vw', '2rem', '3rem')
+										}}
 									>
-										Python
-									</h2>
-									<div
-										className="mt-10px mb-20px w-100per max-w-600px m-auto"
-										style={{ borderBottom: '2px solid white' }}
-									/>
-									<p className="lh-30px ta-c">
-										<h3 className="fs-20px">Work Break Timer V2</h3>
-									</p>
-									<div
-										className="mt-10px mb-20px w-100per max-w-400px m-auto"
-										style={{ borderBottom: '2px solid white' }}
-									/>
-									<p className="lh-30px">
-										My Excel jouney never really slowed down, but in the meantime I taught myself
-										Python. I was facinated with creating desktop applications at the time so I
-										learned to use tKinter, which I found to be very hard to understand where to
-										find and use the values from interactive elements so a built a application
-										building app.
-									</p>
-									<br />
-									<p className="lh-30px">
-										It asks for the name of the application, as wells the number of buttons, inputs,
-										sliders, etc. to create boiler plate with all of your elements with their event
-										functions already built in, so you can get going on funcionality without all
-										that typing.
-									</p>
-									<p className="lh-30px ta-c">
-										<h3 className="fs-20px">Homemade Version Control Manager</h3>
-									</p>
-									<div
-										className="mt-10px mb-20px w-100per max-w-400px m-auto"
-										style={{ borderBottom: '2px solid white' }}
-									/>
-									<p className="lh-30px">
-										At this time I did not know what Github was or what a version control system was
-										but did that stop me from building my own version control system. No that did
-										not.
-									</p>
-									<br />
-									<p className="lh-30px">
-										I created a command line interface that will copy over my current version onto a
-										new version, and date and version the filename. If it was the same day it would
-										be keep the same date and add 1 to the version. If it was a new day it would put
-										the new date and 1 as the version.
-									</p>
-
-									<p className="lh-30px" />
-								</div>
-							</GlassContainer>
-						</div>
-					</Fade>
-					<Fade left={true}>
-						<div className={`${width < 950 ? 'm-20px' : ''} jc-fe`}>
-							<GlassContainer className={`w-100per max-w-600px `} hover={true}>
-								<div className="p-20px">
-									<h2
-										className="ta-c"
-										style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}
-									>
-										Excel
-									</h2>
-									<div
-										className="mt-10px mb-20px w-100per max-w-600px m-auto"
-										style={{ borderBottom: '2px solid white' }}
-									/>
-									<p className="lh-30px ta-c">
-										<h3 className="fs-20px">Personal Expenses</h3>
-									</p>
-									<div
-										className="mt-10px mb-20px w-100per max-w-400px m-auto"
-										style={{ borderBottom: '2px solid white' }}
-									/>
-									<p className="lh-30px">
-										I loved keeping track of my own data like daily routes, expenses, workouts, all
-										sorts of things.
-									</p>
-									<p className="lh-30px">
-										I wasn't just taking the data and leaving it. I was also flowing the data into
-										different formats that allowed me to visualize the infomation in a meaningful
-										way. It was satisfying to see all of the data flow into its places.
-									</p>
-									<br />
-									<p className="lh-30px ta-c">
-										<h3 className="fs-20px">Daily Routines</h3>
-									</p>
-									<div
-										className="mt-10px mb-20px w-100per max-w-400px m-auto"
-										style={{ borderBottom: '2px solid white' }}
-									/>
-									<p className="lh-30px">
-										My Excel sheets would get pretty intense. To put it in perspective for you, I
-										had a daily routines excel sheet that would keep track of each nutrient that I
-										would eat, like on the back of the nutirition label that would calculate up into
-										its respective categories. That excel would actually lag because of how many
-										formulas that were calucating. I am sure there were many things I was doing
-										wrong but I loved the flow of it. To calcuations is such a breeze in Excel.
-									</p>
-								</div>
-							</GlassContainer>
-						</div>
-					</Fade>
-					<Fade right={true}>
-						<div className={`${width < 950 ? 'm-20px' : ''} jc-s`}>
-							<GlassContainer className={` max-w-600px `} hover={true}>
-								<div className="p-20px">
-									<h2
-										className="ta-c"
-										style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}
-									>
-										3D Printing/CAD Design
-									</h2>
-									<div
-										className="mt-10px mb-20px w-100per max-w-600px m-auto"
-										style={{ borderBottom: '2px solid white' }}
-									/>
-									<p className="lh-30px ta-c">
-										<h3 className="fs-20px">Coding Boot Camp</h3>
-									</p>
-									<div
-										className="mt-10px mb-20px w-100per max-w-400px m-auto"
-										style={{ borderBottom: '2px solid white' }}
-									/>
-									<p className="lh-30px">
-										I found myself at a crossroads of what I wanted to do. I didn't feel confidnet
-										enough in my skills to find a job. So I joined a Coding Boot Camp specializing
-										in Web Development. I did the accelerated course that took 3 months to complete.
-									</p>
-									<br />
-									<p className="lh-30px">
-										I will say that it was fast but the exact speed that I learned at. It was
-										wonderful. I felt like I really got a lot out of that class and thats what
-										solidified my coding existence.
-									</p>
-									<br />
-									<div
-										className="mt-10px mb-20px w-100per max-w-400px m-auto"
-										style={{ borderBottom: '2px solid white' }}
-									/>
-									<p className="lh-30px">
-										My Python experience made the Javascript way easier to understand.
-									</p>
-									<br />
-									<p className="lh-30px">
-										I created a command line interface that will copy over my current version onto a
-										new version, and date and version the filename. If it was the same day it would
-										be keep the same date and add 1 to the version. If it was a new day it would put
-										the new date and 1 as the version.
-									</p>
-									<p className="lh-30px ta-c">
-										<h3 className="fs-20px">Coding Boot Camp</h3>
-									</p>
-									<p className="lh-30px" />
-								</div>
-							</GlassContainer>
-						</div>
-					</Fade>
-					<Fade left={true}>
-						<div className={`${width < 950 ? 'm-20px' : ''} jc-fe`}>
-							<GlassContainer className={` max-w-600px `} hover={true}>
-								<div className="p-20px">
-									<h2
-										className="ta-c"
-										style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}
-									>
-										Web Development and Beyond
-									</h2>
-									<div
-										className="mt-10px mb-20px w-100per max-w-600px m-auto"
-										style={{ borderBottom: '2px solid white' }}
-									/>
-									<p className="lh-30px ta-c">
-										<h3 className="fs-20px">Coding Boot Camp</h3>
-									</p>
-									<p className="lh-30px">
-										I found myself at a crossroads of what I wanted to do. I didn't feel confidnet
-										enough in my skills to find a job.
-									</p>
-
-									<p className="lh-30px">
-										So I joined a Coding Boot Camp specializing in Web Development. I did the
-										accelerated course that took 3 months to complete.
-									</p>
-									<br />
-									<p className="lh-30px">
-										I will say that it was fast but the exact speed that I learned at. It was
-										wonderful. I felt like I really got a lot out of that class and thats what
-										solidified my coding existence.
-									</p>
-									<br />
-									<div
-										className="mt-10px mb-20px w-100per max-w-400px m-auto"
-										style={{ borderBottom: '2px solid white' }}
-									/>
-									<p className="lh-30px">
-										I used the knowledge in that class to create an ecommerce website from scratch
-										to sell my 3D Printed Products. Nobody said that that was the best or easiest
-										route to take but I wanted to test myself and push my skills further. So I did.
-									</p>
-									<br />
-									<p className="lh-30px">
-										That project/business is called{' '}
-										<a
-											href="https://www.glow-leds.com"
-											target="_blank"
-											rel="noopener noreferrer"
-											aria-label="Glow LEDs"
-										>
-											<span
-												className="lh-30px title_font br-10px p-10px fs-16px"
-												style={{
-													color: 'white',
-
-													display: 'inline-block',
-													// boxShadow: 'inset rgb(255 255 255 / 20%) 0px 0px 10px 5px',
-													// filter: 'blur(0px)',
-													cursor: 'pointer'
-												}}
-											>
-												Glow LEDs
-											</span>
-										</a>{' '}
-										learn more about it here
-									</p>
-								</div>
-							</GlassContainer>
-						</div>
-					</Fade>
-					<Fade right={true}>
-						<div className={`${width < 950 ? 'm-20px' : ''} jc-s`}>
-							<GlassContainer className={`w-100per max-w-600px `} hover={true}>
-								<div className="p-20px">
-									<h2
-										className="ta-c"
-										style={{ fontSize: responsive_font(width, 600, 1040, '5vw', '3rem', '5rem') }}
-									>
-										Arduino/C++ and Addressable LEDs
+										Glow LEDs, the culmination
 									</h2>
 									<div
 										className="mt-10px mb-20px w-100per max-w-600px m-auto"
@@ -614,7 +821,7 @@ const HomePage = () => {
 						</div>
 					</Fade>
 				</div>
-				<ScrollLink activeClass="active" to="skills" spy={true} smooth={true} duration={2000} offset={-200}>
+				<ScrollLink activeClassName="active" to="skills" spy={true} smooth={true} duration={2000} offset={-200}>
 					<div
 						className="fade_in bob pos-rel w-100per jc-c"
 						style={{
@@ -784,7 +991,14 @@ const HomePage = () => {
 					</div>
 				</FadeInContainer>
 
-				<ScrollLink activeClass="active" to="experience" spy={true} smooth={true} duration={2000} offset={-200}>
+				<ScrollLink
+					activeClassName="active"
+					to="experience"
+					spy={true}
+					smooth={true}
+					duration={2000}
+					offset={-200}
+				>
 					<div
 						className="fade_in bob pos-rel w-100per jc-c"
 						style={{
@@ -930,7 +1144,7 @@ const HomePage = () => {
 						</div>
 					</div>
 				</FadeInContainer>
-				<Link activeClass="active" to="/projects">
+				<Link activeClassName="active" to="/projects">
 					<div
 						className="fade_in bob pos-rel w-100per jc-c"
 						style={{
