@@ -1,6 +1,5 @@
 [
 	{
-		"id": 8,
 		"name": "Glow LEDs",
 		"pathname": "glow_leds",
 		"image": "/images/project_images/Glow_LEDs_Logo.png",
@@ -12,7 +11,6 @@
 		"technologies": [ "Javascript", "MERN Stack", "Redux", "Nodemailer" ]
 	},
 	{
-		"id": 7,
 		"name": "CoLab",
 		"pathname": "colab",
 		"image": "/images/project_images/Co_Lab_Logo.png",
@@ -24,7 +22,6 @@
 		"technologies": [ "MERN Stack", "Passport.js", "Google Oauth", "Github API", "UIKit", "Framer X" ]
 	},
 	{
-		"id": 6,
 		"name": "Livdin",
 		"pathname": "livdin",
 		"image": "/images/project_images/Livdin_Logo_2.jpg",
@@ -36,7 +33,6 @@
 		"technologies": [ "Node.js", "MySQL", "Sequalize", "Mapquest API", "Leaflet", "Open Street Map API" ]
 	},
 	{
-		"id": 5,
 		"name": "Ping Pong Ball LED Matrix",
 		"pathname": "ping_pong_ball_led_matrix",
 		"image": "/images/project_images/LED_Matrix_Logo.png",
@@ -52,7 +48,6 @@
 		]
 	},
 	{
-		"id": 4,
 		"name": "Weather Dashboard",
 		"pathname": "weather_dashboard",
 		"image": "/images/project_images/Weather_Dashboard.png",
@@ -64,7 +59,6 @@
 		"technologies": [ "Javacript", "Open Weather Map API", "Open Street Map API" ]
 	},
 	{
-		"id": 3,
 		"name": "Date Night Recipes",
 		"pathname": "date_night_recipes",
 		"image": "/images/project_images/Date_Night_Recipes.png",
@@ -76,7 +70,6 @@
 		"technologies": [ "Javascrpt", "Mealdb API", "Cocktaildb API", "UiKit" ]
 	},
 	{
-		"id": 2,
 		"name": "3D Printing Quiz",
 		"pathname": "3d_printing_quiz",
 		"image": "/images/project_images/3D_Printing_Quiz.png",
@@ -88,9 +81,85 @@
 		"technologies": [ "Javacript", "JQuery" ]
 	},
 	{
-		"id": 1,
 		"name": "Password Generator",
 		"pathname": "password_generator",
+		"image": "/images/project_images/password_generator.png",
+		"date_created": "12/11/19",
+		"date_completed": "12/17/20",
+		"url": "https://livingkurt.github.io/Random-Password-Generator/",
+		"github": "https://github.com/livingkurt/Random-Password-Generator",
+		"description": "Security is a big deal now a days. No one is safe. But some are safer than others. With this password generator you too can be one of the safe ones. With the ability to choose the length, and type of characters. You will be the safest on the internet!",
+		"technologies": [ "Javacript", "JQuery" ]
+	},
+	{
+		"name": "Fusion 360: Functional Designs",
+		"pathname": "music_product",
+		"image": "/images/project_images/password_generator.png",
+		"date_created": "12/11/19",
+		"date_completed": "12/17/20",
+		"url": "https://livingkurt.github.io/Random-Password-Generator/",
+		"github": "https://github.com/livingkurt/Random-Password-Generator",
+		"description": "Security is a big deal now a days. No one is safe. But some are safer than others. With this password generator you too can be one of the safe ones. With the ability to choose the length, and type of characters. You will be the safest on the internet!",
+		"technologies": [ "Javacript", "JQuery" ]
+	},
+	{
+		"name": "Python: Date Created",
+		"pathname": "music_product",
+		"image": "/images/project_images/password_generator.png",
+		"date_created": "12/11/19",
+		"date_completed": "12/17/20",
+		"url": "https://livingkurt.github.io/Random-Password-Generator/",
+		"github": "https://github.com/livingkurt/Random-Password-Generator",
+		"description": "Security is a big deal now a days. No one is safe. But some are safer than others. With this password generator you too can be one of the safe ones. With the ability to choose the length, and type of characters. You will be the safest on the internet!",
+		"technologies": [ "Javacript", "JQuery" ]
+	},
+	{
+		"name": "Python: App Bulder",
+		"pathname": "music_product",
+		"image": "/images/project_images/password_generator.png",
+		"date_created": "12/11/19",
+		"date_completed": "12/17/20",
+		"url": "https://livingkurt.github.io/Random-Password-Generator/",
+		"github": "https://github.com/livingkurt/Random-Password-Generator",
+		"description": "Security is a big deal now a days. No one is safe. But some are safer than others. With this password generator you too can be one of the safe ones. With the ability to choose the length, and type of characters. You will be the safest on the internet!",
+		"technologies": [ "Javacript", "JQuery" ]
+	},
+	{
+		"name": "Max/MSP/Jitter: Work Breal Timer",
+		"pathname": "music_product",
+		"image": "/images/project_images/password_generator.png",
+		"date_created": "12/11/19",
+		"date_completed": "12/17/20",
+		"url": "https://livingkurt.github.io/Random-Password-Generator/",
+		"github": "https://github.com/livingkurt/Random-Password-Generator",
+		"description": "Security is a big deal now a days. No one is safe. But some are safer than others. With this password generator you too can be one of the safe ones. With the ability to choose the length, and type of characters. You will be the safest on the internet!",
+		"technologies": [ "Javacript", "JQuery" ]
+	},
+	{
+		"name": "Excel: Daily Routines",
+		"pathname": "music_product",
+		"image": "/images/project_images/password_generator.png",
+		"date_created": "12/11/19",
+		"date_completed": "12/17/20",
+		"url": "https://livingkurt.github.io/Random-Password-Generator/",
+		"github": "https://github.com/livingkurt/Random-Password-Generator",
+		"description": "Security is a big deal now a days. No one is safe. But some are safer than others. With this password generator you too can be one of the safe ones. With the ability to choose the length, and type of characters. You will be the safest on the internet!",
+		"technologies": [ "Javacript", "JQuery" ]
+	},
+	{
+		"name": "Excel: Expenses",
+		"pathname": "music_product",
+		"image": "/images/project_images/password_generator.png",
+		"date_created": "12/11/19",
+		"date_completed": "12/17/20",
+		"url": "https://livingkurt.github.io/Random-Password-Generator/",
+		"github": "https://github.com/livingkurt/Random-Password-Generator",
+		"description": "Security is a big deal now a days. No one is safe. But some are safer than others. With this password generator you too can be one of the safe ones. With the ability to choose the length, and type of characters. You will be the safest on the internet!",
+		"technologies": [ "Javacript", "JQuery" ]
+	},
+	{
+		"name": "NTRE: Music Production",
+		"pathname": "music_product",
 		"image": "/images/project_images/password_generator.png",
 		"date_created": "12/11/19",
 		"date_completed": "12/17/20",
