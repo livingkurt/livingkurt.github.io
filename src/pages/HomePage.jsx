@@ -36,7 +36,7 @@ const HomePage = () => {
 	return (
 		<div className="pos-rel">
 			<InvisibleButtons />
-			<div className="pos-rel" style={{ top: '10vh' }}>
+			<div className="pos-rel" style={{ top: width < 737 ? '2vh' : '10vh' }}>
 				<Fade bottom effect="backdrop-filter">
 					<div className={`${width < 737 ? 'm-20px' : ''}`}>
 						<GlassContainer className="max-w-700px m-auto " hover={true}>
@@ -123,28 +123,31 @@ const HomePage = () => {
 										understanding, I learned to play the piano, juggle, ride a unicycle, solve a
 										rubiks cube, etc just to see if I could, and I could!
 									</p>
-									<ScrollLink
-										activeClassName="active"
-										to="about_me"
-										spy={true}
-										smooth={true}
-										duration={2000}
-										offset={-200}
-									>
-										<span
-											className="lh-30px title_font br-10px p-10px mt-2rem fs-16px"
-											style={{
-												color: 'white',
-
-												display: 'inline-block',
-												boxShadow: 'inset rgb(255 255 255 / 20%) 0px 0px 10px 5px',
-												filter: 'blur(0px)',
-												cursor: 'pointer'
-											}}
+									<p className="lh-30px ">
+										Take a look at my jouney to{' '}
+										<ScrollLink
+											activeClassName="active"
+											to="about_me"
+											spy={true}
+											smooth={true}
+											duration={2000}
+											offset={-200}
 										>
-											See how I got here
-										</span>
-									</ScrollLink>
+											<span
+												className="lh-30px title_font br-10px p-10px fs-16px"
+												style={{
+													color: 'white',
+
+													display: 'inline-block',
+													boxShadow: 'inset rgb(255 255 255 / 20%) 0px 0px 10px 5px',
+													filter: 'blur(0px)',
+													cursor: 'pointer'
+												}}
+											>
+												See how I got here
+											</span>
+										</ScrollLink>
+									</p>
 								</Fade>
 							</div>
 						</GlassContainer>
@@ -1007,7 +1010,7 @@ const HomePage = () => {
 				</ScrollLink>
 			</div>
 			<div className="w-100per pos-rel" id="skills" style={{ top: isMobile ? '88vh' : '150vh' }}>
-				<FadeInContainer width="900px" fade={'right'} hover={true} screen_width={width}>
+				<FadeInContainer width="900px" fade={'bottom'} hover={true} screen_width={width}>
 					<div className="p-20px">
 						<h2
 							className=" ta-c"

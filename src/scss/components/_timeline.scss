@@ -280,13 +280,13 @@
 	transition: all .3s ease-out;
 }
 
-.timeline-content:focus .timeline-text {
+.timeline-content:hover .timeline-text {
 	opacity: 1;
 	max-height: 1000px;
 	width: unset;
 	// display: block;
 }
-.timeline-content:focus .timeline-header {
+.timeline-content:hover .timeline-header {
 	font-size: 3rem;
 	margin-bottom: 10px;
 }

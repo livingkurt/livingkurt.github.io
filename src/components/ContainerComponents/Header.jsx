@@ -41,6 +41,24 @@ function Header() {
 						)}
 						{width > 970 && (
 							<div className="row">
+								<span
+									className="fs-20spanx blur-2px"
+									style={{
+										fontSize: responsive_font(width, 600, 1040, '2vw', '1.6rem', '2rem'),
+										paddingLeft: responsive_font(width, 600, 1040, '3vw', '1.6rem', '3rem'),
+										cursor: 'pointer'
+									}}
+									onClick={(e) =>
+										window.confirm(
+											'Hello! I am updating my portfolio to match my current skillset. Thank you for understanding. Look around and see what you find!'
+										)}
+								>
+									work in progress
+								</span>
+							</div>
+						)}
+						{/* {width > 970 && (
+							<div className="row">
 								<ScrollLink
 									to="about_me"
 									className="fc-white"
@@ -99,7 +117,7 @@ function Header() {
 									</span>
 								</ScrollLink>
 							</div>
-						)}
+						)} */}
 					</div>
 					<div className="row">
 						<div className="link-container">
